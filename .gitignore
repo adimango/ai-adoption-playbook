@@ -1,0 +1,11 @@
+# Source material (private/copyrighted)
+docs/
+
+# Demo scripts and recordings
+demo/
+
+# OS
+.DS_Store
+
+# Claude Code
+.claude/

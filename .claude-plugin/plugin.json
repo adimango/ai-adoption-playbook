@@ -1,0 +1,22 @@
+{
+  "name": "ai-adoption-playbook",
+  "description": "Structured AI adoption framework for leaders — diagnostic assessments, blocker analysis, rollout plans, and board-ready narratives",
+  "version": "1.0.0",
+  "author": {
+    "name": "Alex Di Mango",
+    "url": "https://alexdimango.com"
+  },
+  "homepage": "https://alexdimango.com",
+  "repository": "https://github.com/adimango/ai-adoption-playbook",
+  "license": "MIT",
+  "keywords": [
+    "ai-adoption",
+    "ai-strategy",
+    "board-reporting",
+    "fluency-assessment",
+    "adoption-playbook",
+    "cto",
+    "caio",
+    "ai-rollout"
+  ]
+}
