@@ -1,0 +1,18 @@
+{
+  "name": "ai-adoption-playbook",
+  "owner": {
+    "name": "Alex Di Mango",
+    "email": "me@alexdimango.com"
+  },
+  "metadata": {
+    "description": "Structured AI adoption framework for leaders"
+  },
+  "plugins": [
+    {
+      "name": "ai-adoption-playbook",
+      "source": ".",
+      "description": "Diagnostic assessments, blocker analysis, rollout plans, and board-ready narratives",
+      "version": "1.0.0"
+    }
+  ]
+}

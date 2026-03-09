@@ -61,10 +61,11 @@ The playbook diagnoses which pillars are blocking you, then guides you through f
 
 Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
-**Install as a plugin:**
+**Install as a plugin from GitHub:**
 
 ```bash
-claude plugin install ai-adoption-playbook
+/plugin marketplace add adimango/ai-adoption-playbook
+/plugin install ai-adoption-playbook@ai-adoption-playbook
 ```
 
 **Or clone and use directly:**
