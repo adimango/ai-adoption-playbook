@@ -10,7 +10,10 @@
   "plugins": [
     {
       "name": "ai-adoption-playbook",
-      "source": ".",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/adimango/ai-adoption-playbook.git"
+      },
       "description": "Diagnostic assessments, blocker analysis, rollout plans, and board-ready narratives",
       "version": "1.0.0"
     }
