@@ -11,13 +11,17 @@ Quick diagnostic that scores an organization's AI fluency across three pillars: 
 
 **Core principle:** Diagnose before you prescribe. This skill assesses — it does NOT build plans, pick tools, or write board narratives. Those are separate skills.
 
-**Time:** Under 5 minutes for the quick quiz. Optional deep-dive available if the leader wants more detail.
+**Time:** Under 5 minutes for the quick quiz. Even faster if the leader has existing survey or assessment data. Optional deep-dive available if the leader wants more detail.
 
 ## Flow
 
 ```dot
 digraph fluency {
     "Context (2 Qs)" [shape=box];
+    "Have existing data?" [shape=diamond];
+    "Import & map data" [shape=box];
+    "Gaps in data?" [shape=diamond];
+    "Fill gaps (targeted Qs)" [shape=box];
     "Quick Quiz (9 Qs)" [shape=box];
     "Score & produce scorecard" [shape=box];
     "Offer team survey" [shape=box];
@@ -25,7 +29,13 @@ digraph fluency {
     "Deep-dive on weakest pillar" [shape=box];
     "Route to next skill" [shape=doublecircle];
 
-    "Context (2 Qs)" -> "Quick Quiz (9 Qs)";
+    "Context (2 Qs)" -> "Have existing data?";
+    "Have existing data?" -> "Import & map data" [label="yes"];
+    "Have existing data?" -> "Quick Quiz (9 Qs)" [label="no"];
+    "Import & map data" -> "Gaps in data?";
+    "Gaps in data?" -> "Fill gaps (targeted Qs)" [label="yes"];
+    "Gaps in data?" -> "Score & produce scorecard" [label="no"];
+    "Fill gaps (targeted Qs)" -> "Score & produce scorecard";
     "Quick Quiz (9 Qs)" -> "Score & produce scorecard";
     "Score & produce scorecard" -> "Offer team survey";
     "Offer team survey" -> "Want deep-dive?";
@@ -52,9 +62,46 @@ Get just enough context to interpret the quiz answers. Ask one at a time:
 1. **"Tell me about your team — how big, what they do, and what's your role?"**
 2. **"What AI tools does your team have access to today, if any?"**
 
-That's it. Don't ask about funding stage, runway, or history. Get to the quiz fast.
+That's it. Don't ask about funding stage, runway, or history. Get to the assessment fast.
 
-### Step 2: Quick Quiz (9 questions)
+### Step 2: Check for Existing Data
+
+After context questions, ask:
+
+> **"Have you already run a survey or assessment on AI adoption — even an informal one? If so, share the results and I'll map them to our framework instead of starting from scratch."**
+
+**If they have data:** Go to Step 2a (Import Existing Data).
+**If they don't:** Go to Step 3 (Quick Quiz).
+
+### Step 2a: Import Existing Data
+
+Accept whatever format they share — survey results, spreadsheet exports, summary notes, screenshots. Map their data to the three pillars using this approach:
+
+1. **Extract signals.** Read through the data and identify anything that maps to psychological barriers, integration failures, or ownership gaps. Use the survey-to-pillar mapping table (see Team Survey Template section) as a guide, but be flexible — their questions won't match ours exactly.
+
+2. **Score what you can.** For each pillar where you have enough signal, assign a 1-4 raw score based on what the data tells you. Use the same scoring logic as the quiz: 1 = no engagement, 4 = fluent.
+
+3. **Identify gaps.** Check which pillars have weak or missing signal. Common gaps:
+   - External surveys rarely cover **psychological barriers** well (people don't self-report fear or identity threat accurately)
+   - **Ownership gaps** often aren't covered unless the survey explicitly asked about process and accountability
+   - **Integration** data is usually the strongest since most surveys ask about tool usage
+
+4. **Fill gaps with targeted questions.** For each pillar with insufficient data, ask 1-2 questions from the Quick Quiz (Step 3) that cover the gap. Tell the leader why:
+
+   > "Your survey gives me a good picture of [covered pillars]. I'm missing signal on [gap pillar] — let me ask [1-2] quick questions to fill that in."
+
+   Pick the most diagnostic question per pillar:
+   - Psychological Barriers gap → ask Q2 (reasons for non-use) and Q3 (leadership modeling)
+   - Integration gap → ask Q4 (team relationship with tools) and Q6 (breadth of use)
+   - Ownership gap → ask Q7 (who owns it) and Q8 (how you measure)
+
+5. **Proceed to scoring** (Step 4) once all three pillars have signal.
+
+<HARD-GATE>
+Do NOT accept vague summaries as data. "Team seems positive" is not data. Push for specifics: "What percentage responded? What were the actual response distributions?" If the shared data is too vague to score, say so honestly and offer the quick quiz as a faster path than going back and forth on interpretation.
+</HARD-GATE>
+
+### Step 3: Quick Quiz (9 questions)
 
 Ask ONE question at a time. Present the options exactly as written. The leader picks A, B, C, or D. Each answer maps to a score (shown in brackets — do NOT show the scores to the leader).
 
@@ -118,7 +165,7 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 - C) There's someone they can ask, but no systematic feedback loop [3]
 - D) There's a clear process — issues get reported, tracked, and addressed [4]
 
-### Step 3: Score
+### Step 4: Score
 
 **Scoring method:**
 - Each answer maps to a score of 1-4 (shown in brackets above)
@@ -138,7 +185,7 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 
 Produce the scorecard using the Output format below.
 
-### Step 4: Offer Team Survey + Optional Deep-Dive
+### Step 5: Offer Team Survey + Optional Deep-Dive
 
 After presenting the scorecard:
 
@@ -155,7 +202,7 @@ After presenting the scorecard:
 
 **If they want to move on:** Route to the next skill.
 
-### Step 5: Route to Next Skill
+### Step 6: Route to Next Skill
 
 Based on the scorecard, recommend ONE next step. See the Next Skill section below.
 
@@ -261,8 +308,9 @@ After all questions, produce the scorecard in this exact format:
 - **5** — Fluent. AI is invisible and expected. New hires pick it up by watching how the team works. Decisions are better, not just faster.
 
 ### Data Source
-**Based on:** [Leader quiz / Leader quiz + deep-dive / Leader quiz + team survey]
+**Based on:** [Leader quiz / Imported data + gap-fill / Leader quiz + deep-dive / Leader quiz + team survey]
 [If quiz-only: "These scores reflect your perspective. A 5-minute team survey would sharpen the picture — especially on psychological barriers, where leaders often underestimate resistance."]
+[If imported data: "These scores combine your existing survey data with targeted questions to fill gaps. Data source: [describe what they shared]."]
 
 ### Top Finding
 [Single most important thing this leader needs to address, in 2-3 sentences]
