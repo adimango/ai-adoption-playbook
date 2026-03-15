@@ -187,6 +187,9 @@ Produce the use case brief in this exact format:
 ### Quality Bar for Stage 1
 [What "good enough" means for AI output in this use case. Set it low on purpose: "good enough to move work forward" not "ready to publish." Perfectionism kills early adoption — the team needs to see AI as a useful starting point, not a replacement for their judgment.]
 
+### Baseline (Before Pilot Starts)
+[The current number for the metric you'll use to prove success — e.g., "Average PR review time: 45 minutes. Engineers using AI tools weekly: 2 of 14." Without this, there's nothing to compare against at Week 4.]
+
 ### What Success Looks Like in 2 Weeks
 [One concrete, measurable outcome — e.g., "AI catches at least 3 real issues in PRs that humans confirm were valid"]
 

@@ -75,6 +75,21 @@ Cost efficiency ROI = (time value saved - tool cost) / tool cost × 100
 **Consequence:** Board asks "what else could we spend $10K/year on?" and founder has no answer.
 **Fix:** Include the cost-per-engineer-per-month and let the board compare to other investments.
 
+### Watermelon Numbers
+**Symptom:** A metric looks green — "95% of engineers have Copilot" — but the underlying reality hasn't changed. Access ≠ usage ≠ adoption.
+**Consequence:** Board thinks adoption is working. Next quarter the numbers don't move and credibility takes a hit.
+**Fix:** If the founder's data shows high access but low usage, flag it: "This number measures access, not behavior. The board will ask what people actually do with it."
+
+### Cobra Numbers
+**Symptom:** A metric becomes a target and people optimize the number instead of the outcome — e.g., team accepts every AI suggestion to hit "AI-assisted commits" while code quality drops.
+**Consequence:** The metric improves, the goal doesn't. Board eventually notices.
+**Fix:** Pair every activity metric with an outcome metric. If you report "AI-assisted commits," pair it with "defect rate" or "review cycle time." If they move in opposite directions, flag the tension.
+
+### Hawthorne Numbers
+**Symptom:** Usage spikes during the pilot month when everyone's watching, then drops when attention moves elsewhere.
+**Consequence:** ROI calculated from the pilot month overstates the real impact.
+**Fix:** If usage data covers only a monitored period, label the number in the output: "(pilot period — not yet confirmed as sustained)." The board sees it's provisional. Don't present pilot-month data as a trend.
+
 ## Output
 
 Produce the ROI calculation in this exact format:

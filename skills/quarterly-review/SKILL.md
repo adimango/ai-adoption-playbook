@@ -106,6 +106,11 @@ Use `board-ai-update` template to draft the quarterly update. The "What Happened
 **Consequence:** Demoralizing. Ignores real progress.
 **Fix:** Compare to the previous scorecard. "You went from 2/5 to 3/5 — here's what moved it, here's what to do next to get to 4."
 
+### Missing Adoption Trade-offs
+**Symptom:** Scores improved but the founder doesn't mention that pushing adoption created new friction — code quality concerns, team morale dips, or engineers feeling surveilled.
+**Consequence:** The cure causes a new disease. Next quarter's blockers are side effects of this quarter's push.
+**Fix:** Always ask: "Did pushing adoption create any new tension — with quality, morale, or team autonomy?" If yes, log it as a new blocker. A score that went up by forcing behavior isn't real progress.
+
 ## Output
 
 Produce the quarterly review in this exact format:

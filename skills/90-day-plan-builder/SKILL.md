@@ -88,7 +88,7 @@ Present Phase 1 to the founder. This phase must:
 - Set baseline metrics before the pilot starts
 - Address the #1 blocker from the blocker report
 - Include at least one "change the default" action — something that makes AI the starting point, not an optional add-on
-- Define what success looks like at Day 30
+- Define what success looks like at Day 30 — Phase 1 metrics are early signals (are people trying it? how often?), not proof. Don't expect outcome data yet.
 
 **Phase 1 structure:**
 
