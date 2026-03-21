@@ -92,6 +92,9 @@ Produce the scorecard in this exact format:
 
 ### Change Since Last Measurement
 [If prior scorecard exists: what moved, what didn't. If first measurement: "Baseline established."]
+
+### Team Stability Note
+[If team stability is not "Stable": 1-2 sentences explaining how the restructuring affects these numbers. E.g., "Sales team went from 20 to 15 after restructuring. 3 of the 5 departures were non-adopters — adoption percentage may overstate real behavior change." If team is stable, omit this section.]
 ```
 
 ## Anti-Patterns
