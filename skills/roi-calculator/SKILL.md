@@ -128,6 +128,10 @@ Produce the ROI calculation in this exact format:
 
 ### What's Missing
 [List any data gaps that would strengthen the case — e.g., "Objective time measurement (current numbers are self-reported)", "Quality impact data (bug rates before/after)"]
+[If team stability is "Restructuring in progress": add this line:]
+- **Team restructuring in progress.** Headcount changes may inflate or obscure AI-driven savings. If roles were eliminated alongside AI adoption, separate "capacity recovered through AI" from "capacity removed through restructuring" before presenting to the board. Mixed numbers invite hard follow-up questions.
+[If team stability is "Restructuring completed": add this line instead:]
+- **Team restructured during measurement period.** Baseline headcount changed. ROI calculations use the current team as the denominator, but prior-period comparisons should note the team was larger/smaller then.
 
 ### Board-Ready Summary
 [2-3 sentences: investment amount, return, and what it means. Use only defended numbers.]
