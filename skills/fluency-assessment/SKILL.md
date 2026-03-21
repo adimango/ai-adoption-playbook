@@ -70,6 +70,17 @@ After context questions, ask:
 
 > **"Have you already run a survey or assessment on AI adoption — even an informal one? If so, share the results and I'll map them to our framework instead of starting from scratch."**
 
+After the existing data question, also ask:
+
+> **"Has your organization restructured, or is it planning to restructure, in connection with AI adoption — role changes, headcount adjustments, new positions, or team reorganization?"**
+
+If yes, ask one follow-up: **"What changed — which roles, how many people affected?"** A bare "yes" isn't enough — this follows the same principle as rejecting vague self-assessment.
+
+Record the answer as one of three states for the scorecard:
+- **Stable** — no restructuring
+- **Restructuring in progress** — changes are happening now
+- **Restructuring completed [timeframe]** — changes happened, team is now stable
+
 **If they have data:** Go to Step 2a (Import Existing Data).
 **If they don't:** Go to Step 3 (Quick Quiz).
 
@@ -290,6 +301,7 @@ After all questions, produce the scorecard in this exact format:
 ```
 ## AI Fluency Scorecard
 **Company:** [name] | **Team:** [size] | **Date:** [date]
+**Team stability:** [Stable / Restructuring in progress — [description] / Restructuring completed [timeframe] — [description]]
 
 ### Scores (1-5 scale)
 
