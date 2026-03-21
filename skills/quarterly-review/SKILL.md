@@ -128,6 +128,7 @@ Produce the quarterly review in this exact format:
 | Integration Failures | X/5 | X/5 | [+/-/=] | [One sentence] |
 | Ownership Gaps | X/5 | X/5 | [+/-/=] | [One sentence] |
 | **Overall** | **X/5** | **X/5** | **[+/-/=]** | |
+| Team composition | [X] people | [Y] people | [+/-X] | [If changed: e.g., "3 roles eliminated, 1 AI-focused role created. Score changes partly reflect who left, not just behavior change." If stable: "No change." If restructuring status transitioned (e.g., in-progress → completed): note the transition.] |
 
 ### Blocker Status
 
@@ -148,6 +149,8 @@ Produce the quarterly review in this exact format:
 
 ### Board Update Draft
 [Use board-ai-update template — include the delta narrative]
+[If team composition changed: add this line to the board update:]
+Note: team composition changed this quarter. Adoption metrics reflect both behavior change and structural change.
 ```
 
 ## Next Skill
