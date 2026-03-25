@@ -32,6 +32,14 @@ Every AI adoption failure maps to one of these. Every skill diagnoses or address
 
 The throughline. Every skill output must be expressible in terms a VC understands: specific numbers, clear timelines, named owners, ROI framing. No "we're exploring." No "our developers love it." Numbers or it didn't happen.
 
+## Skill Invocation
+
+When invoking skills via the Skill tool, you MUST use the fully-qualified name with the `ai-adoption-playbook:` prefix. For example:
+- `Skill(ai-adoption-playbook:fluency-assessment)` — NOT `Skill(fluency-assessment)`
+- `Skill(ai-adoption-playbook:blocker-diagnosis)` — NOT `Skill(blocker-diagnosis)`
+
+This applies to ALL skills in this plugin. Short names in documentation are for readability — always add the `ai-adoption-playbook:` prefix when calling the Skill tool.
+
 ## Skill Chaining Rules
 
 1. `fluency-assessment` MUST run before any other interactive or workflow skill. It's the diagnostic before the prescription.
