@@ -352,17 +352,15 @@ If the leader wants the team survey, produce it in this format. This is sent to 
    - I go back and forth, adjusting my input until I get what I need
    - I work with templates, system prompts, or pre-built assistants for recurring tasks
 
-3. What have you used AI for? (check all that apply)
+3. What have you used AI for? (check all that apply — append department-specific options from the relevant profile)
    - I haven't used it for work yet
    - Writing, editing, or rephrasing text
-   - Emails, messages, or communications
    - Looking things up or getting explanations
    - Brainstorming or structuring ideas
-   - Working with data, spreadsheets, or reports
-   - Preparing presentations or documents
    - Using an assistant or agent someone else set up
    - Building your own assistant, agent, or workflow
    - Automating repetitive steps in my workflow
+   - [Additional department-specific options from the relevant Department Profile]
    - Other: ___
 
 4. How do you feel about AI becoming a bigger part of your work?
@@ -403,7 +401,7 @@ If the leader wants the team survey, produce it in this format. This is sent to 
 | Q1 (relationship), Q2 (interaction depth), Q3 (breadth), Q5 (effort/output) | Integration Failures |
 | Q6 (shared practices), Q7 (who to ask) | Ownership Gaps |
 
-**Note:** Department profiles may include additional department-specific options for survey Q3. Append these to the checklist when generating the survey for a specific department.
+**How to generate the survey for a specific team:** Replace the `[Additional department-specific options from the relevant Department Profile]` line in Q3 with the items listed under `Survey Q3 — Additional Department-Specific Options` in the relevant Department Profile (Engineering, Sales, or Generic). Do not include items twice.
 
 ## Department Profiles
 
@@ -481,7 +479,6 @@ Use the relevant profile based on the leader's answer to Q3 (department detectio
 "AI is used across several workflow stages — prospecting, meeting prep, proposals, pipeline analysis, etc."
 
 #### Survey Q3 — Additional Department-Specific Options
-- I haven't used it for work yet
 - Prospecting or outreach emails
 - Proposal or deck drafting
 - Meeting prep or research
@@ -538,7 +535,6 @@ Use this profile when the team isn't Engineering or Sales (Q3 options C, D, E) o
 "AI is used across multiple workflow stages — drafting, reviewing, summarizing, analyzing, etc."
 
 #### Survey Q3 — Additional Department-Specific Options
-- I haven't used it for work yet
 - Drafting or editing documents
 - Summarizing meetings, calls, or notes
 - Looking things up or research
