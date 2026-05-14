@@ -81,7 +81,7 @@ Ask ONE question at a time. Stay in character. Be tough but fair — a good boar
 **On the numbers:**
 - "You say you saved X hours. How did you measure that? Is it self-reported?"
 - "What's the actual ROI in dollars? Walk me through the math."
-- "X engineers are using it. That's [Y%] of your team. What about the rest?"
+- "X team members are using it. That's [Y%]. What about the rest?"
 
 **On sustainability:**
 - "Who owns this? If you get hit by a bus, does AI adoption keep going?"
@@ -89,13 +89,13 @@ Ask ONE question at a time. Stay in character. Be tough but fair — a good boar
 - "Is this a pilot or a program? What's the difference?"
 
 **On skepticism:**
-- "How do you know this isn't just your enthusiastic engineers telling you what you want to hear?"
-- "Your competitor just shipped an AI feature. You're optimizing code reviews. Are you focused on the right thing?"
+- "How do you know this isn't just your enthusiastic early adopters telling you what you want to hear?"
+- "Your competitor just shipped an AI-powered product. You're optimizing internal workflow. Are you focused on the right thing?"
 - "Every startup says they're 'leveraging AI.' What are you actually doing that's different?"
 
 **On the plan:**
 - "What's next? I don't want to hear about this again in 3 months with the same numbers."
-- "You started with code review. What's the second use case and when does it ship?"
+- "You started with [their first use case]. What's the second use case and when does it ship?"
 - "What's your AI budget for next quarter? Or is this still a side project?"
 
 **On risks:**
@@ -159,7 +159,7 @@ Present the draft and ask: "Does this capture it? Anything to change?"
 ### Inflating the Narrative
 **Symptom:** Narrative says "significant improvement" or "team loves it" without numbers.
 **Consequence:** Exactly the kind of vague update the board is tired of hearing.
-**Fix:** If you can't put a number on it, don't put it in the narrative. "15 of 30 engineers" not "strong adoption." "$5K/month" not "modest investment."
+**Fix:** If you can't put a number on it, don't put it in the narrative. "15 of 30 team members" not "strong adoption." "$5K/month" not "modest investment."
 
 ## Output
 
@@ -171,7 +171,7 @@ Draft the board narrative in this format. Adapt length to the board's preferred 
 
 ### What We Did
 [1 paragraph. What was the initiative, who participated, what timeframe.
-Must include: number of engineers, the specific use case, the duration.]
+Must include: number of team members (use the Department Profile's headcount noun), the specific use case, the duration.]
 
 ### What Happened
 [1 paragraph. Results with specific numbers.
@@ -190,6 +190,32 @@ Must include: next use case, timeline, named owner, target metric for next quart
 [2-3 sentences. What's not working yet, what you're watching.
 Shows self-awareness. Boards trust founders who name their own risks.]
 ```
+
+## Department Profiles
+
+Use the relevant profile to tailor skeptic questions during the roleplay. The four general buckets (numbers / sustainability / skepticism / plan / risks) apply to every department; the department-specific examples below replace the engineering-flavored versions in Step 3.
+
+### Engineering
+
+Add these department-specific skeptic questions to the bank:
+- "Your engineers say AI saves them time. Did your cycle time actually drop? By how much?"
+- "Did AI introduce any bugs that humans wouldn't have? How do you know?"
+- "Your seniors didn't adopt. Why? Are you ignoring the people you can't afford to lose?"
+
+### Sales
+
+Add these department-specific skeptic questions to the bank:
+- "Reps say their outreach is faster. Did your reply rate or meeting-booked rate improve, or did you just send more emails?"
+- "Customers are getting AI-drafted outreach. Has anyone complained? Could anyone tell?"
+- "If your top performer left tomorrow, would AI keep your pipeline healthy or expose the gap?"
+- "What's the deal cycle delta — before AI vs. with AI? In days, not feelings."
+
+### Generic
+
+Add these department-specific skeptic questions to the bank:
+- "What's the measurable output change — not effort change, output change?"
+- "Did quality drop anywhere when speed went up?"
+- "What would your team lose if you turned the AI tools off tomorrow?"
 
 ## Next Skill
 
