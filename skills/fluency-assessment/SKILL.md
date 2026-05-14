@@ -156,7 +156,7 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 - C) Some do and share what they learn, but it's inconsistent [3]
 - D) Yes — leadership models AI use and it's visible to the team [4]
 
-**Integration (3 questions)**
+**Integration (4 questions)**
 
 **Q4. How would you describe your team's current relationship with AI tools?**
 - A) We have licenses but most people haven't really started [1]

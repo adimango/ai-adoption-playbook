@@ -43,7 +43,7 @@ digraph router {
 
 **Do NOT ask "have you done an assessment before?"** Most people haven't, and the question creates confusion. Instead, acknowledge what they're dealing with and go straight into the first question.
 
-> "Let's figure out where your team actually stands with AI. I've got a quick quiz — 9 questions, under 5 minutes. You pick A/B/C/D for each one, and at the end you'll have a scorecard with actual numbers across three areas: your team's mindset, how tools fit your workflow, and who owns making this work.
+> "Let's figure out where your team actually stands with AI. I've got a quick quiz — 11 questions, under 5 minutes. You pick A/B/C/D for each one, and at the end you'll have a scorecard with actual numbers across three areas: your team's mindset, how tools fit your workflow, and who owns making this work.
 >
 > After that, I'd recommend sending a 5-minute survey to your team in parallel — your perspective is valuable, but hearing directly from the people using (or avoiding) the tools gives us a sharper picture.
 >
@@ -61,7 +61,7 @@ Many leaders have done employee surveys, have tool usage dashboards, or have som
 
 | They have... | How to bridge it |
 |-------------|-----------------|
-| Employee survey results | "What did people say about AI tools? Let's sort those responses into three buckets: resistance and fear, tool/workflow complaints, and 'nobody owns this' themes." |
+| Employee survey results | "What did people say about AI tools? Let's sort those responses into the three pillars: resistance and fear, tool/workflow complaints, and 'nobody owns this' themes." |
 | Tool dashboard / usage stats | "Usage data tells us about integration, but not psychology or ownership. Let's use your numbers for Pillar 2, and I'll ask a few questions to fill in the other two." |
 | Anecdotal sense ("I think people are resistant") | "That's a starting hypothesis. Let me ask a few specific questions to confirm it and score it — your gut feel might be right, but the board needs numbers." |
 | A previous assessment from a different framework | "Walk me through what you found. I'll map it to our three pillars — psychological barriers, integration failures, ownership gaps — and we'll see where the gaps are." |

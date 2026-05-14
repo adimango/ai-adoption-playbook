@@ -7,7 +7,7 @@ description: Use when a founder needs to calculate or present the ROI of AI tool
 
 ## Purpose
 
-Produces a board-ready ROI calculation from the founder's actual data — not industry benchmarks. Separates ROI into three buckets so the founder can tell a complete story. This is a calculation tool, not a strategy session.
+Produces a board-ready ROI calculation from the founder's actual data — not industry benchmarks. Separates ROI into four dimensions (cost efficiency, revenue optimization, new revenue, capacity gained) so the founder can tell a complete story. This is a calculation tool, not a strategy session.
 
 **Core principle:** Use the founder's real numbers. If a number is estimated, label it as estimated. Never substitute industry averages for missing data — flag the gap instead.
 

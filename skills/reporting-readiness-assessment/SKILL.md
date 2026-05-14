@@ -322,5 +322,5 @@ Based on the scorecard, recommend ONE next step:
 - `fluency-assessment` — prerequisite skill. Must score Integration ≥ 3/5 before running this skill.
 - `roi-calculator` — chains from this skill when Outcome Rigor is the main gap.
 - `board-ai-update` — chains from this skill when Board Defensibility is the main gap.
-- `quarterly-review` — chains from this skill when Risk Posture is the main gap and re-runs this assessment alongside fluency over time.
+- `quarterly-review` — chains from this skill when Risk Posture is the main gap. Recommended cadence: re-run this Stage 2 assessment manually each quarter alongside `quarterly-review`'s fluency re-run, until quarterly-review natively orchestrates both stages.
 - `full-adoption-cycle` — orchestrates Stage 1 (adoption). This skill is the Stage 2 follow-up: run it separately once the team has Integration ≥ 3/5 and the question shifts from "are we using AI?" to "can we defend the numbers?"
