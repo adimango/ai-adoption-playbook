@@ -5,6 +5,10 @@ docs/
 playbook-alignment-spec.md
 playbook-extension-spec.md
 
+# Locally-built plugin archives (CI builds these on release tags)
+*.zip
+*.plugin
+
 # Demo scripts and recordings
 demo/
 
