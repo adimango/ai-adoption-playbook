@@ -1,6 +1,9 @@
 # Source material (private/copyrighted)
 docs/
 
+# Local-only alignment notes
+playbook-alignment-spec.md
+
 # Demo scripts and recordings
 demo/
 
