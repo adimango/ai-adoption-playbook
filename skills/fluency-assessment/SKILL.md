@@ -373,14 +373,17 @@ After all questions, produce the scorecard in this exact format:
 
 Based on the scorecard, recommend ONE next step:
 
-| Lowest-scoring pillar | Recommended next skill | Why |
-|----------------------|----------------------|-----|
-| Psychological Barriers | `blocker-diagnosis` | Need to understand the specific resistance before acting |
-| Integration Failures | `first-use-case-picker` | Tools aren't fitting — find the right starting point |
-| Ownership Gaps | `90-day-plan-builder` | Need structure, owner, and metrics before anything else |
+| Situation | Recommended next skill | Why |
+|-----------|----------------------|-----|
+| Lowest pillar is Psychological Barriers | `blocker-diagnosis` | Need to understand the specific resistance before acting |
+| Lowest pillar is Integration Failures | `first-use-case-picker` | Tools aren't fitting — find the right starting point |
+| Lowest pillar is Ownership Gaps | `90-day-plan-builder` | Need structure, owner, and metrics before anything else |
 | Tied or all low | `blocker-diagnosis` | Start with people — tools and process follow |
+| Integration ≥ 3/5 AND the leader's real question is reporting / board defensibility (not adoption) | `reporting-readiness-assessment` | Stage 2 — adoption is underway, the question now is whether the numbers would survive CFO or board scrutiny |
 
 > "Your biggest gap is [pillar]. I'd recommend running [skill name] next to [one sentence on what it does]. Want to do that now?"
+
+**Stage 2 routing:** If Integration scored 3/5 or higher and the leader mentioned board pressure, CFO scrutiny, or audit risk during the assessment, surface `reporting-readiness-assessment` as the next step instead of the lowest-pillar default. The Stage 1 cycle (this skill → blocker-diagnosis / first-use-case-picker / 90-day-plan-builder → board-narrative-coach) builds adoption. Stage 2 (`reporting-readiness-assessment`) measures whether the resulting AI work can be defended.
 
 ## Team Survey Template
 

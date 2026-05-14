@@ -83,6 +83,7 @@ Once a scorecard exists, match the founder's request to a skill:
 | "Show me the numbers" / "ROI" / "is it worth it?" | `roi-calculator` |
 | "I need a snapshot" / "who's using what?" | `adoption-scorecard` |
 | "Quarterly check-in" / "compare to last time" | `quarterly-review` |
+| "CFO doesn't believe my AI numbers" / "audit risk" / "EU AI Act readiness" / "how do I defend this to the board?" | `reporting-readiness-assessment` |
 
 ### Step 3: Handle Unclear Requests
 

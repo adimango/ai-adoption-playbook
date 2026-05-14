@@ -83,7 +83,8 @@ Skills must detect and resist these founder behaviors:
 - `roi-calculator` — quantify impact in board terms with formulas
 
 ### Interactive (guided conversations)
-- `fluency-assessment` — entry point diagnostic across three pillars (MUST run first)
+- `fluency-assessment` — Stage 1 entry point: diagnostic across three pillars (MUST run first)
+- `reporting-readiness-assessment` — Stage 2 diagnostic: outcome rigor, risk posture, board defensibility. Runs after fluency-assessment when Integration ≥ 3/5.
 - `blocker-diagnosis` — deep dive on what's stuck and why, per pillar
 - `first-use-case-picker` — choose where to start for maximum visible wins in 2-4 weeks
 - `90-day-plan-builder` — phased rollout with board-cycle milestones and named owners

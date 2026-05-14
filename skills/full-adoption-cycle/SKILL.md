@@ -101,6 +101,8 @@ This skill does not produce its own artifact. It orchestrates the five skills th
 4. 90-Day AI Adoption Plan
 5. Board AI Update
 
+**Stage 2 follow-up:** Once the team has worked through Stage 1 and reached Integration ≥ 3/5, the next question is whether the AI work can be defended to a CFO or board. That's a separate Stage 2 diagnostic: `reporting-readiness-assessment`. It runs once after adoption is real, then quarterly alongside `quarterly-review`. The full Stage 1 cycle above does NOT include it — Stage 2 is for teams past the adoption curve, not for first-time runs.
+
 ## References
 
 - `fluency-assessment` — Step 1
@@ -109,3 +111,4 @@ This skill does not produce its own artifact. It orchestrates the five skills th
 - `90-day-plan-builder` — Step 4
 - `board-narrative-coach` — Step 5
 - `using-playbook` — routes to this skill when the founder wants the full process
+- `reporting-readiness-assessment` — Stage 2 diagnostic that runs separately after this cycle, once Integration ≥ 3/5
