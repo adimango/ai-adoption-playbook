@@ -220,13 +220,18 @@ A team that hates writing docs will score documentation higher on pain-point rel
 
 ### Sales
 
-| Use case | Effort | Visibility | Speed to result | Best for |
-|----------|--------|-----------|----------------|----------|
-| AI-drafted prospecting emails | Low | High | 1-2 weeks | SDRs with high outreach volume |
-| Meeting summary + CRM auto-update | Low | Medium | 1-2 weeks | AEs who hate CRM data entry |
-| Proposal/deck first draft | Medium | High | 2-3 weeks | AEs with repetitive RFP responses |
-| Pipeline risk scoring | Medium | High | 3-4 weeks | Sales managers, needs clean CRM data |
-| Call analysis and coaching | High | Medium | 3-4 weeks | Sales managers, needs recording buy-in |
+| Use case | Visibility | Time to result | Friction | Skeptic-resistance | Failure cost |
+|----------|:----------:|:--------------:|:--------:|:------------------:|:------------:|
+| AI-drafted prospecting emails | 5 | 5 | 5 | 3 | 4 |
+| Meeting summary + CRM auto-update | 3 | 5 | 5 | 2 | 5 |
+| Proposal/deck first draft | 4 | 4 | 4 | 3 | 4 |
+| Pipeline risk scoring | 4 | 3 | 2 | 4 | 3 |
+| Call analysis and coaching | 3 | 3 | 2 | 4 | 3 |
+| Competitive research briefs | 3 | 5 | 4 | 2 | 5 |
+
+A sales team buried in CRM admin will score "Meeting summary + CRM auto-update" higher on pain-point relief. A team with high outreach volume will score "AI-drafted prospecting emails" highest on visibility.
+
+**Note on best-fit roles:** Prospecting emails fit SDRs; CRM auto-update fits AEs who avoid data entry; proposal drafts fit AEs with repetitive RFPs; pipeline scoring and call analysis fit Sales Managers. Capture role fit in the Use Case Brief's "Who Runs the Pilot" field — don't bake it into the scoring schema.
 
 ## References
 
