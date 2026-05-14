@@ -138,6 +138,14 @@ Produce the ROI calculation in this exact format:
 #### 3. New Revenue
 [Specific data if available, or: "Not applicable yet. This bucket activates when AI enables product features or services that generate revenue directly."]
 
+#### 4. Capacity Gained
+- Baseline period: [e.g., Q4 2024 — revenue $[X], FTE [Y]]
+- Current period: [e.g., Q4 2025 — revenue $[X], FTE [Y]]
+- FTE delta: [+/-X people, or "flat"]
+- Revenue per FTE delta: [+X% / -X% / flat]
+- **Capacity gained: [X]% revenue growth on [flat / -X] FTE base**
+- [If not yet measurable: "Baseline data missing — set a baseline period now so this dimension is calculable next quarter."]
+
 ### The Math
 [Show each calculation step so the board can verify]
 
