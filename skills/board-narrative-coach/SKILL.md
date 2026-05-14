@@ -191,6 +191,15 @@ Must include: next use case, timeline, named owner, target metric for next quart
 Shows self-awareness. Boards trust founders who name their own risks.]
 ```
 
+## Next Skill
+
+| Situation | Recommended next skill |
+|-----------|----------------------|
+| Founder wants detailed ROI numbers | `roi-calculator` |
+| Founder wants a usage snapshot for the deck | `adoption-scorecard` |
+| This is a quarterly review | `quarterly-review` (re-run the cycle) |
+| Default (end of the adoption cycle) | Terminal — the founder is prepared |
+
 ## Department Profiles
 
 Use the relevant profile to tailor skeptic questions during the roleplay. The four general buckets (numbers / sustainability / skepticism / plan / risks) apply to every department; the department-specific examples below replace the engineering-flavored versions in Step 3.
@@ -216,15 +225,6 @@ Add these department-specific skeptic questions to the bank:
 - "What's the measurable output change — not effort change, output change?"
 - "Did quality drop anywhere when speed went up?"
 - "What would your team lose if you turned the AI tools off tomorrow?"
-
-## Next Skill
-
-| Situation | Recommended next skill |
-|-----------|----------------------|
-| Founder wants detailed ROI numbers | `roi-calculator` |
-| Founder wants a usage snapshot for the deck | `adoption-scorecard` |
-| This is a quarterly review | `quarterly-review` (re-run the cycle) |
-| Default (end of the adoption cycle) | Terminal — the founder is prepared |
 
 ## References
 
