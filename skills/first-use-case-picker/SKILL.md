@@ -91,12 +91,12 @@ Based on what you've learned, identify 2-3 candidate use cases and score them ag
 | **Visibility** | Will the result be seen by others? | First use case needs witnesses. Hidden wins don't spread. |
 | **Time to result** | How fast will someone see value? | Must show results in 2-4 weeks or momentum dies. |
 | **Friction** | How hard is it to start? | Every setup step loses people. Lower friction = higher adoption. |
-| **Skeptic-resistance** | Can skeptics dismiss the result? | If the senior engineer can wave it away, it didn't work. |
+| **Skeptic-resistance** | Can skeptics dismiss the result? | If the most senior or skeptical team member can wave it away, it didn't work. |
 | **Failure cost** | What happens if it doesn't work? | First use case must be safe to fail. Low stakes. |
 
 **Bonus lens: Does this eliminate blank-page work?**
 
-The highest-impact first use cases remove tasks that currently start from zero. If engineers are writing boilerplate, drafting PRs from scratch, or creating test skeletons by hand — that's blank-page work. AI eliminates it by providing a starting point that humans refine.
+The highest-impact first use cases remove tasks that currently start from zero. If team members are routinely starting from a blank document — drafting outreach emails, writing boilerplate code, building decks from scratch, summarizing meetings by hand — that's blank-page work. AI eliminates it by providing a starting point that humans refine.
 
 When scoring candidates, favor use cases where AI replaces "start from nothing" with "start from a draft." These produce the most visceral time savings and are hardest for skeptics to dismiss — the before/after is obvious.
 
@@ -232,6 +232,19 @@ A team that hates writing docs will score documentation higher on pain-point rel
 A sales team buried in CRM admin will score "Meeting summary + CRM auto-update" higher on pain-point relief. A team with high outreach volume will score "AI-drafted prospecting emails" highest on visibility.
 
 **Note on best-fit roles:** Prospecting emails fit SDRs; CRM auto-update fits AEs who avoid data entry; proposal drafts fit AEs with repetitive RFPs; pipeline scoring and call analysis fit Sales Managers. Capture role fit in the Use Case Brief's "Who Runs the Pilot" field — don't bake it into the scoring schema.
+
+### Generic
+
+| Use case | Visibility | Time to result | Friction | Skeptic-resistance | Failure cost |
+|----------|:----------:|:--------------:|:--------:|:------------------:|:------------:|
+| Meeting summaries with action items | 4 | 5 | 5 | 3 | 5 |
+| First-draft documents (memos, briefs, status reports) | 4 | 5 | 5 | 2 | 5 |
+| Research synthesis from multiple sources | 3 | 4 | 4 | 3 | 4 |
+| Inbox / message triage and reply drafts | 3 | 5 | 5 | 2 | 5 |
+| Data extraction or cleanup from unstructured input | 3 | 4 | 3 | 4 | 4 |
+| Workflow automation of repetitive admin steps | 4 | 3 | 3 | 4 | 4 |
+
+A team buried in meetings will score "Meeting summaries with action items" highest on pain-point relief. A team that produces a lot of internal documents will score "First-draft documents" highest on visibility. Adjust based on which workflow stage actually slows the team down.
 
 ## References
 
