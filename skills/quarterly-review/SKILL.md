@@ -133,13 +133,19 @@ Produce the quarterly review in this exact format:
 
 ### Score Comparison
 
-| Pillar | Previous | Current | Change | What Happened |
-|--------|:--------:|:-------:|:------:|---------------|
-| Psychological Barriers | X/5 | X/5 | [+/-/=] | [One sentence] |
-| Integration Failures | X/5 | X/5 | [+/-/=] | [One sentence] |
-| Ownership Gaps | X/5 | X/5 | [+/-/=] | [One sentence] |
-| **Overall** | **X/5** | **X/5** | **[+/-/=]** | |
-| Team composition | [X] people | [Y] people | [+/-X] | [If changed: e.g., "3 roles eliminated, 1 AI-focused role created. Score changes partly reflect who left, not just behavior change." If stable: "No change." If restructuring status transitioned (e.g., in-progress → completed): note the transition.] |
+| Pillar | Previous | Current | Change | Status | What Happened |
+|--------|:--------:|:-------:|:------:|:------:|---------------|
+| Psychological Barriers | X/5 | X/5 | [+/-/=] | `above plan` / `on plan` / `below plan` | [One sentence] |
+| Integration Failures | X/5 | X/5 | [+/-/=] | `above plan` / `on plan` / `below plan` | [One sentence] |
+| Ownership Gaps | X/5 | X/5 | [+/-/=] | `above plan` / `on plan` / `below plan` | [One sentence] |
+| **Overall** | **X/5** | **X/5** | **[+/-/=]** | **[status]** | |
+| Team composition | [X] people | [Y] people | [+/-X] | — | [If changed: e.g., "3 roles eliminated, 1 AI-focused role created. Score changes partly reflect who left, not just behavior change." If stable: "No change." If restructuring status transitioned (e.g., in-progress → completed): note the transition.] |
+
+**Status definitions** (against the plan set last quarter, not against zero):
+- `above plan` — score exceeds target
+- `on plan` — score meets target within ±10%
+- `below plan` — score misses target
+- (Team composition row uses `—` since it's a context note, not a planned metric.)
 
 ### Blocker Status
 
@@ -171,7 +177,7 @@ For each killed pilot:
 | Killed date | [Month, year] |
 
 ### Next Quarter Focus
-[The single highest-leverage action for next quarter, with named owner and target metric]
+[The single highest-leverage action for next quarter, with named owner and target metric. State the target metric AND the status threshold (e.g., "Target: 12 of 30 team members using AI weekly. `on plan` if reached within ±10% by Day 90.").]
 
 ### Board Update Draft
 [Use board-ai-update template — include the delta narrative]
