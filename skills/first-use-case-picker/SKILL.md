@@ -178,13 +178,13 @@ Produce the use case brief in this exact format:
 [What "good enough" means for AI output in this use case. Set it low on purpose: "good enough to move work forward" not "ready to publish." Perfectionism kills early adoption — the team needs to see AI as a useful starting point, not a replacement for their judgment.]
 
 ### Baseline (Before Pilot Starts)
-[The current number for the metric you'll use to prove success — e.g., "Average PR review time: 45 minutes. Engineers using AI tools weekly: 2 of 14." Without this, there's nothing to compare against at Week 4.]
+[The current number for the metric you'll use to prove success — e.g., engineering: "Average PR review time: 45 minutes. Engineers using AI tools weekly: 2 of 14." Sales: "Average proposal turnaround: 3 days. Reps using AI weekly: 3 of 12." Generic: "Average meeting-notes turnaround: 2 days. Team members using AI weekly: 4 of 20." Without this, there's nothing to compare against at Week 4.]
 
 ### What Success Looks Like in 2 Weeks
-[One concrete, measurable outcome — e.g., "AI catches at least 3 real issues in PRs that humans confirm were valid"]
+[One concrete, measurable outcome — e.g., engineering: "AI catches at least 3 real issues in PRs that humans confirm were valid." Sales: "AI-drafted outreach matches or beats the rep's reply rate on 5+ campaigns." Generic: "AI summaries cut meeting-note time by 50% on at least 5 recurring meetings."]
 
 ### What Success Looks Like in 4 Weeks
-[One concrete, measurable outcome focused on **repeat use** — e.g., "5+ engineers voluntarily use it on every PR, not just when reminded." Repeat use is the signal that adoption is real. One-off demos and novelty don't count.]
+[One concrete, measurable outcome focused on **repeat use** — e.g., "5+ team members voluntarily use it for every relevant task, not just when reminded." Repeat use is the signal that adoption is real. One-off demos and novelty don't count.]
 
 ### Alternatives Considered
 - [Option B — one line on why it wasn't chosen]
