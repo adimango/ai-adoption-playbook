@@ -21,6 +21,7 @@ jobs:
             .claude-plugin \
             skills \
             README.md \
+            assets \
             -x "*.DS_Store"
           ls -lh ai-adoption-playbook.zip
 
