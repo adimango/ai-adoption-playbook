@@ -46,7 +46,7 @@ This applies to ALL skills in this plugin. Short names in documentation are for 
 2. `full-adoption-cycle` orchestrates the complete sequence: fluency-assessment -> blocker-diagnosis -> first-use-case-picker -> 90-day-plan-builder -> board-narrative-coach
 3. `quarterly-review` re-runs fluency-assessment and compares to previous scorecard
 4. Each skill produces an artifact that feeds the next skill in the chain
-5. `fluency-assessment` stamps a `Department:` field on the scorecard (from Q3). Every downstream skill (`blocker-diagnosis`, `first-use-case-picker`, `90-day-plan-builder`, `roi-calculator`, `adoption-scorecard`, `board-ai-update`, `board-narrative-coach`, `tool-stack-audit`) reads this field and loads the matching Department Profile (Engineering / Sales / Generic). When the leader picks "multiple departments" they choose a primary; the cycle runs on the primary and can be re-run for another department.
+5. `fluency-assessment` stamps two fields on the scorecard: `Department:` (from Q3) and `Currency:` (from Q4). Every downstream skill (`blocker-diagnosis`, `first-use-case-picker`, `90-day-plan-builder`, `roi-calculator`, `adoption-scorecard`, `board-ai-update`, `board-narrative-coach`, `tool-stack-audit`) reads these fields — Department determines which profile to load (Engineering / Sales / Generic), Currency determines the symbol used in money references (`$` / `€` / `£` / other). When the leader picks "multiple departments" they choose a primary; the cycle runs on the primary and can be re-run for another department. When no scorecard is available, default to USD ($).
 
 ## Voice and Tone
 

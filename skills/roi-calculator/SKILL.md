@@ -34,7 +34,7 @@ Most early-stage AI adoption lives in cost efficiency. That's fine — but namin
 3. Do NOT recommend tools, processes, or strategy changes. Calculate only.
 4. Always show the math. The board will ask "how did you get that number?"
 5. If critical data is missing, say what's missing and what it would change — don't fill the gap with benchmarks.
-6. Express measurements as ranges where the data supports them (e.g., "€214–287k" not "€250k"). A range signals documented confidence intervals; a single number signals vendor hype. Use a single number only when the data is exact (e.g., "$800/month tool cost").
+6. Express measurements as ranges where the data supports them (e.g., "€214–287k" or "$214–287k" — NOT "€250k" or "$250k"). A range signals documented confidence intervals; a single number signals vendor hype. Use a single number only when the data is exact (e.g., "[CCY]800/month tool cost"). Use the currency from the scorecard throughout — do NOT mix currencies in one calculation.
 </HARD-GATE>
 
 ### Required Inputs
@@ -88,7 +88,7 @@ Capacity gained = ((current revenue per FTE - baseline revenue per FTE) / baseli
 
 ### Ignoring the "Compared to What" Question
 **Symptom:** ROI shows AI tools save money vs. doing nothing.
-**Consequence:** Board asks "what else could we spend $10K/year on?" and founder has no answer.
+**Consequence:** Board asks "what else could we spend [CCY]10K/year on?" and founder has no answer.
 **Fix:** Include the cost-per-engineer-per-month and let the board compare to other investments.
 
 ### Watermelon Numbers
@@ -107,26 +107,27 @@ Capacity gained = ((current revenue per FTE - baseline revenue per FTE) / baseli
 **Fix:** If usage data covers only a monitored period, label the number in the output: "(pilot period — not yet confirmed as sustained)." The board sees it's provisional. Don't present pilot-month data as a trend.
 
 ### Point-Estimate Confidence
-**Symptom:** ROI presented as a single precise number — "AI saved $247,389.50 this quarter."
+**Symptom:** ROI presented as a single precise number — "AI saved $247,389.50 this quarter" (or "€247,389.50" — currency doesn't fix the problem).
 **Consequence:** Board treats the precision as evidence of rigor, then loses trust when one assumption shifts and the number moves by 30%. Point estimates over-claim confidence the data doesn't support.
-**Fix:** Express any number that depends on estimated inputs as a range. "$214–287k saved this quarter" reads as documented, not hyped. Only use single numbers when the input data is exact (tool spend, headcount, contract values). For everything that depends on a self-reported hours-saved estimate, an attribution model, or a baseline comparison, show the range.
+**Fix:** Express any number that depends on estimated inputs as a range. "[CCY]214–287k saved this quarter" reads as documented, not hyped. Only use single numbers when the input data is exact (tool spend, headcount, contract values). For everything that depends on a self-reported hours-saved estimate, an attribution model, or a baseline comparison, show the range.
 
 ## Output
 
-Produce the ROI calculation in this exact format:
+Produce the ROI calculation in this exact format. **Currency note:** Substitute the `[CCY]` placeholder below with the currency symbol from the fluency-assessment scorecard (`$` for USD, `€` for EUR, `£` for GBP, etc.). If no scorecard is available, ask the founder which currency they report in and use that symbol throughout. Do NOT mix currencies in one calculation.
 
 ```
 ## AI Investment ROI
 **Company:** [name] | **Period:** [timeframe] | **Date:** [date]
+**Currency:** [USD / EUR / GBP / other — from scorecard]
 
 ### Investment Summary
 | Item | Monthly | Annual |
 |------|---------|--------|
-| [Tool 1] — [X] seats | $[X] | $[X] |
-| [Tool 2] — [X] seats | $[X] | $[X] |
-| Unused seats ([X] of [Y]) | $[X] wasted | $[X] wasted |
-| **Total investment** | **$[X]** | **$[X]** |
-| **Effective investment** (active seats only) | **$[X]** | **$[X]** |
+| [Tool 1] — [X] seats | [CCY][X] | [CCY][X] |
+| [Tool 2] — [X] seats | [CCY][X] | [CCY][X] |
+| Unused seats ([X] of [Y]) | [CCY][X] wasted | [CCY][X] wasted |
+| **Total investment** | **[CCY][X]** | **[CCY][X]** |
+| **Effective investment** (active seats only) | **[CCY][X]** | **[CCY][X]** |
 
 ### ROI by Bucket
 
@@ -134,7 +135,7 @@ Produce the ROI calculation in this exact format:
 - Active users: [X] of [Y] team members
 - Time saved: [X] hours per active user per week [estimated/measured]
 - Total weekly capacity recovered: [X] hours
-- Value of recovered capacity: $[X]/year (at $[X]/hr fully loaded)
+- Value of recovered capacity: [CCY][X]/year (at [CCY][X]/hr fully loaded)
 - **Cost efficiency ROI: [X]%**
 - **Breakeven:** Tool needs to save each active user [X] minutes/day to pay for itself
 
@@ -145,8 +146,8 @@ Produce the ROI calculation in this exact format:
 [Specific data if available, or: "Not applicable yet. This bucket activates when AI enables product features or services that generate revenue directly."]
 
 #### 4. Capacity Gained
-- Baseline period: [e.g., Q4 2024 — revenue $[X], FTE [Y]]
-- Current period: [e.g., Q4 2025 — revenue $[X], FTE [Y]]
+- Baseline period: [e.g., Q4 2024 — revenue [CCY][X], FTE [Y]]
+- Current period: [e.g., Q4 2025 — revenue [CCY][X], FTE [Y]]
 - FTE delta: [+/-X people, or "flat"]
 - Revenue per FTE delta: [+X% / -X% / flat]
 - **Capacity gained: [X]% revenue growth on [flat / -X] FTE base**
