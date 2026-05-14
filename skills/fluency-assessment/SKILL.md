@@ -118,8 +118,8 @@ Accept whatever format they share — survey results, spreadsheet exports, summa
 
    Pick the most diagnostic question per pillar:
    - Psychological Barriers gap → ask Q2 (reasons for non-use) and Q3 (leadership modeling)
-   - Integration gap → ask Q4 (team relationship with tools) and Q6 (breadth of use)
-   - Ownership gap → ask Q7 (who owns it) and Q8 (how you measure)
+   - Integration gap → ask Q4 (team relationship with tools) and Q7 (function distribution)
+   - Ownership gap → ask Q8 (who owns it) and Q11 (hiring & review)
 
 5. **Proceed to scoring** (Step 4) once all three pillars have signal.
 
@@ -207,7 +207,7 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 
 **Scoring method:**
 - Each answer maps to a score of 1-4 (shown in brackets above)
-- Per pillar: average the 3 question scores, then map to 1-5 scale:
+- Per pillar: average the question scores within the pillar (3 for Psychological Barriers, 4 for Integration, 4 for Ownership), then map to 1-5 scale:
   - Average 1.0-1.5 → **Score 1/5**
   - Average 1.6-2.2 → **Score 2/5**
   - Average 2.3-2.9 → **Score 3/5**
