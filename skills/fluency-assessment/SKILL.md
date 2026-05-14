@@ -171,7 +171,13 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 - C) A few shared use cases that multiple people use [3]
 - D) AI is used across multiple workflow stages [4] _(use the relevant Department Profile's Q6 Option D phrasing for a concrete example, e.g., "writing, reviewing, testing, docs" for engineering)_
 
-**Ownership (3 questions)**
+**Q7. How evenly is AI use spread across functions in your organization?**
+- A) No function uses AI meaningfully yet [1]
+- B) One function (usually engineering) uses AI — others have barely started [2]
+- C) Two or three functions use AI regularly — back-office and customer-facing teams lag [3]
+- D) AI is in use across engineering, product, GTM, support, and back-office — depth varies, but every function is in [4]
+
+**Ownership (4 questions)**
 
 **Q7. Who is responsible for making AI adoption work in your organization?**
 - A) Nobody specifically — or "me, alongside everything else" [1]
