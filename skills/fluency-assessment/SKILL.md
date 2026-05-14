@@ -17,7 +17,7 @@ Quick diagnostic that scores an organization's AI fluency across three pillars: 
 
 ```dot
 digraph fluency {
-    "Context (3 Qs)" [shape=box];
+    "Context (4 Qs)" [shape=box];
     "Have existing data?" [shape=diamond];
     "Import & map data" [shape=box];
     "Gaps in data?" [shape=diamond];
@@ -29,7 +29,7 @@ digraph fluency {
     "Deep-dive on weakest pillar" [shape=box];
     "Route to next skill" [shape=doublecircle];
 
-    "Context (3 Qs)" -> "Have existing data?";
+    "Context (4 Qs)" -> "Have existing data?";
     "Have existing data?" -> "Import & map data" [label="yes"];
     "Have existing data?" -> "Quick Quiz (11 Qs)" [label="no"];
     "Import & map data" -> "Gaps in data?";
@@ -55,7 +55,7 @@ digraph fluency {
 5. Do NOT suggest tools, processes, or plans. That comes from other skills after this one.
 </HARD-GATE>
 
-### Step 1: Context (3 questions)
+### Step 1: Context (4 questions)
 
 Get just enough context to interpret the quiz answers. Ask one at a time:
 
@@ -68,14 +68,19 @@ Get just enough context to interpret the quiz answers. Ask one at a time:
    - D) Customer Support / Success
    - E) Finance / Legal / Operations / HR
    - F) Multiple departments / Whole organization
+4. **"What currency does your team report financial numbers in?"**
+   - A) USD ($)
+   - B) EUR (€)
+   - C) GBP (£)
+   - D) Other (specify — e.g., JPY, CAD, AUD, CHF, SEK)
 
-**Profile routing:**
+**Profile routing (Q3):**
 - A → Engineering profile
 - B → Sales profile
 - C, D, E → Generic profile (department-neutral probes; specialized profiles for these are not yet built)
 - F → Ask one follow-up: **"Which department has the biggest gap today? We'll start there and you can run this assessment again for another department later."** Record both the cross-functional context and the primary department on the scorecard. Downstream skills focus on the primary department.
 
-The scorecard's `Department:` field records the leader's pick. Every downstream skill (`blocker-diagnosis`, `first-use-case-picker`, `90-day-plan-builder`, `roi-calculator`, `adoption-scorecard`, `board-ai-update`, `board-narrative-coach`, `tool-stack-audit`) reads this field and loads the matching profile.
+The scorecard's `Department:` field records the leader's pick from Q3. The `Currency:` field records the leader's pick from Q4 (e.g., USD, EUR, GBP). Every downstream skill (`blocker-diagnosis`, `first-use-case-picker`, `90-day-plan-builder`, `roi-calculator`, `adoption-scorecard`, `board-ai-update`, `board-narrative-coach`, `tool-stack-audit`) reads both fields — Department determines which profile to load, Currency determines which symbol to use in money references. Default to USD ($) only if no scorecard is available.
 
 Don't ask about funding stage, runway, or history. Get to the assessment fast.
 
@@ -340,6 +345,7 @@ After all questions, produce the scorecard in this exact format:
 **Company:** [name] | **Team:** [size] | **Date:** [date]
 **Team stability:** [Stable / Restructuring in progress — [description] / Restructuring completed [timeframe] — [description]]
 **Department:** [from Q3]
+**Currency:** [from Q4 — e.g., USD ($), EUR (€), GBP (£), or other]
 
 ### Scores (1-5 scale)
 
