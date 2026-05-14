@@ -83,7 +83,7 @@ If Phase 1 actions rely on people voluntarily changing habits, the plan will fai
 
 Present Phase 1 to the founder. This phase must:
 - Name the adoption champion with explicit time allocation
-- Scope the first use case pilot (which team, which repos, how many engineers)
+- Scope the first use case pilot (which team or sub-team, which scope of work, how many participants)
 - Set baseline metrics before the pilot starts
 - Address the #1 blocker from the blocker report
 - Include at least one "change the default" action — something that makes AI the starting point, not an optional add-on

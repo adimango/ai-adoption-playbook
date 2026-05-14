@@ -76,7 +76,7 @@ Cost efficiency ROI = (time value saved - tool cost) / tool cost × 100
 **Fix:** Include the cost-per-engineer-per-month and let the board compare to other investments.
 
 ### Watermelon Numbers
-**Symptom:** A metric looks green — "95% of engineers have Copilot" — but the underlying reality hasn't changed. Access ≠ usage ≠ adoption.
+**Symptom:** A metric looks green — "95% of the team has a license" — but the underlying reality hasn't changed. Access ≠ usage ≠ adoption.
 **Consequence:** Board thinks adoption is working. Next quarter the numbers don't move and credibility takes a hit.
 **Fix:** If the founder's data shows high access but low usage, flag it: "This number measures access, not behavior. The board will ask what people actually do with it."
 

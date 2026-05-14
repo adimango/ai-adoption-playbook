@@ -127,7 +127,7 @@ Once the founder picks, produce the brief.
 ## Anti-Patterns
 
 ### Recommending Before Understanding
-**Symptom:** You suggest "code review" after hearing the company name and team size.
+**Symptom:** You suggest a generic first use case (e.g., "code review" for engineering, "prospecting emails" for sales) after hearing only the company name and team size.
 **Consequence:** Generic recommendation that may not fit their specific workflow or blockers.
 **Fix:** Complete all discovery questions first. The best use case depends on their bottlenecks, team dynamics, and what's already been tried.
 

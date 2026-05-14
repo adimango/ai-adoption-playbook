@@ -17,7 +17,7 @@ Produces a one-page adoption snapshot with hard numbers — who's using what, ho
 1. Report numbers only. No diagnosis, no recommendations, no action items.
 2. Distinguish access (has a license) from usage (uses it regularly) from adoption (work has actually changed).
 3. Use the founder's actual data. If data is missing, show the gap — don't estimate.
-4. Every metric must be specific: "12 of 30 engineers" not "strong adoption."
+4. Every metric must be specific: "12 of 30 team members" not "strong adoption."
 5. The scorecard IS the output. Do not add follow-up lists, next steps, or guidance after the scorecard template. If data is missing, the [DATA NEEDED] markers in the scorecard are sufficient.
 </HARD-GATE>
 

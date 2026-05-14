@@ -73,7 +73,7 @@ Produce the audit in this exact format:
 
 ### Gaps
 [Capabilities the team needs but doesn't have — described as needs, not product recommendations.
-E.g., "No AI assistance for code review" not "Should buy CodeRabbit."]
+E.g., "No AI assistance for code review" (engineering) / "No AI meeting summaries that update the CRM" (sales) / "No AI drafting for recurring documents" (generic) — not "Should buy CodeRabbit / Gong / ChatGPT."]
 
 ### Shadow IT Risk
 [Individual subscriptions outside company control: estimated count, estimated cost, governance concern.]
