@@ -169,7 +169,7 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 - A) None, or just one thing (like autocomplete) [1]
 - B) 2-3 things, but it's individual — everyone uses it differently [2]
 - C) A few shared use cases that multiple people use [3]
-- D) AI is used across multiple workflow stages [4]
+- D) AI is used across multiple workflow stages [4] _(use the relevant Department Profile's Q6 Option D phrasing for a concrete example, e.g., "writing, reviewing, testing, docs" for engineering)_
 
 **Ownership (3 questions)**
 
