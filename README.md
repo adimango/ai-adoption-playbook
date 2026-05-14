@@ -18,9 +18,11 @@ This playbook breaks that loop with a structured process: diagnose what's stuck,
 
 1. Clone this repo
 2. Open it in [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
-3. Say: **"My board is asking about our AI strategy"**
+3. Say one of:
+   - **"My board is asking about our AI strategy"** — Stage 1: diagnoses adoption blockers, builds the rollout plan
+   - **"My CFO doesn't believe my AI numbers"** — Stage 2: diagnoses reporting readiness (outcome rigor, risk posture, board defensibility)
 
-The playbook will run a fluency assessment, diagnose your blockers, and guide you to the right next step.
+The playbook will run the right diagnostic and guide you to the next step.
 
 ## Skills
 
@@ -30,7 +32,7 @@ The playbook will run a fluency assessment, diagnose your blockers, and guide yo
 | `adoption-scorecard` | Snapshot of who uses what AI tools, how often, how well |
 | `board-ai-update` | Board-ready narrative with specific numbers |
 | `tool-stack-audit` | What you pay for vs. what gets used |
-| `roi-calculator` | Quantified impact in terms your board cares about |
+| `roi-calculator` | Quantified impact across four dimensions — cost efficiency, revenue optimization, new revenue, and capacity gained (revenue per FTE) |
 
 ### Interactive Skills
 | Skill | What it does |
