@@ -17,7 +17,7 @@ Every AI investment produces value in one or more of these buckets:
 
 | Bucket | What it measures | Examples |
 |--------|-----------------|----------|
-| **Cost efficiency** | Time saved, spend reduced | Hours saved per engineer per week, reduced contractor spend, fewer tools needed |
+| **Cost efficiency** | Time saved, spend reduced | Hours saved per active user per week, reduced contractor or agency spend, fewer tools needed |
 | **Revenue optimization** | Existing revenue protected or grown | Faster feature shipping, reduced churn from faster bug fixes, shorter sales cycles |
 | **New revenue** | Revenue that wouldn't exist without AI | AI-powered product features, new service offerings, markets entered faster |
 
@@ -38,10 +38,10 @@ Most early-stage AI adoption lives in bucket 1. That's fine — but naming all t
 Ask for these if not already available from prior skills:
 
 - **Tool costs:** Monthly spend per tool, number of seats
-- **Team costs:** Fully loaded cost per engineer (or average)
+- **Team costs:** Fully loaded cost per team member (or average for the role being measured)
 - **Usage data:** How many people use each tool, how often
 - **Time savings:** Hours saved per person per week (self-reported is fine, label it)
-- **Quality signals:** Any measurable change in output (cycle time, bug rate, PR throughput)
+- **Quality signals:** Any measurable change in output — use the relevant department profile below for department-specific metrics
 
 ### Calculation Method
 
@@ -76,14 +76,14 @@ Cost efficiency ROI = (time value saved - tool cost) / tool cost × 100
 **Fix:** Include the cost-per-engineer-per-month and let the board compare to other investments.
 
 ### Watermelon Numbers
-**Symptom:** A metric looks green — "95% of engineers have Copilot" — but the underlying reality hasn't changed. Access ≠ usage ≠ adoption.
+**Symptom:** A metric looks green — "95% of the team has a license" — but the underlying reality hasn't changed. Access ≠ usage ≠ adoption.
 **Consequence:** Board thinks adoption is working. Next quarter the numbers don't move and credibility takes a hit.
 **Fix:** If the founder's data shows high access but low usage, flag it: "This number measures access, not behavior. The board will ask what people actually do with it."
 
 ### Cobra Numbers
-**Symptom:** A metric becomes a target and people optimize the number instead of the outcome — e.g., team accepts every AI suggestion to hit "AI-assisted commits" while code quality drops.
+**Symptom:** A metric becomes a target and people optimize the number instead of the outcome — e.g., engineering accepts every AI suggestion to hit "AI-assisted commits" while code quality drops; sales sends more AI-drafted emails to hit volume while reply rates fall.
 **Consequence:** The metric improves, the goal doesn't. Board eventually notices.
-**Fix:** Pair every activity metric with an outcome metric. If you report "AI-assisted commits," pair it with "defect rate" or "review cycle time." If they move in opposite directions, flag the tension.
+**Fix:** Pair every activity metric with an outcome metric. If you report "AI-assisted commits," pair it with "defect rate" or "review cycle time." If you report "AI-drafted emails sent," pair it with "reply rate" or "meetings booked." If they move in opposite directions, flag the tension.
 
 ### Hawthorne Numbers
 **Symptom:** Usage spikes during the pilot month when everyone's watching, then drops when attention moves elsewhere.
@@ -110,8 +110,8 @@ Produce the ROI calculation in this exact format:
 ### ROI by Bucket
 
 #### 1. Cost Efficiency
-- Active users: [X] of [Y] engineers
-- Time saved: [X] hours/engineer/week [estimated/measured]
+- Active users: [X] of [Y] team members
+- Time saved: [X] hours per active user per week [estimated/measured]
 - Total weekly capacity recovered: [X] hours
 - Value of recovered capacity: $[X]/year (at $[X]/hr fully loaded)
 - **Cost efficiency ROI: [X]%**
@@ -136,6 +136,47 @@ Produce the ROI calculation in this exact format:
 ### Board-Ready Summary
 [2-3 sentences: investment amount, return, and what it means. Use only defended numbers.]
 ```
+
+## Department Profiles
+
+### Engineering
+
+**Quality signals to ask for:**
+- Cycle time (ticket to production)
+- Bug rate or defect density
+- PR throughput (PRs merged per engineer per week)
+- Code review turnaround time
+
+**ROI framing:**
+- Cost efficiency: hours saved on code writing, review, testing, documentation
+- Revenue optimization: faster feature shipping, reduced time-to-fix for customer-facing bugs
+- New revenue: AI-powered product features, faster market entry
+
+### Sales
+
+**Quality signals to ask for:**
+- Average deal cycle length (before/after)
+- Outreach volume per rep per week
+- CRM data entry time per rep per week
+- Proposal turnaround time
+
+**ROI framing:**
+- Cost efficiency: hours saved on CRM entry, email drafting, meeting prep
+- Revenue optimization: shorter deal cycles, higher outreach volume, better pipeline accuracy
+- New revenue: AI-identified upsell/cross-sell opportunities
+
+### Generic
+
+**Quality signals to ask for:**
+- Turnaround time on recurring deliverables (documents, reports, summaries)
+- Volume of work completed per person per week
+- Time spent on administrative or repetitive tasks
+- Error rate or rework rate
+
+**ROI framing:**
+- Cost efficiency: hours saved on drafting, summarizing, research, repetitive admin
+- Revenue optimization: faster turnaround on customer-facing work, capacity freed for higher-leverage tasks
+- New revenue: AI-enabled services, faster response to opportunities, expanded throughput without headcount growth
 
 ## References
 

@@ -58,8 +58,8 @@ Reference the fluency scorecard and blocker report if available. If not, ask for
 You need to know how work actually flows through the team to find where AI fits naturally.
 
 **Questions (ask one at a time):**
-- What does a typical week look like for your engineers? What takes the most time?
-- Walk me through your development process — ticket to production. Where are the bottlenecks?
+- What does a typical week look like for your team? What takes the most time?
+- Walk me through your team's core workflow — start to finish. Where are the bottlenecks?
 - What repetitive tasks does your team complain about?
 - Are there tasks people avoid or procrastinate on?
 - What tasks does your team do that always start from a blank page — writing something from scratch every time?
@@ -71,7 +71,7 @@ Find the specific friction points where AI could help.
 **Questions:**
 - What's the thing your team spends time on that feels like it should be faster?
 - When was the last time someone said "I wish I didn't have to do this manually"?
-- What's the biggest time sink that doesn't directly ship features?
+- What's the biggest time sink that doesn't directly produce output for customers or the business?
 
 ### Step 4: Assess Team Dynamics
 
@@ -91,12 +91,12 @@ Based on what you've learned, identify 2-3 candidate use cases and score them ag
 | **Visibility** | Will the result be seen by others? | First use case needs witnesses. Hidden wins don't spread. |
 | **Time to result** | How fast will someone see value? | Must show results in 2-4 weeks or momentum dies. |
 | **Friction** | How hard is it to start? | Every setup step loses people. Lower friction = higher adoption. |
-| **Skeptic-resistance** | Can skeptics dismiss the result? | If the senior engineer can wave it away, it didn't work. |
+| **Skeptic-resistance** | Can skeptics dismiss the result? | If the most senior or skeptical team member can wave it away, it didn't work. |
 | **Failure cost** | What happens if it doesn't work? | First use case must be safe to fail. Low stakes. |
 
 **Bonus lens: Does this eliminate blank-page work?**
 
-The highest-impact first use cases remove tasks that currently start from zero. If engineers are writing boilerplate, drafting PRs from scratch, or creating test skeletons by hand — that's blank-page work. AI eliminates it by providing a starting point that humans refine.
+The highest-impact first use cases remove tasks that currently start from zero. If team members are routinely starting from a blank document — drafting outreach emails, writing boilerplate code, building decks from scratch, summarizing meetings by hand — that's blank-page work. AI eliminates it by providing a starting point that humans refine.
 
 When scoring candidates, favor use cases where AI replaces "start from nothing" with "start from a draft." These produce the most visceral time savings and are hardest for skeptics to dismiss — the before/after is obvious.
 
@@ -104,17 +104,7 @@ Score each candidate 1-5 on each criterion. Higher = better.
 
 **Common use case candidates and their typical profiles:**
 
-| Use case | Visibility | Time to result | Friction | Skeptic-resistance | Failure cost |
-|----------|:----------:|:--------------:|:--------:|:------------------:|:------------:|
-| AI-assisted code review | 4 | 4 | 5 | 4 | 5 |
-| Test generation | 3 | 3 | 3 | 3 | 4 |
-| PR descriptions/summaries | 5 | 5 | 5 | 2 | 5 |
-| Documentation drafts | 3 | 4 | 4 | 2 | 5 |
-| Bug investigation/debugging | 4 | 3 | 3 | 4 | 4 |
-| Code migration/refactoring | 3 | 2 | 2 | 4 | 2 |
-| Boilerplate/scaffolding | 2 | 5 | 4 | 1 | 5 |
-
-These are defaults. Adjust scores based on what you learned about this specific team. A team that hates writing docs will score documentation higher on pain-point relief. A team with flaky tests will score test generation higher.
+Use the relevant department profile below for use case candidates. These are defaults — adjust scores based on what you learned about this specific team.
 
 ### Step 6: Present Options
 
@@ -137,7 +127,7 @@ Once the founder picks, produce the brief.
 ## Anti-Patterns
 
 ### Recommending Before Understanding
-**Symptom:** You suggest "code review" after hearing the company name and team size.
+**Symptom:** You suggest a generic first use case (e.g., "code review" for engineering, "prospecting emails" for sales) after hearing only the company name and team size.
 **Consequence:** Generic recommendation that may not fit their specific workflow or blockers.
 **Fix:** Complete all discovery questions first. The best use case depends on their bottlenecks, team dynamics, and what's already been tried.
 
@@ -152,7 +142,7 @@ Once the founder picks, produce the brief.
 **Fix:** Score on all five criteria, not just time savings. Visibility and skeptic-resistance matter more for the first use case than raw productivity.
 
 ### Ignoring the Blocker Report
-**Symptom:** Recommending code completion when the blocker report says seniors have identity-based resistance to AI writing code.
+**Symptom:** Recommending an AI tool that generates work-product content when the blocker report says seniors have identity-based resistance to AI replacing their expertise (e.g., code completion for engineers, AI-drafted outreach for top sales reps, AI-written copy for marketers).
 **Consequence:** The use case triggers the exact barrier that's already blocking adoption.
 **Fix:** Cross-reference the blocker report. If psychological barriers are high, favor use cases where AI reviews/assists rather than generates. If integration is the issue, favor use cases with zero setup.
 
@@ -165,7 +155,7 @@ Produce the use case brief in this exact format:
 **Company:** [name] | **Date:** [date]
 
 ### Chosen Use Case
-[Name of the use case — e.g., "AI-assisted code review on pull requests"]
+[Name of the use case — engineering: "AI-assisted code review on pull requests" / sales: "AI-drafted prospecting emails" / generic: "AI meeting summaries with action items"]
 
 ### Why This One
 [2-3 sentences tying the choice to this team's specific workflow, pain points, and dynamics]
@@ -188,13 +178,13 @@ Produce the use case brief in this exact format:
 [What "good enough" means for AI output in this use case. Set it low on purpose: "good enough to move work forward" not "ready to publish." Perfectionism kills early adoption — the team needs to see AI as a useful starting point, not a replacement for their judgment.]
 
 ### Baseline (Before Pilot Starts)
-[The current number for the metric you'll use to prove success — e.g., "Average PR review time: 45 minutes. Engineers using AI tools weekly: 2 of 14." Without this, there's nothing to compare against at Week 4.]
+[The current number for the metric you'll use to prove success — e.g., engineering: "Average PR review time: 45 minutes. Engineers using AI tools weekly: 2 of 14." Sales: "Average proposal turnaround: 3 days. Reps using AI weekly: 3 of 12." Generic: "Average meeting-notes turnaround: 2 days. Team members using AI weekly: 4 of 20." Without this, there's nothing to compare against at Week 4.]
 
 ### What Success Looks Like in 2 Weeks
-[One concrete, measurable outcome — e.g., "AI catches at least 3 real issues in PRs that humans confirm were valid"]
+[One concrete, measurable outcome — e.g., engineering: "AI catches at least 3 real issues in PRs that humans confirm were valid." Sales: "AI-drafted outreach matches or beats the rep's reply rate on 5+ campaigns." Generic: "AI summaries cut meeting-note time by 50% on at least 5 recurring meetings."]
 
 ### What Success Looks Like in 4 Weeks
-[One concrete, measurable outcome focused on **repeat use** — e.g., "5+ engineers voluntarily use it on every PR, not just when reminded." Repeat use is the signal that adoption is real. One-off demos and novelty don't count.]
+[One concrete, measurable outcome focused on **repeat use** — e.g., "5+ team members voluntarily use it for every relevant task, not just when reminded." Repeat use is the signal that adoption is real. One-off demos and novelty don't count.]
 
 ### Alternatives Considered
 - [Option B — one line on why it wasn't chosen]
@@ -211,6 +201,50 @@ After the use case is picked:
 | Founder needs board-ready story | `board-narrative-coach` |
 | Founder wants to understand cost/benefit | `roi-calculator` |
 | Default | `90-day-plan-builder` |
+
+## Department Profiles
+
+### Engineering
+
+| Use case | Visibility | Time to result | Friction | Skeptic-resistance | Failure cost |
+|----------|:----------:|:--------------:|:--------:|:------------------:|:------------:|
+| AI-assisted code review | 4 | 4 | 5 | 4 | 5 |
+| Test generation | 3 | 3 | 3 | 3 | 4 |
+| PR descriptions/summaries | 5 | 5 | 5 | 2 | 5 |
+| Documentation drafts | 3 | 4 | 4 | 2 | 5 |
+| Bug investigation/debugging | 4 | 3 | 3 | 4 | 4 |
+| Code migration/refactoring | 3 | 2 | 2 | 4 | 2 |
+| Boilerplate/scaffolding | 2 | 5 | 4 | 1 | 5 |
+
+A team that hates writing docs will score documentation higher on pain-point relief. A team with flaky tests will score test generation higher.
+
+### Sales
+
+| Use case | Visibility | Time to result | Friction | Skeptic-resistance | Failure cost |
+|----------|:----------:|:--------------:|:--------:|:------------------:|:------------:|
+| AI-drafted prospecting emails | 5 | 5 | 5 | 3 | 4 |
+| Meeting summary + CRM auto-update | 3 | 5 | 5 | 2 | 5 |
+| Proposal/deck first draft | 4 | 4 | 4 | 3 | 4 |
+| Pipeline risk scoring | 4 | 3 | 2 | 4 | 3 |
+| Call analysis and coaching | 3 | 3 | 2 | 4 | 3 |
+| Competitive research briefs | 3 | 5 | 4 | 2 | 5 |
+
+A sales team buried in CRM admin will score "Meeting summary + CRM auto-update" higher on pain-point relief. A team with high outreach volume will score "AI-drafted prospecting emails" highest on visibility.
+
+**Note on best-fit roles:** Prospecting emails fit SDRs; CRM auto-update fits AEs who avoid data entry; proposal drafts fit AEs with repetitive RFPs; pipeline scoring and call analysis fit Sales Managers. Capture role fit in the Use Case Brief's "Who Runs the Pilot" field — don't bake it into the scoring schema.
+
+### Generic
+
+| Use case | Visibility | Time to result | Friction | Skeptic-resistance | Failure cost |
+|----------|:----------:|:--------------:|:--------:|:------------------:|:------------:|
+| Meeting summaries with action items | 4 | 5 | 5 | 3 | 5 |
+| First-draft documents (memos, briefs, status reports) | 4 | 5 | 5 | 2 | 5 |
+| Research synthesis from multiple sources | 3 | 4 | 4 | 3 | 4 |
+| Inbox / message triage and reply drafts | 3 | 5 | 5 | 2 | 5 |
+| Data extraction or cleanup from unstructured input | 3 | 4 | 3 | 4 | 4 |
+| Workflow automation of repetitive admin steps | 4 | 3 | 3 | 4 | 4 |
+
+A team buried in meetings will score "Meeting summaries with action items" highest on pain-point relief. A team that produces a lot of internal documents will score "First-draft documents" highest on visibility. Adjust based on which workflow stage actually slows the team down.
 
 ## References
 

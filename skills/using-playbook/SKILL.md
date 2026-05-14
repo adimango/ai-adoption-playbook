@@ -102,7 +102,7 @@ If the founder's request doesn't clearly match a skill, use their scorecard to r
 **Fix:** "I hear you. But without understanding where your team actually stands, any advice I give is generic. The assessment takes 20 minutes and makes everything after it specific to your situation."
 
 ### Routing to the Wrong Skill
-**Symptom:** Founder says "we need a plan" but their real issue is that their senior engineers won't touch AI tools.
+**Symptom:** Founder says "we need a plan" but their real issue is that their senior team members (senior engineers, top sales reps, tenured ops staff) won't touch AI tools.
 **Consequence:** A 90-day plan built on top of undiagnosed psychological resistance will fail.
 **Fix:** If the scorecard shows a critical gap in one pillar but the founder wants a different skill, flag it. "Your scorecard shows a 1/5 on psychological barriers. A plan won't help until we understand that resistance. Want to run blocker-diagnosis first?"
 
