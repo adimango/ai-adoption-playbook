@@ -272,6 +272,43 @@ Ask about specific times someone tried an AI tool and stopped, how long they tri
 | No feedback channel for tool issues | No feedback loop | High |
 | "We'll figure it out organically" | Wishful thinking | Critical |
 
+### Function Distribution Deep-Dive
+
+Use when Q7 scored A or B (AI is concentrated in one function).
+
+- Which function leads on AI use today? Which lags furthest behind?
+- What's blocking the lagging function — tooling, time, leadership, identity?
+- Has the leading function tried to share patterns with other functions? What happened?
+- If you had to predict which function will still not use AI a year from now, which one — and why?
+
+**What you're listening for:**
+
+| Signal | Issue | Severity |
+|--------|-------|----------|
+| Engineering at L4, support at L0 | Function silos around AI | High |
+| Leadership at L4, back-office at L0 | Identity threat concentrated by role type | High |
+| "We tried to roll it out everywhere at once" | Lack of function-specific use cases | Medium |
+| One function actively resists sharing | Cultural ownership gap | High |
+
+### Hiring & Review Deep-Dive
+
+Use when Q11 scored A or B (no structural accountability for AI fluency).
+
+- In your last 5 hires, did AI fluency come up at all in the interview process?
+- Has any candidate been rejected for lack of AI fluency? Has any been hired specifically for it?
+- When a manager's team shows weak AI adoption, what happens in their performance review?
+- Have you ever turned down a headcount request because AI could do the work?
+- Is "AI native" or equivalent written down anywhere — job specs, review criteria, manager comp?
+
+**What you're listening for:**
+
+| Signal | Gap | Severity |
+|--------|-----|----------|
+| AI not in any hiring rubric | Structural blind spot | High |
+| Managers not accountable for team AI use | No mechanism to drive adoption | Critical |
+| Headcount approved without AI alternative considered | Org grows past the AI lever | Critical |
+| "We'll add it to job specs eventually" | Procrastination, not policy | Medium |
+
 ## Anti-Patterns
 
 ### "We're Pretty Early"
