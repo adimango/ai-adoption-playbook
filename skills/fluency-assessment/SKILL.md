@@ -179,23 +179,29 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 
 **Ownership (4 questions)**
 
-**Q7. Who is responsible for making AI adoption work in your organization?**
+**Q8. Who is responsible for making AI adoption work in your organization?**
 - A) Nobody specifically — or "me, alongside everything else" [1]
 - B) It's loosely assigned to someone, but it's not their main focus [2]
 - C) Someone has it as a real responsibility with some dedicated time [3]
 - D) There's a named owner with a clear mandate, time, and authority [4]
 
-**Q8. How do you know if AI tools are actually helping?**
+**Q9. How do you know if AI tools are actually helping?**
 - A) I don't — we have no way to measure it [1]
 - B) We track license count or login activity [2]
 - C) We have some usage data and anecdotal feedback [3]
 - D) We measure specific outcomes — time saved, quality changes, or workflow metrics [4]
 
-**Q9. When someone has a problem with an AI tool, what happens?**
+**Q10. When someone has a problem with an AI tool, what happens?**
 - A) Nothing — they stop using it and nobody notices [1]
 - B) They might mention it in passing, but there's no formal channel [2]
 - C) There's someone they can ask, but no systematic feedback loop [3]
 - D) There's a clear process — issues get reported, tracked, and addressed [4]
+
+**Q11. How does AI fluency show up in hiring and performance review?**
+- A) Hiring rubrics and reviews make no mention of AI [1]
+- B) Recruiters ask about AI casually, but answers don't change hiring decisions [2]
+- C) Candidates are asked for real AI workflow examples; new hires get tools on day one; managers are expected to set up their team for AI use [3]
+- D) AI fluency is a hard hiring filter; managers are held accountable for team AI use in performance reviews; headcount requests include a "why can't AI do this?" section [4]
 
 ### Step 4: Score
 
