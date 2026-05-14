@@ -16,13 +16,14 @@ This playbook breaks that loop with a structured process: diagnose what's stuck,
 
 ## Quick Start
 
-1. Clone this repo
-2. Open it in [Claude Code](https://docs.anthropic.com/en/docs/claude-code)
-3. Say one of:
-   - **"My board is asking about our AI strategy"** — Stage 1: diagnoses adoption blockers, builds the rollout plan
-   - **"My CFO doesn't believe my AI numbers"** — Stage 2: diagnoses reporting readiness (outcome rigor, risk posture, board defensibility)
+After installing (see [Installation](#installation) below), say:
 
-The playbook will run the right diagnostic and guide you to the next step.
+> **"Start AI playbook"**
+
+The playbook picks the right diagnostic for you and takes over. If you'd rather signal your specific situation:
+
+- **"My board is asking about our AI strategy"** — Stage 1: diagnoses adoption blockers, builds the rollout plan
+- **"My CFO doesn't believe my AI numbers"** — Stage 2: diagnoses reporting readiness (outcome rigor, risk posture, board defensibility)
 
 ## Skills
 
