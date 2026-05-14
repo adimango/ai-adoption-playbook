@@ -99,7 +99,7 @@ Adapt to what the board expects:
 ### The Buzzword Update
 **Symptom:** "We are leveraging AI to transform our development workflow and drive innovation across the organization."
 **Consequence:** Board learns nothing. Founder sounds like they're reading a press release.
-**Fix:** Replace with specifics. Engineering example: "8 engineers used AI code review for 2 months. 6 kept using it. They save about 6 hours per week combined. Tool costs $800/month." Sales example: "12 AEs used AI for proposal drafts for 8 weeks. 10 kept using it. They save about 4 hours per week each. Tool costs $1,200/month."
+**Fix:** Replace with specifics. Engineering example: "8 engineers used AI code review for 2 months. 6 kept using it. They save about 6 hours per week combined. Tool costs $800/month." Sales example: "12 AEs used AI for proposal drafts for 8 weeks. 10 kept using it. They save about 4 hours per week each. Tool costs €1,200/month." (Substitute the currency from the scorecard — examples above are illustrative.)
 
 ### The Apology Tour
 **Symptom:** Update is mostly about what didn't work, framed defensively.
@@ -109,7 +109,7 @@ Adapt to what the board expects:
 ### Numbers Without Context
 **Symptom:** "Saved 24 hours per month" with no reference point.
 **Consequence:** Board can't evaluate if that's good or bad.
-**Fix:** Always provide context. "24 hours/month across 6 team members — about 4 hours each, or 30 minutes per day. Tool costs $800/month, which is $33 per hour of capacity recovered."
+**Fix:** Always provide context. "24 hours/month across 6 team members — about 4 hours each, or 30 minutes per day. Tool costs [CCY]800/month, which is [CCY]33 per hour of capacity recovered."
 
 ## Department Profiles
 

@@ -161,7 +161,7 @@ Present the draft and ask: "Does this capture it? Anything to change?"
 ### Inflating the Narrative
 **Symptom:** Narrative says "significant improvement" or "team loves it" without numbers.
 **Consequence:** Exactly the kind of vague update the board is tired of hearing.
-**Fix:** If you can't put a number on it, don't put it in the narrative. "15 of 30 team members" not "strong adoption." "$5K/month" not "modest investment."
+**Fix:** If you can't put a number on it, don't put it in the narrative. "15 of 30 team members" not "strong adoption." "[CCY]5K/month" not "modest investment." (Use the currency from the scorecard.)
 
 ## Output
 

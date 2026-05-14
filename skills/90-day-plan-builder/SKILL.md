@@ -216,7 +216,7 @@ Status reflects against the plan, not against zero. A phase can be "below plan" 
 | [Team role] using AI tools weekly (substitute with the department's role label: engineers / reps / marketers / etc.) | [X] | [Y] |
 | [Use-case-specific metric] | [X] | [Y] |
 | Estimated hours saved per week | [X] | [Y] |
-| Tool cost per month | [$X] | [$Y] |
+| Tool cost per month | [CCY][X] | [CCY][Y] |
 
 ### What You'll Say to the Board
 [3-4 sentence draft narrative the founder can adapt. Specific numbers, not platitudes.]
