@@ -111,7 +111,7 @@ Produce the ROI calculation in this exact format:
 
 #### 1. Cost Efficiency
 - Active users: [X] of [Y] team members
-- Time saved: [X] hours/engineer/week [estimated/measured]
+- Time saved: [X] hours per active user per week [estimated/measured]
 - Total weekly capacity recovered: [X] hours
 - Value of recovered capacity: $[X]/year (at $[X]/hr fully loaded)
 - **Cost efficiency ROI: [X]%**
@@ -164,6 +164,19 @@ Produce the ROI calculation in this exact format:
 - Cost efficiency: hours saved on CRM entry, email drafting, meeting prep
 - Revenue optimization: shorter deal cycles, higher outreach volume, better pipeline accuracy
 - New revenue: AI-identified upsell/cross-sell opportunities
+
+### Generic
+
+**Quality signals to ask for:**
+- Turnaround time on recurring deliverables (documents, reports, summaries)
+- Volume of work completed per person per week
+- Time spent on administrative or repetitive tasks
+- Error rate or rework rate
+
+**ROI framing:**
+- Cost efficiency: hours saved on drafting, summarizing, research, repetitive admin
+- Revenue optimization: faster turnaround on customer-facing work, capacity freed for higher-leverage tasks
+- New revenue: AI-enabled services, faster response to opportunities, expanded throughput without headcount growth
 
 ## References
 
