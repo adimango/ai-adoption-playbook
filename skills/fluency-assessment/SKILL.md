@@ -22,7 +22,7 @@ digraph fluency {
     "Import & map data" [shape=box];
     "Gaps in data?" [shape=diamond];
     "Fill gaps (targeted Qs)" [shape=box];
-    "Quick Quiz (9 Qs)" [shape=box];
+    "Quick Quiz (11 Qs)" [shape=box];
     "Score & produce scorecard" [shape=box];
     "Offer team survey" [shape=box];
     "Want deep-dive?" [shape=diamond];
@@ -31,12 +31,12 @@ digraph fluency {
 
     "Context (3 Qs)" -> "Have existing data?";
     "Have existing data?" -> "Import & map data" [label="yes"];
-    "Have existing data?" -> "Quick Quiz (9 Qs)" [label="no"];
+    "Have existing data?" -> "Quick Quiz (11 Qs)" [label="no"];
     "Import & map data" -> "Gaps in data?";
     "Gaps in data?" -> "Fill gaps (targeted Qs)" [label="yes"];
     "Gaps in data?" -> "Score & produce scorecard" [label="no"];
     "Fill gaps (targeted Qs)" -> "Score & produce scorecard";
-    "Quick Quiz (9 Qs)" -> "Score & produce scorecard";
+    "Quick Quiz (11 Qs)" -> "Score & produce scorecard";
     "Score & produce scorecard" -> "Offer team survey";
     "Offer team survey" -> "Want deep-dive?";
     "Want deep-dive?" -> "Deep-dive on weakest pillar" [label="yes, have time"];
@@ -127,7 +127,7 @@ Accept whatever format they share — survey results, spreadsheet exports, summa
 Do NOT accept vague summaries as data. "Team seems positive" is not data. Push for specifics: "What percentage responded? What were the actual response distributions?" If the shared data is too vague to score, say so honestly and offer the quick quiz as a faster path than going back and forth on interpretation.
 </HARD-GATE>
 
-### Step 3: Quick Quiz (9 questions)
+### Step 3: Quick Quiz (11 questions)
 
 Ask ONE question at a time. Present the options exactly as written. The leader picks A, B, C, or D. Each answer maps to a score (shown in brackets — do NOT show the scores to the leader).
 
@@ -319,7 +319,7 @@ Use when Q11 scored A or B (no structural accountability for AI fluency).
 ### "Just Tell Me What to Do"
 **Symptom:** Leader tries to skip assessment and get straight to solutions.
 **Consequence:** Generic advice that doesn't fit their actual situation.
-**Fix:** "This is 9 quick questions — under 5 minutes. It makes everything after this specific to your situation instead of generic advice."
+**Fix:** "This is 11 quick questions — under 5 minutes. It makes everything after this specific to your situation instead of generic advice."
 
 ### "Our CTO Will Handle It"
 **Symptom:** Leader delegates AI adoption without defining what "handle it" means.
