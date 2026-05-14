@@ -5,7 +5,7 @@
 A skills framework for leaders responsible for AI adoption — founders, CTOs, CAIOs, VPs of Engineering, VPs of Sales, COOs, heads of Marketing or Operations, consultants, PE operating partners, or anyone who needs to show the board that AI investment is producing results.
 
 <p align="center">
-  <img src="assets/ai-adoption-playbook-full.gif" alt="AI Adoption Playbook demo" width="800">
+  <img src="assets/cowork.png" alt="AI Adoption Playbook running in Claude Cowork" width="800">
 </p>
 
 ## The Problem
