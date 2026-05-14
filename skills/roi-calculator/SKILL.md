@@ -34,6 +34,7 @@ Most early-stage AI adoption lives in cost efficiency. That's fine — but namin
 3. Do NOT recommend tools, processes, or strategy changes. Calculate only.
 4. Always show the math. The board will ask "how did you get that number?"
 5. If critical data is missing, say what's missing and what it would change — don't fill the gap with benchmarks.
+6. Express measurements as ranges where the data supports them (e.g., "€214–287k" not "€250k"). A range signals documented confidence intervals; a single number signals vendor hype. Use a single number only when the data is exact (e.g., "$800/month tool cost").
 </HARD-GATE>
 
 ### Required Inputs
@@ -104,6 +105,11 @@ Capacity gained = ((current revenue per FTE - baseline revenue per FTE) / baseli
 **Symptom:** Usage spikes during the pilot month when everyone's watching, then drops when attention moves elsewhere.
 **Consequence:** ROI calculated from the pilot month overstates the real impact.
 **Fix:** If usage data covers only a monitored period, label the number in the output: "(pilot period — not yet confirmed as sustained)." The board sees it's provisional. Don't present pilot-month data as a trend.
+
+### Point-Estimate Confidence
+**Symptom:** ROI presented as a single precise number — "AI saved $247,389.50 this quarter."
+**Consequence:** Board treats the precision as evidence of rigor, then loses trust when one assumption shifts and the number moves by 30%. Point estimates over-claim confidence the data doesn't support.
+**Fix:** Express any number that depends on estimated inputs as a range. "$214–287k saved this quarter" reads as documented, not hyped. Only use single numbers when the input data is exact (tool spend, headcount, contract values). For everything that depends on a self-reported hours-saved estimate, an attribution model, or a baseline comparison, show the range.
 
 ## Output
 
