@@ -69,7 +69,13 @@ Get just enough context to interpret the quiz answers. Ask one at a time:
    - E) Finance / Legal / Operations / HR
    - F) Multiple departments / Whole organization
 
-**Cross-functional handling:** If the leader picks F, the scorecard's 'Adoption by Role' section becomes 'Adoption by Department' instead. Deep-dive probes use the most relevant department's profile based on where the leader sees the biggest gap. Downstream skills focus on one department at a time — the leader picks which to start with.
+**Profile routing:**
+- A → Engineering profile
+- B → Sales profile
+- C, D, E → Generic profile (department-neutral probes; specialized profiles for these are not yet built)
+- F → Ask one follow-up: **"Which department has the biggest gap today? We'll start there and you can run this assessment again for another department later."** Record both the cross-functional context and the primary department on the scorecard. Downstream skills focus on the primary department.
+
+The scorecard's `Department:` field records the leader's pick. Every downstream skill (`blocker-diagnosis`, `first-use-case-picker`, `90-day-plan-builder`, `roi-calculator`, `adoption-scorecard`) reads this field and loads the matching profile.
 
 Don't ask about funding stage, runway, or history. Get to the assessment fast.
 
@@ -483,6 +489,62 @@ Use the relevant profile based on the leader's answer to Q3 (department detectio
 - CRM updates or data entry
 - Pipeline analysis or forecasting
 - Competitive research
+- Other: ___
+
+### Generic
+
+Use this profile when the team isn't Engineering or Sales (Q3 options C, D, E) or when you genuinely need department-neutral probes.
+
+#### Deep-Dive Probes — Psychological Barriers
+
+- Who on the team actively avoids AI tools? What's their role and seniority?
+- When they explain why they don't use them, what do they actually say? (Get exact words)
+- Do senior and junior team members behave differently around AI tools?
+- Has anyone — even jokingly — said something about AI replacing them?
+- How do the team's managers talk about AI tools? Do they use them themselves?
+
+**What you're listening for:**
+
+| Signal | Barrier Type | Severity |
+|--------|-------------|----------|
+| "It's not good enough for my work" (from a senior who hasn't tried it seriously) | Identity threat | High |
+| Team members quietly ignoring tools | Passive resistance | Medium |
+| "Is this going to replace us?" | Fear of replacement | High |
+| Juniors use it, seniors don't | Seniority-identity split | High |
+| Managers mandate it without using it themselves | Leadership credibility gap | High |
+
+#### Deep-Dive Probes — Integration
+
+- Walk me through a specific time someone tried an AI tool and stopped. What happened?
+- How long did they try before deciding it didn't work?
+- Did anyone configure the tool for the team's specific context, or was it out-of-the-box?
+- When results are inconsistent, can people explain what changed between good and bad output?
+- Is there a recurring task the team hates doing that happens every week?
+
+**What you're listening for:**
+
+| Signal | Issue | Severity |
+|--------|-------|----------|
+| "Output isn't right for our context" | Context/config problem | High — fixable |
+| "I only use it for simple stuff" | Narrow use case adoption | Medium |
+| "Results are inconsistent" | Variation confusion — people quit when they can't explain why | High |
+| "Too many steps to use it" | Friction problem | Medium |
+
+#### Deep-Dive Probes — Ownership
+
+[Use the same ownership probes as the main section — ownership questions are department-neutral]
+
+#### Q6 Option D (Workflow Breadth)
+"AI is used across multiple workflow stages — drafting, reviewing, summarizing, analyzing, etc."
+
+#### Survey Q3 — Additional Department-Specific Options
+- I haven't used it for work yet
+- Drafting or editing documents
+- Summarizing meetings, calls, or notes
+- Looking things up or research
+- Working with data, spreadsheets, or reports
+- Building decks or visual materials
+- Automating repetitive steps in my workflow
 - Other: ___
 
 ## References
