@@ -153,6 +153,26 @@ Use the relevant department profile below for workflow stages.
 | Pipeline forecasting | [yes/no] | | |
 | Call analysis/coaching | [yes/no] | | |
 
+### Generic
+
+**Adoption by Role:**
+| Role | Total | Using AI Weekly | Notes |
+|------|:-----:|:---------------:|-------|
+| Individual contributors (senior) | [X] | [X] | |
+| Individual contributors (mid/junior) | [X] | [X] | |
+| Team leads / managers | [X] | [X] | |
+| Specialists / domain experts | [X] | [X] | |
+
+**Use Case Coverage:**
+| Workflow Stage | AI Used? | Tool | Who |
+|---------------|:--------:|------|-----|
+| Drafting documents / emails | [yes/no] | | |
+| Summarizing meetings / calls | [yes/no] | | |
+| Research / information lookup | [yes/no] | | |
+| Data analysis / reporting | [yes/no] | | |
+| Internal communications | [yes/no] | | |
+| Repetitive admin / workflow automation | [yes/no] | | |
+
 ## References
 
 - `fluency-assessment` — deeper diagnostic that scores fluency across three pillars
