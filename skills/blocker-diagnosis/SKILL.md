@@ -152,7 +152,7 @@ Keep secondary probes shorter: 2-3 questions per pillar, focused on the most lik
 ## Anti-Patterns
 
 ### Accepting the First Answer
-**Symptom:** Founder says "they think AI code isn't good enough" and you log it as the blocker.
+**Symptom:** Founder says "they think the AI output isn't good enough" and you log it as the blocker.
 **Consequence:** You're documenting the excuse, not the cause.
 **Fix:** Always ask the follow-up. "Did they show you examples? How long did they try? What specifically wasn't good enough?" The root cause is usually 2-3 questions deeper.
 
@@ -164,7 +164,7 @@ Keep secondary probes shorter: 2-3 questions per pillar, focused on the most lik
 ### Treating Everything as Psychological
 **Symptom:** You assume all resistance is fear or identity-based.
 **Consequence:** You miss legitimate tool-workflow mismatches. Some tools genuinely don't fit.
-**Fix:** When someone says "it doesn't work," probe whether they configured it, how long they tried, and what specifically failed. If the answer is "I set it up properly, used it for 3 weeks on real work, and it consistently produced wrong suggestions for our Scala backend" — that's integration, not psychology.
+**Fix:** When someone says "it doesn't work," probe whether they configured it, how long they tried, and what specifically failed. If the answer is "I set it up properly, used it for 3 weeks on real work, and it consistently produced wrong output for our specific domain or tooling" — that's integration, not psychology.
 
 ### Letting the Founder Self-Diagnose
 **Symptom:** Founder says "our problem is ownership" and you agree without probing.
@@ -256,6 +256,29 @@ Route based on what the diagnosis reveals:
 | "It doesn't sound like us" | Tone/voice mismatch | "Did anyone fine-tune the prompts with your brand voice? How many iterations?" |
 | "Reps won't change their process" | Not embedded in workflow | "What if the AI draft appeared automatically — would they edit it or delete it?" |
 | "We already have templates" | Perceived redundancy | "How often do reps actually use the templates vs. writing from scratch?" |
+
+### Generic
+
+**Psychological Barriers — "What they say / what it means":**
+
+| They say | It sounds like | Probe with |
+|----------|---------------|------------|
+| "The output isn't good enough" | Could be real, could be identity defense | "Did they try it and show you examples? Or is this a general stance?" |
+| "I don't need it" | Status quo bias or identity threat | "What do they spend most of their time on? Any tasks they find tedious?" |
+| "It doesn't understand our context" | Could be real integration issue | "Did they give it context — relevant docs, examples, system prompts? How long did they try?" |
+| "We're already efficient enough" | May mask fear of exposure | "What's your typical turnaround time on [recurring task]? Where does work get stuck?" |
+| Silence / avoidance | Passive resistance | "If I asked your team anonymously, what do you think they'd say about AI tools?" |
+| "I need to stay in control" | Legitimate boundary-setting | "Where specifically do you think human judgment matters most? Let's separate that from the tedious stuff." |
+
+**Integration — "What they say / what it means":**
+
+| They say | It sounds like | Probe with |
+|----------|---------------|------------|
+| "We tried it, didn't work" | Premature abandonment | "How long? Who tried? What task? What went wrong specifically?" |
+| "Too much setup" | Friction problem | "What was the setup process? Did everyone hit the same wall?" |
+| "It's not built for our kind of work" | May be real or untested assumption | "Did someone test it on a real task, or is it an assumption?" |
+| "People forget to use it" | Not embedded in workflow | "Is it an extra step, or part of their normal flow?" |
+| "Results are inconsistent" | Variation confusion | "Can they explain what changed between the good output and the bad? Or does it feel random?" |
 
 ## References
 
