@@ -3,6 +3,7 @@ docs/
 
 # Local-only alignment notes
 playbook-alignment-spec.md
+playbook-extension-spec.md
 
 # Demo scripts and recordings
 demo/
