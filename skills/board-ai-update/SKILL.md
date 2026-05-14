@@ -27,6 +27,7 @@ Template for the AI section of a board update. Takes results data and produces a
 - **Results:** Adoption rate, hours saved, cost, quality signals
 - **Plan:** Next use case, timeline, owner, target metric
 - **Risks:** What's not working yet (optional but recommended for skeptical boards)
+- **Killed pilots:** Pilots stopped this quarter, with cost / reason / lesson (optional but a credibility-boost for skeptical boards)
 
 ## Output
 
@@ -56,6 +57,11 @@ Must include: next use case, timeline, named owner, target metric for next quart
 ### Risks and Honest Assessment
 [2-3 sentences. What's not working yet, what you're watching.
 Shows self-awareness. Boards trust founders who name their own risks.]
+
+### Killed Pilots This Quarter
+[1-3 pilots that were stopped, with cost invested, why killed, and lesson learned.
+This is the strongest credibility move. Boards trust founders who disclose failures.
+If no pilots were killed, omit this section — don't fabricate.]
 ```
 
 ### Format Variations
