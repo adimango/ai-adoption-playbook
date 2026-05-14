@@ -61,6 +61,18 @@ Cost efficiency ROI = (time value saved - tool cost) / tool cost × 100
 
 **Revenue optimization and new revenue:** These require founder-specific data. If the founder has revenue impact data, include it. If not, note the bucket as "not yet measured" — don't estimate.
 
+**Capacity gained:**
+```
+Revenue per FTE (current period) = total revenue / current FTE count
+Revenue per FTE (baseline period) = baseline revenue / baseline FTE count
+Capacity gained = ((current revenue per FTE - baseline revenue per FTE) / baseline revenue per FTE) × 100
+```
+
+**Important notes for the founder:**
+- Capacity is an organization-level outcome, not a per-use-case rollup. It emerges from the other three dimensions plus headcount stability.
+- The credible claim is "revenue grew X% while FTE stayed flat (or shrank by Y)" — not "AI made us X% more productive." Tie the number to a specific revenue period and a specific FTE delta.
+- If headcount changed materially during the measurement period, label the comparison explicitly (e.g., "Q4 2025 vs Q4 2024, with 12 → 11 FTE on a flat revenue base").
+
 ## Anti-Patterns
 
 ### Inflating with Industry Benchmarks
