@@ -35,7 +35,8 @@ The playbook will run a fluency assessment, diagnose your blockers, and guide yo
 ### Interactive Skills
 | Skill | What it does |
 |-------|-------------|
-| `fluency-assessment` | Entry point — scores your team across three pillars |
+| `fluency-assessment` | Entry point — scores your team across three pillars (psychological barriers, integration, ownership) |
+| `reporting-readiness-assessment` | Stage 2 — scores reporting maturity across three pillars (outcome rigor, risk posture, board defensibility) |
 | `blocker-diagnosis` | Deep dive into what's stuck and why |
 | `first-use-case-picker` | Finds the right starting point for maximum visible wins |
 | `90-day-plan-builder` | Phased rollout with board-cycle milestones |
