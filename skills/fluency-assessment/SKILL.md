@@ -75,7 +75,7 @@ Get just enough context to interpret the quiz answers. Ask one at a time:
 - C, D, E → Generic profile (department-neutral probes; specialized profiles for these are not yet built)
 - F → Ask one follow-up: **"Which department has the biggest gap today? We'll start there and you can run this assessment again for another department later."** Record both the cross-functional context and the primary department on the scorecard. Downstream skills focus on the primary department.
 
-The scorecard's `Department:` field records the leader's pick. Every downstream skill (`blocker-diagnosis`, `first-use-case-picker`, `90-day-plan-builder`, `roi-calculator`, `adoption-scorecard`) reads this field and loads the matching profile.
+The scorecard's `Department:` field records the leader's pick. Every downstream skill (`blocker-diagnosis`, `first-use-case-picker`, `90-day-plan-builder`, `roi-calculator`, `adoption-scorecard`, `board-ai-update`, `board-narrative-coach`, `tool-stack-audit`) reads this field and loads the matching profile.
 
 Don't ask about funding stage, runway, or history. Get to the assessment fast.
 
