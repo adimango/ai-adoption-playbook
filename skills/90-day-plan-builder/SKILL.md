@@ -199,7 +199,7 @@ Produce the 90-day plan in this exact format:
 ### Board-Ready Numbers (Target for Day 90)
 | Metric | Baseline | Target |
 |--------|----------|--------|
-| Engineers using AI tools weekly | [X] | [Y] |
+| [Team role] using AI tools weekly (substitute with the department's role label: engineers / reps / marketers / etc.) | [X] | [Y] |
 | [Use-case-specific metric] | [X] | [Y] |
 | Estimated hours saved per week | [X] | [Y] |
 | Tool cost per month | [$X] | [$Y] |
@@ -232,6 +232,13 @@ Produce the 90-day plan in this exact format:
 - Instead of "train reps to use AI for outreach" → "configure AI draft suggestions to appear in the email composer for every new prospect"
 - Instead of "encourage CRM updates" → "enable automatic call summary logging — AI writes the note, rep approves with one click"
 - Instead of "share best practices" → "add AI-generated meeting prep brief to every calendar invite with a prospect"
+
+### Generic
+
+**"Change the default" examples:**
+- Instead of "train the team to use AI for meeting notes" → "configure AI meeting summaries to send automatically to every attendee after the call"
+- Instead of "encourage AI use for first drafts" → "embed an AI draft step in the document/template that fires before a human ever opens it"
+- Instead of "remind people to use AI for research" → "make the team's research tool a chat assistant that surfaces sources by default"
 
 ## References
 
