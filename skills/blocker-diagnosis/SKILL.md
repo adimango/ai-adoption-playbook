@@ -67,9 +67,9 @@ Goal: distinguish identity threat, fear of replacement, perfectionism, and socia
 **Key questions (ask one at a time, adapt based on answers):**
 - Who on your team actively avoids AI tools? What's their role and seniority?
 - When they explain why they don't use them, what do they actually say? (Get exact words if possible)
-- Do your senior engineers and junior engineers behave differently around AI tools?
+- Do senior and junior team members behave differently around AI tools?
 - Has anyone on the team — even jokingly — said something about AI replacing them?
-- How do your engineering managers talk about AI tools? Do they use them themselves?
+- How do your managers talk about AI tools? Do they use them themselves?
 
 **Four signals people are quietly disengaging (probe for all of these):**
 
@@ -84,14 +84,7 @@ If the founder confirms two or more of these, the team hasn't found its entry po
 
 **Digging beneath surface answers:**
 
-| They say | It sounds like | Probe with |
-|----------|---------------|------------|
-| "It writes bad code" | Could be real, could be identity defense | "Did they try it and show you examples? Or is this a general stance?" |
-| "I don't need it" | Status quo bias or identity threat | "What do they spend most of their time on? Any tasks they find tedious?" |
-| "It doesn't understand our codebase" | Could be real integration issue | "Did they configure it with context? How long did they try?" |
-| "We're fast enough" | May mask fear of exposure | "What's your cycle time? Where do features get stuck?" |
-| Silence / avoidance | Passive resistance | "If I asked your team anonymously, what do you think they'd say about AI tools?" |
-| "I need to stay in control" | Legitimate boundary-setting | "Where specifically do you think human judgment matters most? Let's separate that from the tedious stuff." |
+Use the relevant department profile below for department-specific "what they say / what it means" probes.
 
 **Note:** Not all resistance is irrational. Some people are right that certain tasks need human judgment — trade-offs, accountability, risk calls, context AI can't see. When you find this, name it as a strength, not a blocker. The goal is clarity on where AI helps and where humans must stay, not AI everywhere.
 
@@ -102,9 +95,9 @@ Goal: distinguish tool-workflow mismatch, wrong use case, friction, and prematur
 **Key questions:**
 - Walk me through a specific time someone tried an AI tool and stopped. What happened?
 - How long did they try before deciding it didn't work?
-- Did anyone set up the tool for your specific codebase, or was it out-of-the-box?
-- Where in your development workflow (writing, reviewing, testing, deploying) would saving 30 minutes matter most?
-- Is there a task your team hates doing that happens every sprint?
+- Did anyone configure the tool for your team's specific context, or was it out-of-the-box?
+- Where in your team's workflow would saving 30 minutes matter most?
+- Is there a task your team hates doing that happens every week?
 
 **Variation confusion (a hidden adoption killer):**
 
@@ -117,13 +110,7 @@ If the team can't explain variation, they'll conclude the tool is unreliable and
 
 **Digging beneath surface answers:**
 
-| They say | It sounds like | Probe with |
-|----------|---------------|------------|
-| "We tried it, didn't work" | Premature abandonment | "How long? Who tried? What task? What went wrong specifically?" |
-| "Too much setup" | Friction problem | "What was the setup process? Did everyone hit the same wall?" |
-| "It's not compatible with our stack" | May be real or untested assumption | "Did someone test this, or is it an assumption?" |
-| "People forget to use it" | Not embedded in workflow | "Is it an extra step, or part of their normal flow?" |
-| "Results are inconsistent" | Variation confusion | "Can they explain what changed between the good output and the bad? Or does it feel random?" |
+Use the relevant department profile below for department-specific integration probes.
 
 #### Probing Ownership Gaps
 
@@ -131,8 +118,8 @@ Goal: find out who (if anyone) is driving adoption and what measurement exists.
 
 **Key questions:**
 - When something goes wrong with AI tool adoption, who hears about it?
-- If I asked you right now how many engineers used an AI tool this week, could you tell me?
-- Has anyone set a goal like "X engineers using Y tool by Z date"?
+- If I asked you right now how many people used an AI tool this week, could you tell me?
+- Has anyone set a goal like "X people using Y tool by Z date"?
 - Who would you call the AI adoption champion on your team? (Listen for silence or "me, I guess")
 
 **Digging beneath surface answers:**
@@ -222,6 +209,53 @@ Route based on what the diagnosis reveals:
 | No plan, no structure, no owner | `90-day-plan-builder` | Need to build the operating system |
 | Need board-ready story urgently | `board-narrative-coach` | Time-sensitive, can incorporate diagnosis |
 | Multiple intertwined blockers | `first-use-case-picker` | One visible win unblocks more than a plan |
+
+## Department Profiles
+
+### Engineering
+
+**Psychological Barriers — "What they say / what it means":**
+
+| They say | It sounds like | Probe with |
+|----------|---------------|------------|
+| "It writes bad code" | Could be real, could be identity defense | "Did they try it and show you examples? Or is this a general stance?" |
+| "I don't need it" | Status quo bias or identity threat | "What do they spend most of their time on? Any tasks they find tedious?" |
+| "It doesn't understand our codebase" | Could be real integration issue | "Did they configure it with context? How long did they try?" |
+| "We're fast enough" | May mask fear of exposure | "What's your cycle time? Where do features get stuck?" |
+| Silence / avoidance | Passive resistance | "If I asked your team anonymously, what do you think they'd say about AI tools?" |
+| "I need to stay in control" | Legitimate boundary-setting | "Where specifically do you think human judgment matters most? Let's separate that from the tedious stuff." |
+
+**Integration — "What they say / what it means":**
+
+| They say | It sounds like | Probe with |
+|----------|---------------|------------|
+| "We tried it, didn't work" | Premature abandonment | "How long? Who tried? What task? What went wrong specifically?" |
+| "Too much setup" | Friction problem | "What was the setup process? Did everyone hit the same wall?" |
+| "It's not compatible with our stack" | May be real or untested assumption | "Did someone test this, or is it an assumption?" |
+| "People forget to use it" | Not embedded in workflow | "Is it an extra step, or part of their normal flow?" |
+| "Results are inconsistent" | Variation confusion | "Can they explain what changed between the good output and the bad? Or does it feel random?" |
+
+### Sales
+
+**Psychological Barriers — "What they say / what it means":**
+
+| They say | It sounds like | Probe with |
+|----------|---------------|------------|
+| "Sales is about relationships, not AI" | Identity threat — top performers see AI as undermining their edge | "Which parts of the deal cycle are relationship-dependent vs. administrative?" |
+| "Our CRM data is a mess" | Real integration issue — AI can't personalize with bad data | "What would it take to get CRM data clean enough? Is that a tooling problem or a discipline problem?" |
+| "I already hit my number without it" | No incentive — comp structure doesn't reward efficiency | "What if AI freed up 5 hours/week? What would reps do with that time?" |
+| "Customers will know it's AI" | Quality/authenticity fear | "Has anyone tested AI-drafted outreach? What was the response rate vs. manual?" |
+| Silence from top performers | Passive resistance — stars don't want to share their playbook | "If you made your top rep's process available to everyone via AI, would that help or threaten them?" |
+
+**Integration — "What they say / what it means":**
+
+| They say | It sounds like | Probe with |
+|----------|---------------|------------|
+| "We tried it, didn't work" | Premature abandonment | "How long? One email or a full campaign? What was the response rate?" |
+| "Our CRM is too messy for AI" | Data quality issue | "What would clean enough look like? Is that a tooling fix or a process fix?" |
+| "It doesn't sound like us" | Tone/voice mismatch | "Did anyone fine-tune the prompts with your brand voice? How many iterations?" |
+| "Reps won't change their process" | Not embedded in workflow | "What if the AI draft appeared automatically — would they edit it or delete it?" |
+| "We already have templates" | Perceived redundancy | "How often do reps actually use the templates vs. writing from scratch?" |
 
 ## References
 

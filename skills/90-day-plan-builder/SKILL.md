@@ -62,7 +62,7 @@ You need specifics that the previous skills didn't cover. Ask one at a time:
 
 - **Board timing:** "When is your next board meeting? That's our deadline for having results to show."
 - **Champion:** "Who on your team would you put in charge of the pilot? Not you — someone with time and interest."
-- **Capacity:** "How many hours per week can the champion realistically dedicate? And how many engineers can participate in the pilot without disrupting current work?"
+- **Capacity:** "How many hours per week can the champion realistically dedicate? And how many team members can participate in the pilot without disrupting current work?"
 - **Budget:** "Do you have budget flexibility for AI tools, or does anything above a threshold need approval?"
 - **Board format:** "When your board asks about engineering initiatives, what format do they expect? Narrative? Slides? Data table?"
 - **Prior attempts:** "Has anything been tried before that we need to avoid repeating?"
@@ -74,9 +74,8 @@ Skip questions already answered by prior artifacts. Adapt to what you know.
 Don't build a plan that asks people to remember to use AI tools. Build a plan that changes the starting conditions of their work so AI is already there.
 
 **Examples:**
-- Instead of "train engineers to use AI for code review" → "configure AI review comments to appear automatically on every PR"
-- Instead of "encourage engineers to try AI for tests" → "add AI test generation to the PR template checklist"
-- Instead of "remind people to use AI for docs" → "change the doc template so the first draft is AI-generated"
+
+Use the relevant department profile below for department-specific examples. The principle is the same regardless of department: make AI the starting point, not an optional step.
 
 If Phase 1 actions rely on people voluntarily changing habits, the plan will fail. Change the environment, not the people.
 
@@ -217,6 +216,22 @@ Produce the 90-day plan in this exact format:
 | Founder wants to calculate ROI now | `roi-calculator` |
 | Founder wants the full adoption cycle | Continue to `board-narrative-coach` (next in the chain) |
 | Default | `board-narrative-coach` |
+
+## Department Profiles
+
+### Engineering
+
+**"Change the default" examples:**
+- Instead of "train engineers to use AI for code review" → "configure AI review comments to appear automatically on every PR"
+- Instead of "encourage engineers to try AI for tests" → "add AI test generation to the PR template checklist"
+- Instead of "remind people to use AI for docs" → "change the doc template so the first draft is AI-generated"
+
+### Sales
+
+**"Change the default" examples:**
+- Instead of "train reps to use AI for outreach" → "configure AI draft suggestions to appear in the email composer for every new prospect"
+- Instead of "encourage CRM updates" → "enable automatic call summary logging — AI writes the note, rep approves with one click"
+- Instead of "share best practices" → "add AI-generated meeting prep brief to every calendar invite with a prospect"
 
 ## References
 

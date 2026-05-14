@@ -17,7 +17,7 @@ Quick diagnostic that scores an organization's AI fluency across three pillars: 
 
 ```dot
 digraph fluency {
-    "Context (2 Qs)" [shape=box];
+    "Context (3 Qs)" [shape=box];
     "Have existing data?" [shape=diamond];
     "Import & map data" [shape=box];
     "Gaps in data?" [shape=diamond];
@@ -29,7 +29,7 @@ digraph fluency {
     "Deep-dive on weakest pillar" [shape=box];
     "Route to next skill" [shape=doublecircle];
 
-    "Context (2 Qs)" -> "Have existing data?";
+    "Context (3 Qs)" -> "Have existing data?";
     "Have existing data?" -> "Import & map data" [label="yes"];
     "Have existing data?" -> "Quick Quiz (9 Qs)" [label="no"];
     "Import & map data" -> "Gaps in data?";
@@ -55,14 +55,23 @@ digraph fluency {
 5. Do NOT suggest tools, processes, or plans. That comes from other skills after this one.
 </HARD-GATE>
 
-### Step 1: Context (2 questions)
+### Step 1: Context (3 questions)
 
 Get just enough context to interpret the quiz answers. Ask one at a time:
 
 1. **"Tell me about your team — how big, what they do, and what's your role?"**
 2. **"What AI tools does your team have access to today, if any?"**
+3. **"Which best describes the team you're assessing?"**
+   - A) Engineering / Product / Technical
+   - B) Sales / Business Development
+   - C) Marketing / Communications
+   - D) Customer Support / Success
+   - E) Finance / Legal / Operations / HR
+   - F) Multiple departments / Whole organization
 
-That's it. Don't ask about funding stage, runway, or history. Get to the assessment fast.
+**Cross-functional handling:** If the leader picks F, the scorecard's 'Adoption by Role' section becomes 'Adoption by Department' instead. Deep-dive probes use the most relevant department's profile based on where the leader sees the biggest gap. Downstream skills focus on one department at a time — the leader picks which to start with.
+
+Don't ask about funding stage, runway, or history. Get to the assessment fast.
 
 ### Step 2: Check for Existing Data
 
@@ -154,7 +163,7 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 - A) None, or just one thing (like autocomplete) [1]
 - B) 2-3 things, but it's individual — everyone uses it differently [2]
 - C) A few shared use cases that multiple people use [3]
-- D) AI is used across several workflow stages — writing, reviewing, testing, docs, etc. [4]
+- D) AI is used across multiple workflow stages [4]
 
 **Ownership (3 questions)**
 
@@ -219,42 +228,15 @@ Based on the scorecard, recommend ONE next step. See the Next Skill section belo
 
 ## Deep-Dive Probes
 
-Use these ONLY if the leader opts for the deeper assessment on a specific pillar. Ask 3-4 questions from the relevant section.
+Use these ONLY if the leader opts for the deeper assessment on a specific pillar. Ask 3-4 questions from the relevant section. Use the relevant department profile below for deep-dive probes, signal tables, and survey options.
 
 ### Psychological Barriers Deep-Dive
 
-- Who on your team actively avoids AI tools? What's their role and seniority?
-- When they explain why they don't use them, what do they actually say? (Get exact words)
-- Do seniors and juniors behave differently around AI tools?
-- Has anyone — even jokingly — said something about AI replacing them?
-- How do your managers talk about AI tools? Do they use them themselves?
-
-**What you're listening for:**
-
-| Signal | Barrier Type | Severity |
-|--------|-------------|----------|
-| "It writes bad code" (from senior who hasn't tried it) | Identity threat | High |
-| Engineers quietly ignoring tools | Passive resistance | Medium |
-| "Is this going to replace us?" | Fear of replacement | High |
-| Juniors use it, seniors don't | Seniority-identity split | High |
-| Managers mandate it without using it themselves | Leadership credibility gap | High |
+Ask about who avoids AI tools, their role and seniority, what they say when explaining non-use, whether seniors and juniors behave differently, and how managers talk about AI. Use the relevant department profile's probes and signal table.
 
 ### Integration Deep-Dive
 
-- Walk me through a specific time someone tried an AI tool and stopped. What happened?
-- How long did they try before deciding it didn't work?
-- Did anyone configure the tool for your specific codebase, or was it out-of-the-box?
-- When results are inconsistent, can people explain what changed between good and bad output?
-- Is there a task your team hates doing that happens every sprint?
-
-**What you're listening for:**
-
-| Signal | Issue | Severity |
-|--------|-------|----------|
-| "Suggestions are wrong for our codebase" | Context/config problem | High — fixable |
-| "I only use it for boilerplate" | Narrow use case adoption | Medium |
-| "Results are inconsistent" | Variation confusion — people quit when they can't explain why | High |
-| "Too many steps to use it" | Friction problem | Medium |
+Ask about specific times someone tried an AI tool and stopped, how long they tried, whether the tool was configured for their context, and whether there's a recurring task the team hates. Use the relevant department profile's probes and signal table.
 
 ### Ownership Deep-Dive
 
@@ -302,6 +284,7 @@ After all questions, produce the scorecard in this exact format:
 ## AI Fluency Scorecard
 **Company:** [name] | **Team:** [size] | **Date:** [date]
 **Team stability:** [Stable / Restructuring in progress — [description] / Restructuring completed [timeframe] — [description]]
+**Department:** [from Q3]
 
 ### Scores (1-5 scale)
 
@@ -413,6 +396,94 @@ If the leader wants the team survey, produce it in this format. This is sent to 
 | Q4 (feelings), Q5 (reasons for not using) | Psychological Barriers |
 | Q1 (relationship), Q2 (interaction depth), Q3 (breadth), Q5 (effort/output) | Integration Failures |
 | Q6 (shared practices), Q7 (who to ask) | Ownership Gaps |
+
+**Note:** Department profiles may include additional department-specific options for survey Q3. Append these to the checklist when generating the survey for a specific department.
+
+## Department Profiles
+
+Use the relevant profile based on the leader's answer to Q3 (department detection).
+
+### Engineering
+
+#### Deep-Dive Probes — Psychological Barriers
+
+- Who on your team actively avoids AI tools? What's their role and seniority?
+- When they explain why they don't use them, what do they actually say? (Get exact words)
+- Do seniors and juniors behave differently around AI tools?
+- Has anyone — even jokingly — said something about AI replacing them?
+- How do your managers talk about AI tools? Do they use them themselves?
+
+**What you're listening for:**
+
+| Signal | Barrier Type | Severity |
+|--------|-------------|----------|
+| "It writes bad code" (from senior who hasn't tried it) | Identity threat | High |
+| Engineers quietly ignoring tools | Passive resistance | Medium |
+| "Is this going to replace us?" | Fear of replacement | High |
+| Juniors use it, seniors don't | Seniority-identity split | High |
+| Managers mandate it without using it themselves | Leadership credibility gap | High |
+
+#### Deep-Dive Probes — Integration
+
+- Walk me through a specific time someone tried an AI tool and stopped. What happened?
+- How long did they try before deciding it didn't work?
+- Did anyone configure the tool for your specific codebase, or was it out-of-the-box?
+- When results are inconsistent, can people explain what changed between good and bad output?
+- Is there a task your team hates doing that happens every sprint?
+
+**What you're listening for:**
+
+| Signal | Issue | Severity |
+|--------|-------|----------|
+| "Suggestions are wrong for our codebase" | Context/config problem | High — fixable |
+| "I only use it for boilerplate" | Narrow use case adoption | Medium |
+| "Results are inconsistent" | Variation confusion — people quit when they can't explain why | High |
+| "Too many steps to use it" | Friction problem | Medium |
+
+#### Deep-Dive Probes — Ownership
+
+[Use the same ownership probes as the main section — ownership questions are department-neutral]
+
+#### Q6 Option D (Workflow Breadth)
+"AI is used across several workflow stages — writing, reviewing, testing, docs, etc."
+
+#### Survey Q3 — Additional Department-Specific Options
+- Writing or reviewing code
+- Generating or running tests
+- Debugging
+- Writing documentation
+- Code review
+- Other: ___
+
+### Sales
+
+#### Deep-Dive Probes — Psychological Barriers
+- "Do your top performers resist AI? What do they say about relationship-building vs. automation?"
+- "Has anyone said customers will know it's AI-generated? What specifically triggered that concern?"
+- "Do managers use AI for their own pipeline reviews or forecasts?"
+
+#### Deep-Dive Probes — Integration
+- "Is AI connected to your CRM? When reps tried AI for outreach, what happened?"
+- "How long did they try before deciding it didn't work? One email or a full campaign?"
+- "Is there a task your reps hate doing that happens every week?" (CRM logging, meeting notes, proposal formatting)
+
+#### Deep-Dive Probes — Ownership
+
+[Use the same ownership probes as the main section — ownership questions are department-neutral]
+
+#### Q6 Option D (Workflow Breadth)
+"AI is used across several workflow stages — prospecting, meeting prep, proposals, pipeline analysis, etc."
+
+#### Survey Q3 — Additional Department-Specific Options
+- I haven't used it for work yet
+- Prospecting or outreach emails
+- Proposal or deck drafting
+- Meeting prep or research
+- Meeting summaries or call notes
+- CRM updates or data entry
+- Pipeline analysis or forecasting
+- Competitive research
+- Other: ___
 
 ## References
 

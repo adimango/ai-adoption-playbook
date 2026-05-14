@@ -58,8 +58,8 @@ Reference the fluency scorecard and blocker report if available. If not, ask for
 You need to know how work actually flows through the team to find where AI fits naturally.
 
 **Questions (ask one at a time):**
-- What does a typical week look like for your engineers? What takes the most time?
-- Walk me through your development process — ticket to production. Where are the bottlenecks?
+- What does a typical week look like for your team? What takes the most time?
+- Walk me through your team's core workflow — start to finish. Where are the bottlenecks?
 - What repetitive tasks does your team complain about?
 - Are there tasks people avoid or procrastinate on?
 - What tasks does your team do that always start from a blank page — writing something from scratch every time?
@@ -104,17 +104,7 @@ Score each candidate 1-5 on each criterion. Higher = better.
 
 **Common use case candidates and their typical profiles:**
 
-| Use case | Visibility | Time to result | Friction | Skeptic-resistance | Failure cost |
-|----------|:----------:|:--------------:|:--------:|:------------------:|:------------:|
-| AI-assisted code review | 4 | 4 | 5 | 4 | 5 |
-| Test generation | 3 | 3 | 3 | 3 | 4 |
-| PR descriptions/summaries | 5 | 5 | 5 | 2 | 5 |
-| Documentation drafts | 3 | 4 | 4 | 2 | 5 |
-| Bug investigation/debugging | 4 | 3 | 3 | 4 | 4 |
-| Code migration/refactoring | 3 | 2 | 2 | 4 | 2 |
-| Boilerplate/scaffolding | 2 | 5 | 4 | 1 | 5 |
-
-These are defaults. Adjust scores based on what you learned about this specific team. A team that hates writing docs will score documentation higher on pain-point relief. A team with flaky tests will score test generation higher.
+Use the relevant department profile below for use case candidates. These are defaults — adjust scores based on what you learned about this specific team.
 
 ### Step 6: Present Options
 
@@ -211,6 +201,32 @@ After the use case is picked:
 | Founder needs board-ready story | `board-narrative-coach` |
 | Founder wants to understand cost/benefit | `roi-calculator` |
 | Default | `90-day-plan-builder` |
+
+## Department Profiles
+
+### Engineering
+
+| Use case | Visibility | Time to result | Friction | Skeptic-resistance | Failure cost |
+|----------|:----------:|:--------------:|:--------:|:------------------:|:------------:|
+| AI-assisted code review | 4 | 4 | 5 | 4 | 5 |
+| Test generation | 3 | 3 | 3 | 3 | 4 |
+| PR descriptions/summaries | 5 | 5 | 5 | 2 | 5 |
+| Documentation drafts | 3 | 4 | 4 | 2 | 5 |
+| Bug investigation/debugging | 4 | 3 | 3 | 4 | 4 |
+| Code migration/refactoring | 3 | 2 | 2 | 4 | 2 |
+| Boilerplate/scaffolding | 2 | 5 | 4 | 1 | 5 |
+
+A team that hates writing docs will score documentation higher on pain-point relief. A team with flaky tests will score test generation higher.
+
+### Sales
+
+| Use case | Effort | Visibility | Speed to result | Best for |
+|----------|--------|-----------|----------------|----------|
+| AI-drafted prospecting emails | Low | High | 1-2 weeks | SDRs with high outreach volume |
+| Meeting summary + CRM auto-update | Low | Medium | 1-2 weeks | AEs who hate CRM data entry |
+| Proposal/deck first draft | Medium | High | 2-3 weeks | AEs with repetitive RFP responses |
+| Pipeline risk scoring | Medium | High | 3-4 weeks | Sales managers, needs clean CRM data |
+| Call analysis and coaching | High | Medium | 3-4 weeks | Sales managers, needs recording buy-in |
 
 ## References
 

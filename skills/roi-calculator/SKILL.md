@@ -41,7 +41,7 @@ Ask for these if not already available from prior skills:
 - **Team costs:** Fully loaded cost per engineer (or average)
 - **Usage data:** How many people use each tool, how often
 - **Time savings:** Hours saved per person per week (self-reported is fine, label it)
-- **Quality signals:** Any measurable change in output (cycle time, bug rate, PR throughput)
+- **Quality signals:** Any measurable change in output — use the relevant department profile below for department-specific metrics
 
 ### Calculation Method
 
@@ -110,7 +110,7 @@ Produce the ROI calculation in this exact format:
 ### ROI by Bucket
 
 #### 1. Cost Efficiency
-- Active users: [X] of [Y] engineers
+- Active users: [X] of [Y] team members
 - Time saved: [X] hours/engineer/week [estimated/measured]
 - Total weekly capacity recovered: [X] hours
 - Value of recovered capacity: $[X]/year (at $[X]/hr fully loaded)
@@ -136,6 +136,34 @@ Produce the ROI calculation in this exact format:
 ### Board-Ready Summary
 [2-3 sentences: investment amount, return, and what it means. Use only defended numbers.]
 ```
+
+## Department Profiles
+
+### Engineering
+
+**Quality signals to ask for:**
+- Cycle time (ticket to production)
+- Bug rate or defect density
+- PR throughput (PRs merged per engineer per week)
+- Code review turnaround time
+
+**ROI framing:**
+- Cost efficiency: hours saved on code writing, review, testing, documentation
+- Revenue optimization: faster feature shipping, reduced time-to-fix for customer-facing bugs
+- New revenue: AI-powered product features, faster market entry
+
+### Sales
+
+**Quality signals to ask for:**
+- Average deal cycle length (before/after)
+- Outreach volume per rep per week
+- CRM data entry time per rep per week
+- Proposal turnaround time
+
+**ROI framing:**
+- Cost efficiency: hours saved on CRM entry, email drafting, meeting prep
+- Revenue optimization: shorter deal cycles, higher outreach volume, better pipeline accuracy
+- New revenue: AI-identified upsell/cross-sell opportunities
 
 ## References
 

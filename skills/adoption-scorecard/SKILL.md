@@ -25,7 +25,7 @@ Produces a one-page adoption snapshot with hard numbers — who's using what, ho
 
 If not available from prior skills, ask for:
 
-- **Team size:** Total engineers, total non-engineering staff
+- **Team size:** Total team size by role
 - **Tools in use:** Which AI tools, how many seats each
 - **Usage data:** Who uses each tool, how often (daily/weekly/rarely/never)
 - **Use cases:** What tasks are people using AI for
@@ -54,7 +54,7 @@ Produce the scorecard in this exact format:
 
 | Metric | Count | % of Team |
 |--------|:-----:|:---------:|
-| Team size (engineering) | [X] | 100% |
+| Team size | [X] | 100% |
 | Have AI tool access | [X] | [X]% |
 | Use AI tools weekly | [X] | [X]% |
 | Work has visibly changed | [X] | [X]% |
@@ -72,23 +72,20 @@ Produce the scorecard in this exact format:
 - [Tools or use cases attempted and abandoned, if any]
 
 ### Adoption by Role
+Use the relevant department profile below for role breakdown.
+
 | Role | Total | Using AI Weekly | Notes |
 |------|:-----:|:---------------:|-------|
-| Senior engineers | [X] | [X] | |
-| Mid-level engineers | [X] | [X] | |
-| Junior engineers | [X] | [X] | |
-| Engineering managers | [X] | [X] | |
-| Non-engineering | [X] | [X] | |
+| [Role from department profile] | [X] | [X] | |
+| ... | ... | ... | ... |
 
 ### Use Case Coverage
+Use the relevant department profile below for workflow stages.
+
 | Workflow Stage | AI Used? | Tool | Who |
 |---------------|:--------:|------|-----|
-| Writing code | [yes/no] | | |
-| Code review | [yes/no] | | |
-| Testing | [yes/no] | | |
-| Documentation | [yes/no] | | |
-| Debugging | [yes/no] | | |
-| Planning/architecture | [yes/no] | | |
+| [Stage from department profile] | [yes/no] | | |
+| ... | ... | ... | ... |
 
 ### Change Since Last Measurement
 [If prior scorecard exists: what moved, what didn't. If first measurement: "Baseline established."]
@@ -113,6 +110,48 @@ Produce the scorecard in this exact format:
 **Symptom:** "Adoption is progressing well" or "team is engaged."
 **Consequence:** Means nothing. Board can't act on vibes.
 **Fix:** Every cell in the scorecard is a number, a name, or a yes/no.
+
+## Department Profiles
+
+### Engineering
+
+**Adoption by Role:**
+| Role | Total | Using AI Weekly | Notes |
+|------|:-----:|:---------------:|-------|
+| Senior engineers | [X] | [X] | |
+| Mid-level engineers | [X] | [X] | |
+| Junior engineers | [X] | [X] | |
+| Engineering managers | [X] | [X] | |
+
+**Use Case Coverage:**
+| Workflow Stage | AI Used? | Tool | Who |
+|---------------|:--------:|------|-----|
+| Writing code | [yes/no] | | |
+| Code review | [yes/no] | | |
+| Testing | [yes/no] | | |
+| Documentation | [yes/no] | | |
+| Debugging | [yes/no] | | |
+| Planning/architecture | [yes/no] | | |
+
+### Sales
+
+**Adoption by Role:**
+| Role | Total | Using AI Weekly | Notes |
+|------|:-----:|:---------------:|-------|
+| Account Executives | [X] | [X] | |
+| SDRs/BDRs | [X] | [X] | |
+| Sales Managers | [X] | [X] | |
+| Sales Ops/Enablement | [X] | [X] | |
+
+**Use Case Coverage:**
+| Workflow Stage | AI Used? | Tool | Who |
+|---------------|:--------:|------|-----|
+| Prospecting/outreach | [yes/no] | | |
+| Meeting prep/research | [yes/no] | | |
+| Proposal/deck generation | [yes/no] | | |
+| CRM updates/logging | [yes/no] | | |
+| Pipeline forecasting | [yes/no] | | |
+| Call analysis/coaching | [yes/no] | | |
 
 ## References
 
