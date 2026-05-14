@@ -44,11 +44,13 @@ digraph cycle {
 
 | Step | Skill | Input | Output | Duration |
 |:----:|-------|-------|--------|----------|
-| 1 | `fluency-assessment` | Company context | AI Fluency Scorecard | 20-30 min |
+| 1 | `fluency-assessment` | Company context | AI Fluency Scorecard (includes `Department:`) | 20-30 min |
 | 2 | `blocker-diagnosis` | Scorecard | Blocker Report | 15-25 min |
 | 3 | `first-use-case-picker` | Scorecard + Blocker Report | Use Case Brief | 15-20 min |
 | 4 | `90-day-plan-builder` | All prior artifacts | 90-Day Plan | 20-30 min |
 | 5 | `board-narrative-coach` | 90-Day Plan + results | Board Narrative | 20-30 min |
+
+**Department propagation:** Step 1's scorecard stamps a `Department:` field. Every downstream skill reads this field to load the matching Department Profile (Engineering / Sales / Generic). If the leader picked F (multiple departments) in Step 1, they will have chosen a primary department — downstream skills run on that primary. To cover a second department, re-run the full cycle for that department.
 
 **Total: approximately 90-135 minutes across one or more sessions.**
 
