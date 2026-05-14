@@ -27,6 +27,25 @@ Template for the AI section of a board update. Takes results data and produces a
 - **Results:** Adoption rate, hours saved, cost, quality signals
 - **Plan:** Next use case, timeline, owner, target metric
 - **Risks:** What's not working yet (optional but recommended for skeptical boards)
+- **Killed pilots:** Pilots stopped this quarter, with cost / reason / lesson (optional but a credibility-boost for skeptical boards)
+
+### Status Convention
+
+Every metric and every use case in a board update carries a status. Use this five-state convention — CFO-native, against plan, not against zero:
+
+| Status | Use when | Notes |
+|--------|----------|-------|
+| `above plan` | Outcome exceeds the target set at start of quarter | A use case can be "above plan" while still being a small absolute number. The plan is the bar. |
+| `on plan` | Outcome meets target within ±10% | The healthy default. |
+| `below plan` | Outcome misses target | Surface the reason. Below-plan is OK if you can explain it. |
+| `pilot` | Use case is in pilot phase, not yet measured against a plan | Don't conflate "we're trying it" with "we're meeting targets." |
+| `measuring` | Use case has results but attribution is still being verified | Used for revenue impact pending an incrementality test, or hours saved pending objective measurement. |
+
+**Rules:**
+- Status reflects against plan, not against zero. A use case can be "below plan" while still saving money.
+- All-green reads as too rosy. Real reports have mixed status. Aim for 5 above/on plan, 2 below or measuring.
+- No traffic-light colors in the markdown output. Use the pill labels above as inline backticked code (e.g., `` `above plan` ``).
+- No emoji as status indicators.
 
 ## Output
 
@@ -43,7 +62,8 @@ Must include: number of team members (use department-specific noun: engineers, r
 ### What Happened
 [1 paragraph. Results with specific numbers.
 Must include: adoption rate, hours saved or cost avoided, quality signal, tool cost.
-ROI calculation if the numbers support it.]
+ROI calculation if the numbers support it.
+Each headline metric should carry a status pill (`above plan` / `on plan` / `below plan` / `pilot` / `measuring`). See Status Convention above.]
 
 ### What's Next
 [1 paragraph. Forward-looking plan.
@@ -56,6 +76,11 @@ Must include: next use case, timeline, named owner, target metric for next quart
 ### Risks and Honest Assessment
 [2-3 sentences. What's not working yet, what you're watching.
 Shows self-awareness. Boards trust founders who name their own risks.]
+
+### Killed Pilots This Quarter
+[1-3 pilots that were stopped, with cost invested, why killed, and lesson learned.
+This is the strongest credibility move. Boards trust founders who disclose failures.
+If no pilots were killed, omit this section — don't fabricate.]
 ```
 
 ### Format Variations

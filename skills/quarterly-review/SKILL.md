@@ -50,6 +50,12 @@ Ask the founder for their previous scorecard, blocker report, and 90-day plan re
 
 > "Let's see how things have moved since last quarter. I'll re-run the fluency assessment, compare it to your previous scores, and we'll draft your next board update. First — do you have your previous scorecard handy?"
 
+Then, after collecting the previous scorecard, ask:
+
+> "Did you kill any AI pilots this quarter? Tools you tried, gave a fair shot, and stopped using — that's the most important section of the report. If yes, I'll capture each one. If no, we'll note that too and check whether that's a portfolio signal."
+
+If they killed pilots, capture for each one: name, cost invested (tool + people time), what it promised, why it was killed, lesson learned, killed date. Push back on vague reasons — "didn't deliver value" is filler; "reps disengaged after week 3" is signal.
+
 ### Step 2: Re-Run Fluency Assessment
 
 Run `fluency-assessment` as normal, but with two additions:
@@ -106,6 +112,11 @@ Use `board-ai-update` template to draft the quarterly update. The "What Happened
 **Consequence:** Demoralizing. Ignores real progress.
 **Fix:** Compare to the previous scorecard. "You went from 2/5 to 3/5 — here's what moved it, here's what to do next to get to 4."
 
+### All-Green Quarterly Reports
+**Symptom:** Every use case is "above plan" or "on plan." No killed pilots. No measuring-still flags.
+**Consequence:** Reads as too rosy. Boards have learned that all-green AI reports mean the team is hiding failures or not measuring rigorously enough. Credibility erodes.
+**Fix:** A real quarter has mixed status. Aim for: 5 above/on plan, 2 below or measuring. Surface at least one killed pilot per quarter if any portfolio activity happened. If the quarter was genuinely all-green, name what's at risk in the next quarter — boards trust founders who name their own risks.
+
 ### Missing Adoption Trade-offs
 **Symptom:** Scores improved but the founder doesn't mention that pushing adoption created new friction — output quality concerns, team morale dips, or team members feeling surveilled (engineers worried about commits being tracked; reps worried about call recordings; etc.).
 **Consequence:** The cure causes a new disease. Next quarter's blockers are side effects of this quarter's push.
@@ -122,13 +133,19 @@ Produce the quarterly review in this exact format:
 
 ### Score Comparison
 
-| Pillar | Previous | Current | Change | What Happened |
-|--------|:--------:|:-------:|:------:|---------------|
-| Psychological Barriers | X/5 | X/5 | [+/-/=] | [One sentence] |
-| Integration Failures | X/5 | X/5 | [+/-/=] | [One sentence] |
-| Ownership Gaps | X/5 | X/5 | [+/-/=] | [One sentence] |
-| **Overall** | **X/5** | **X/5** | **[+/-/=]** | |
-| Team composition | [X] people | [Y] people | [+/-X] | [If changed: e.g., "3 roles eliminated, 1 AI-focused role created. Score changes partly reflect who left, not just behavior change." If stable: "No change." If restructuring status transitioned (e.g., in-progress → completed): note the transition.] |
+| Pillar | Previous | Current | Change | Status | What Happened |
+|--------|:--------:|:-------:|:------:|:------:|---------------|
+| Psychological Barriers | X/5 | X/5 | [+/-/=] | `above plan` / `on plan` / `below plan` | [One sentence] |
+| Integration Failures | X/5 | X/5 | [+/-/=] | `above plan` / `on plan` / `below plan` | [One sentence] |
+| Ownership Gaps | X/5 | X/5 | [+/-/=] | `above plan` / `on plan` / `below plan` | [One sentence] |
+| **Overall** | **X/5** | **X/5** | **[+/-/=]** | **[status]** | |
+| Team composition | [X] people | [Y] people | [+/-X] | — | [If changed: e.g., "3 roles eliminated, 1 AI-focused role created. Score changes partly reflect who left, not just behavior change." If stable: "No change." If restructuring status transitioned (e.g., in-progress → completed): note the transition.] |
+
+**Status definitions** (against the plan set last quarter, not against zero):
+- `above plan` — score exceeds target
+- `on plan` — score meets target within ±10%
+- `below plan` — score misses target
+- (Team composition row uses `—` since it's a context note, not a planned metric.)
 
 ### Blocker Status
 
@@ -144,8 +161,23 @@ Produce the quarterly review in this exact format:
 ### What Didn't Work
 [2-3 bullets: actions that were taken but didn't move scores, or actions that weren't taken]
 
+### Killed Pilots This Quarter
+
+[Disclose AI pilots that were stopped this quarter. Aim for 1-3. Zero feels dishonest; 4+ suggests portfolio management problems. Use the killed-pilot template per pilot. If no pilots were killed this quarter, write: "No pilots killed this quarter. (Reminder: 0 killed pilots over multiple quarters is itself a signal — either the portfolio is too small or the team is reluctant to stop work.)"]
+
+For each killed pilot:
+
+| Field | Content |
+|-------|---------|
+| Pilot name | [Specific, not generic — e.g., "AI sales call coaching"] |
+| Cost invested | $[X] (tool + people time) |
+| What it promised | [One sentence] |
+| Why it was killed | [One sentence — the operational reason, not "didn't deliver value"] |
+| Lesson learned | [One sentence — specific, not "better governance needed"] |
+| Killed date | [Month, year] |
+
 ### Next Quarter Focus
-[The single highest-leverage action for next quarter, with named owner and target metric]
+[The single highest-leverage action for next quarter, with named owner and target metric. State the target metric AND the status threshold (e.g., "Target: 12 of 30 team members using AI weekly. `on plan` if reached within ±10% by Day 90.").]
 
 ### Board Update Draft
 [Use board-ai-update template — include the delta narrative]

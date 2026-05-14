@@ -22,7 +22,7 @@ digraph fluency {
     "Import & map data" [shape=box];
     "Gaps in data?" [shape=diamond];
     "Fill gaps (targeted Qs)" [shape=box];
-    "Quick Quiz (9 Qs)" [shape=box];
+    "Quick Quiz (11 Qs)" [shape=box];
     "Score & produce scorecard" [shape=box];
     "Offer team survey" [shape=box];
     "Want deep-dive?" [shape=diamond];
@@ -31,12 +31,12 @@ digraph fluency {
 
     "Context (3 Qs)" -> "Have existing data?";
     "Have existing data?" -> "Import & map data" [label="yes"];
-    "Have existing data?" -> "Quick Quiz (9 Qs)" [label="no"];
+    "Have existing data?" -> "Quick Quiz (11 Qs)" [label="no"];
     "Import & map data" -> "Gaps in data?";
     "Gaps in data?" -> "Fill gaps (targeted Qs)" [label="yes"];
     "Gaps in data?" -> "Score & produce scorecard" [label="no"];
     "Fill gaps (targeted Qs)" -> "Score & produce scorecard";
-    "Quick Quiz (9 Qs)" -> "Score & produce scorecard";
+    "Quick Quiz (11 Qs)" -> "Score & produce scorecard";
     "Score & produce scorecard" -> "Offer team survey";
     "Offer team survey" -> "Want deep-dive?";
     "Want deep-dive?" -> "Deep-dive on weakest pillar" [label="yes, have time"];
@@ -118,8 +118,8 @@ Accept whatever format they share — survey results, spreadsheet exports, summa
 
    Pick the most diagnostic question per pillar:
    - Psychological Barriers gap → ask Q2 (reasons for non-use) and Q3 (leadership modeling)
-   - Integration gap → ask Q4 (team relationship with tools) and Q6 (breadth of use)
-   - Ownership gap → ask Q7 (who owns it) and Q8 (how you measure)
+   - Integration gap → ask Q4 (team relationship with tools) and Q7 (function distribution)
+   - Ownership gap → ask Q8 (who owns it) and Q11 (hiring & review)
 
 5. **Proceed to scoring** (Step 4) once all three pillars have signal.
 
@@ -127,7 +127,7 @@ Accept whatever format they share — survey results, spreadsheet exports, summa
 Do NOT accept vague summaries as data. "Team seems positive" is not data. Push for specifics: "What percentage responded? What were the actual response distributions?" If the shared data is too vague to score, say so honestly and offer the quick quiz as a faster path than going back and forth on interpretation.
 </HARD-GATE>
 
-### Step 3: Quick Quiz (9 questions)
+### Step 3: Quick Quiz (11 questions)
 
 Ask ONE question at a time. Present the options exactly as written. The leader picks A, B, C, or D. Each answer maps to a score (shown in brackets — do NOT show the scores to the leader).
 
@@ -171,31 +171,43 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 - C) A few shared use cases that multiple people use [3]
 - D) AI is used across multiple workflow stages [4] _(use the relevant Department Profile's Q6 Option D phrasing for a concrete example, e.g., "writing, reviewing, testing, docs" for engineering)_
 
-**Ownership (3 questions)**
+**Q7. How evenly is AI use spread across functions in your organization?**
+- A) No function uses AI meaningfully yet [1]
+- B) One function (usually engineering) uses AI — others have barely started [2]
+- C) Two or three functions use AI regularly — back-office and customer-facing teams lag [3]
+- D) AI is in use across engineering, product, GTM, support, and back-office — depth varies, but every function is in [4]
 
-**Q7. Who is responsible for making AI adoption work in your organization?**
+**Ownership (4 questions)**
+
+**Q8. Who is responsible for making AI adoption work in your organization?**
 - A) Nobody specifically — or "me, alongside everything else" [1]
 - B) It's loosely assigned to someone, but it's not their main focus [2]
 - C) Someone has it as a real responsibility with some dedicated time [3]
 - D) There's a named owner with a clear mandate, time, and authority [4]
 
-**Q8. How do you know if AI tools are actually helping?**
+**Q9. How do you know if AI tools are actually helping?**
 - A) I don't — we have no way to measure it [1]
 - B) We track license count or login activity [2]
 - C) We have some usage data and anecdotal feedback [3]
 - D) We measure specific outcomes — time saved, quality changes, or workflow metrics [4]
 
-**Q9. When someone has a problem with an AI tool, what happens?**
+**Q10. When someone has a problem with an AI tool, what happens?**
 - A) Nothing — they stop using it and nobody notices [1]
 - B) They might mention it in passing, but there's no formal channel [2]
 - C) There's someone they can ask, but no systematic feedback loop [3]
 - D) There's a clear process — issues get reported, tracked, and addressed [4]
 
+**Q11. How does AI fluency show up in hiring and performance review?**
+- A) Hiring rubrics and reviews make no mention of AI [1]
+- B) Recruiters ask about AI casually, but answers don't change hiring decisions [2]
+- C) Candidates are asked for real AI workflow examples; new hires get tools on day one; managers are expected to set up their team for AI use [3]
+- D) AI fluency is a hard hiring filter; managers are held accountable for team AI use in performance reviews; headcount requests include a "why can't AI do this?" section [4]
+
 ### Step 4: Score
 
 **Scoring method:**
 - Each answer maps to a score of 1-4 (shown in brackets above)
-- Per pillar: average the 3 question scores, then map to 1-5 scale:
+- Per pillar: average the question scores within the pillar (3 for Psychological Barriers, 4 for Integration, 4 for Ownership), then map to 1-5 scale:
   - Average 1.0-1.5 → **Score 1/5**
   - Average 1.6-2.2 → **Score 2/5**
   - Average 2.3-2.9 → **Score 3/5**
@@ -260,6 +272,43 @@ Ask about specific times someone tried an AI tool and stopped, how long they tri
 | No feedback channel for tool issues | No feedback loop | High |
 | "We'll figure it out organically" | Wishful thinking | Critical |
 
+### Function Distribution Deep-Dive
+
+Use when Q7 scored A or B (AI is concentrated in one function).
+
+- Which function leads on AI use today? Which lags furthest behind?
+- What's blocking the lagging function — tooling, time, leadership, identity?
+- Has the leading function tried to share patterns with other functions? What happened?
+- If you had to predict which function will still not use AI a year from now, which one — and why?
+
+**What you're listening for:**
+
+| Signal | Issue | Severity |
+|--------|-------|----------|
+| Engineering at L4, support at L0 | Function silos around AI | High |
+| Leadership at L4, back-office at L0 | Identity threat concentrated by role type | High |
+| "We tried to roll it out everywhere at once" | Lack of function-specific use cases | Medium |
+| One function actively resists sharing | Cultural ownership gap | High |
+
+### Hiring & Review Deep-Dive
+
+Use when Q11 scored A or B (no structural accountability for AI fluency).
+
+- In your last 5 hires, did AI fluency come up at all in the interview process?
+- Has any candidate been rejected for lack of AI fluency? Has any been hired specifically for it?
+- When a manager's team shows weak AI adoption, what happens in their performance review?
+- Have you ever turned down a headcount request because AI could do the work?
+- Is "AI native" or equivalent written down anywhere — job specs, review criteria, manager comp?
+
+**What you're listening for:**
+
+| Signal | Gap | Severity |
+|--------|-----|----------|
+| AI not in any hiring rubric | Structural blind spot | High |
+| Managers not accountable for team AI use | No mechanism to drive adoption | Critical |
+| Headcount approved without AI alternative considered | Org grows past the AI lever | Critical |
+| "We'll add it to job specs eventually" | Procrastination, not policy | Medium |
+
 ## Anti-Patterns
 
 ### "We're Pretty Early"
@@ -270,7 +319,7 @@ Ask about specific times someone tried an AI tool and stopped, how long they tri
 ### "Just Tell Me What to Do"
 **Symptom:** Leader tries to skip assessment and get straight to solutions.
 **Consequence:** Generic advice that doesn't fit their actual situation.
-**Fix:** "This is 9 quick questions — under 5 minutes. It makes everything after this specific to your situation instead of generic advice."
+**Fix:** "This is 11 quick questions — under 5 minutes. It makes everything after this specific to your situation instead of generic advice."
 
 ### "Our CTO Will Handle It"
 **Symptom:** Leader delegates AI adoption without defining what "handle it" means.

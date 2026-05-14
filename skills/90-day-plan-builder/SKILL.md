@@ -169,6 +169,17 @@ Produce the 90-day plan in this exact format:
 - Top blocker: [from blocker report]
 - Current state: [one sentence — e.g., "3 of 25 team members use AI tools occasionally"]
 
+### Status Convention (used in each phase below)
+
+Each phase milestone carries a target and a status pill:
+- `above plan` — milestone exceeded
+- `on plan` — milestone met within ±10%
+- `below plan` — milestone missed
+- `pilot` — pilot phase, not yet measured against the target
+- `measuring` — results present but attribution still being verified
+
+Status reflects against the plan, not against zero. A phase can be "below plan" while still moving the team forward.
+
 ### Phase 1: Pilot (Days 1-30)
 **Goal:** [One sentence]
 
@@ -177,6 +188,7 @@ Produce the 90-day plan in this exact format:
 | 1 | ... | ... | ... |
 
 **Phase 1 success metric:** [Specific, measurable]
+- **Status at Day 30:** [target metric outcome → pick one: `above plan` / `on plan` / `below plan` / `pilot` / `measuring`]
 
 ### Phase 2: Expand (Days 31-60)
 **Goal:** [One sentence]
@@ -186,6 +198,7 @@ Produce the 90-day plan in this exact format:
 | 5 | ... | ... | ... |
 
 **Phase 2 success metric:** [Specific, measurable]
+- **Status at Day 60:** [target metric outcome → pick one: `above plan` / `on plan` / `below plan` / `pilot` / `measuring`]
 
 ### Phase 3: Prove & Present (Days 61-90)
 **Goal:** [One sentence]
@@ -195,6 +208,7 @@ Produce the 90-day plan in this exact format:
 | 9 | ... | ... | ... |
 
 **Phase 3 success metric:** [Specific, measurable]
+- **Status at Day 90:** [target metric outcome → pick one: `above plan` / `on plan` / `below plan` / `pilot` / `measuring`]
 
 ### Board-Ready Numbers (Target for Day 90)
 | Metric | Baseline | Target |

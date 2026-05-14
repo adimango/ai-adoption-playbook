@@ -35,7 +35,8 @@ The playbook will run a fluency assessment, diagnose your blockers, and guide yo
 ### Interactive Skills
 | Skill | What it does |
 |-------|-------------|
-| `fluency-assessment` | Entry point — scores your team across three pillars |
+| `fluency-assessment` | Entry point — scores your team across three pillars (psychological barriers, integration, ownership) |
+| `reporting-readiness-assessment` | Stage 2 — scores reporting maturity across three pillars (outcome rigor, risk posture, board defensibility) |
 | `blocker-diagnosis` | Deep dive into what's stuck and why |
 | `first-use-case-picker` | Finds the right starting point for maximum visible wins |
 | `90-day-plan-builder` | Phased rollout with board-cycle milestones |
@@ -49,13 +50,23 @@ The playbook will run a fluency assessment, diagnose your blockers, and guide yo
 
 ## How It Works
 
-Every AI adoption failure maps to one of three pillars:
+The playbook runs in two stages.
+
+**Stage 1 — Adoption.** Every AI adoption failure maps to one of three pillars:
 
 1. **Psychological barriers** — fear, identity threat, "I don't need it"
 2. **Integration failures** — tools don't fit workflows, wrong use cases, too much friction
 3. **Ownership gaps** — nobody owns it, no metrics, no accountability
 
-The playbook diagnoses which pillars are blocking you, then guides you through fixing them in an order that produces board-reportable results.
+The `fluency-assessment` diagnoses which pillars are blocking you. Other skills then fix them in an order that produces results.
+
+**Stage 2 — Reporting.** Once adoption is underway (Integration ≥ 3/5), the question shifts from "are we using AI?" to "can we defend the value to the board?" That's a different gap with three different pillars:
+
+1. **Outcome rigor** — cost methodology, speed baselines, revenue attribution
+2. **Risk posture** — tier classification, EU AI Act readiness, incident logging
+3. **Board defensibility** — reporting cadence, CFO-approved methodology, outcome vs activity discipline
+
+The `reporting-readiness-assessment` diagnoses Stage 2. `roi-calculator` and `board-ai-update` close the gaps it surfaces.
 
 Works for engineering, sales, and other functional teams — the playbook detects your team type at the start and adapts its probes, examples, and metrics accordingly.
 

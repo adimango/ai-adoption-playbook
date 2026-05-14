@@ -11,17 +11,20 @@ Produces a board-ready ROI calculation from the founder's actual data — not in
 
 **Core principle:** Use the founder's real numbers. If a number is estimated, label it as estimated. Never substitute industry averages for missing data — flag the gap instead.
 
-## Three ROI Buckets
+## Four ROI Dimensions
 
-Every AI investment produces value in one or more of these buckets:
+Every AI investment produces value across one or more of these dimensions. The fourth, Capacity Gained, is the question every CFO is now asking: did revenue grow faster than headcount?
 
-| Bucket | What it measures | Examples |
-|--------|-----------------|----------|
+| Dimension | What it measures | Examples |
+|-----------|-----------------|----------|
 | **Cost efficiency** | Time saved, spend reduced | Hours saved per active user per week, reduced contractor or agency spend, fewer tools needed |
 | **Revenue optimization** | Existing revenue protected or grown | Faster feature shipping, reduced churn from faster bug fixes, shorter sales cycles |
 | **New revenue** | Revenue that wouldn't exist without AI | AI-powered product features, new service offerings, markets entered faster |
+| **Capacity gained** | Revenue growth on flat or shrinking FTE base | Revenue per FTE delta (e.g. +18% revenue / flat headcount), output per FTE, work absorbed without headcount growth |
 
-Most early-stage AI adoption lives in bucket 1. That's fine — but naming all three buckets shows the board you're thinking beyond cost cutting.
+Most early-stage AI adoption lives in cost efficiency. That's fine — but naming all four dimensions shows the board you're thinking beyond cost cutting. Capacity gained is an organization-level outcome that emerges from the other three combined with headcount stability.
+
+**Sources:** Cost / Revenue / New Revenue framing follows standard CFO practice. Capacity gained is grounded in the TechShift AI Value Scorecard pattern and Zapier's CFO framework (output-per-FTE).
 
 ## Process
 
@@ -31,6 +34,7 @@ Most early-stage AI adoption lives in bucket 1. That's fine — but naming all t
 3. Do NOT recommend tools, processes, or strategy changes. Calculate only.
 4. Always show the math. The board will ask "how did you get that number?"
 5. If critical data is missing, say what's missing and what it would change — don't fill the gap with benchmarks.
+6. Express measurements as ranges where the data supports them (e.g., "€214–287k" not "€250k"). A range signals documented confidence intervals; a single number signals vendor hype. Use a single number only when the data is exact (e.g., "$800/month tool cost").
 </HARD-GATE>
 
 ### Required Inputs
@@ -57,6 +61,18 @@ Cost efficiency ROI = (time value saved - tool cost) / tool cost × 100
 - If time savings are self-reported, say so. Boards respect honesty more than inflated numbers.
 
 **Revenue optimization and new revenue:** These require founder-specific data. If the founder has revenue impact data, include it. If not, note the bucket as "not yet measured" — don't estimate.
+
+**Capacity gained:**
+```
+Revenue per FTE (current period) = total revenue / current FTE count
+Revenue per FTE (baseline period) = baseline revenue / baseline FTE count
+Capacity gained = ((current revenue per FTE - baseline revenue per FTE) / baseline revenue per FTE) × 100
+```
+
+**Important notes for the founder:**
+- Capacity is an organization-level outcome, not a per-use-case rollup. It emerges from the other three dimensions plus headcount stability.
+- The credible claim is "revenue grew X% while FTE stayed flat (or shrank by Y)" — not "AI made us X% more productive." Tie the number to a specific revenue period and a specific FTE delta.
+- If headcount changed materially during the measurement period, label the comparison explicitly (e.g., "Q4 2025 vs Q4 2024, with 12 → 11 FTE on a flat revenue base").
 
 ## Anti-Patterns
 
@@ -89,6 +105,11 @@ Cost efficiency ROI = (time value saved - tool cost) / tool cost × 100
 **Symptom:** Usage spikes during the pilot month when everyone's watching, then drops when attention moves elsewhere.
 **Consequence:** ROI calculated from the pilot month overstates the real impact.
 **Fix:** If usage data covers only a monitored period, label the number in the output: "(pilot period — not yet confirmed as sustained)." The board sees it's provisional. Don't present pilot-month data as a trend.
+
+### Point-Estimate Confidence
+**Symptom:** ROI presented as a single precise number — "AI saved $247,389.50 this quarter."
+**Consequence:** Board treats the precision as evidence of rigor, then loses trust when one assumption shifts and the number moves by 30%. Point estimates over-claim confidence the data doesn't support.
+**Fix:** Express any number that depends on estimated inputs as a range. "$214–287k saved this quarter" reads as documented, not hyped. Only use single numbers when the input data is exact (tool spend, headcount, contract values). For everything that depends on a self-reported hours-saved estimate, an attribution model, or a baseline comparison, show the range.
 
 ## Output
 
@@ -123,6 +144,14 @@ Produce the ROI calculation in this exact format:
 #### 3. New Revenue
 [Specific data if available, or: "Not applicable yet. This bucket activates when AI enables product features or services that generate revenue directly."]
 
+#### 4. Capacity Gained
+- Baseline period: [e.g., Q4 2024 — revenue $[X], FTE [Y]]
+- Current period: [e.g., Q4 2025 — revenue $[X], FTE [Y]]
+- FTE delta: [+/-X people, or "flat"]
+- Revenue per FTE delta: [+X% / -X% / flat]
+- **Capacity gained: [X]% revenue growth on [flat / -X] FTE base**
+- [If not yet measurable: "Baseline data missing — set a baseline period now so this dimension is calculable next quarter."]
+
 ### The Math
 [Show each calculation step so the board can verify]
 
@@ -146,6 +175,7 @@ Produce the ROI calculation in this exact format:
 - Bug rate or defect density
 - PR throughput (PRs merged per engineer per week)
 - Code review turnaround time
+- Revenue per engineer trend (revenue / engineering FTE, period over period)
 
 **ROI framing:**
 - Cost efficiency: hours saved on code writing, review, testing, documentation
@@ -159,6 +189,7 @@ Produce the ROI calculation in this exact format:
 - Outreach volume per rep per week
 - CRM data entry time per rep per week
 - Proposal turnaround time
+- Revenue per rep trend (revenue / sales FTE, period over period)
 
 **ROI framing:**
 - Cost efficiency: hours saved on CRM entry, email drafting, meeting prep
@@ -172,6 +203,7 @@ Produce the ROI calculation in this exact format:
 - Volume of work completed per person per week
 - Time spent on administrative or repetitive tasks
 - Error rate or rework rate
+- Output per team member trend (deliverables produced / FTE, period over period)
 
 **ROI framing:**
 - Cost efficiency: hours saved on drafting, summarizing, research, repetitive admin
