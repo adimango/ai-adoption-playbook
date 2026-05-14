@@ -11,17 +11,20 @@ Produces a board-ready ROI calculation from the founder's actual data — not in
 
 **Core principle:** Use the founder's real numbers. If a number is estimated, label it as estimated. Never substitute industry averages for missing data — flag the gap instead.
 
-## Three ROI Buckets
+## Four ROI Dimensions
 
-Every AI investment produces value in one or more of these buckets:
+Every AI investment produces value across one or more of these dimensions. The fourth, Capacity Gained, is the question every CFO is now asking: did revenue grow faster than headcount?
 
-| Bucket | What it measures | Examples |
-|--------|-----------------|----------|
+| Dimension | What it measures | Examples |
+|-----------|-----------------|----------|
 | **Cost efficiency** | Time saved, spend reduced | Hours saved per active user per week, reduced contractor or agency spend, fewer tools needed |
 | **Revenue optimization** | Existing revenue protected or grown | Faster feature shipping, reduced churn from faster bug fixes, shorter sales cycles |
 | **New revenue** | Revenue that wouldn't exist without AI | AI-powered product features, new service offerings, markets entered faster |
+| **Capacity gained** | Revenue growth on flat or shrinking FTE base | Revenue per FTE delta (e.g. +18% revenue / flat headcount), output per FTE, work absorbed without headcount growth |
 
-Most early-stage AI adoption lives in bucket 1. That's fine — but naming all three buckets shows the board you're thinking beyond cost cutting.
+Most early-stage AI adoption lives in cost efficiency. That's fine — but naming all four dimensions shows the board you're thinking beyond cost cutting. Capacity gained is an organization-level outcome that emerges from the other three combined with headcount stability.
+
+**Sources:** Cost / Revenue / New Revenue framing follows standard CFO practice. Capacity gained is grounded in the TechShift AI Value Scorecard pattern and Zapier's CFO framework (output-per-FTE).
 
 ## Process
 
