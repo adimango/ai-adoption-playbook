@@ -82,6 +82,8 @@ Ask ONE question at a time. Stay in character. Be tough but fair — a good boar
 - "You say you saved X hours. How did you measure that? Is it self-reported?"
 - "What's the actual ROI in dollars? Walk me through the math."
 - "X team members are using it. That's [Y%]. What about the rest?"
+- "Each of your metrics shows a status — `above plan`, `on plan`, `below plan`. What plan? Where's the target you set last quarter, and how did you arrive at it?"
+- "All your status pills are green. What's not working?"
 
 **On sustainability:**
 - "Who owns this? If you get hit by a bus, does AI adoption keep going?"
