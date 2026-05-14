@@ -91,13 +91,47 @@ E.g., "No AI assistance for code review" not "Should buy CodeRabbit."]
 
 ### Ignoring Shadow IT
 **Symptom:** Audit only covers company-paid tools.
-**Consequence:** Missing 20-40% of actual AI spend. No visibility into what engineers are actually using.
+**Consequence:** Missing 20-40% of actual AI spend. No visibility into what team members are actually using.
 **Fix:** Always ask about individual subscriptions and expense reports.
 
 ### Recommending Specific Vendors
 **Symptom:** "You should switch to Cursor" or "Try Sourcegraph Cody."
 **Consequence:** Recommendation ages badly (tools change fast), may not fit team's needs.
-**Fix:** Describe the capability gap. "Your team needs AI-assisted code review that integrates with your PR workflow." Let the founder evaluate vendors.
+**Fix:** Describe the capability gap. Engineering example: "Your team needs AI-assisted code review that integrates with your PR workflow." Sales example: "Your team needs AI meeting summaries that auto-update your CRM." Let the founder evaluate vendors.
+
+## Department Profiles
+
+Use the relevant profile to recognize typical tools and capability gaps for the team being audited.
+
+### Engineering
+
+**Typical tools to ask about:** GitHub Copilot, Cursor, Sourcegraph Cody, Tabnine, CodeRabbit, Codium, Claude Code, ChatGPT (individual), Sweep, Codeium.
+
+**Common capability gaps (express as needs, not products):**
+- AI-assisted code review that integrates with the PR workflow
+- Test generation tied to the existing test framework
+- Automatic doc drafts from code changes
+- AI debugging assist inside the IDE
+
+### Sales
+
+**Typical tools to ask about:** Gong, Chorus, Clari, Salesloft, Outreach, Apollo, Lavender, Regie, ChatGPT/Claude (individual), HubSpot AI, Salesforce Einstein.
+
+**Common capability gaps (express as needs, not products):**
+- Meeting summaries that auto-update CRM fields
+- AI-drafted outreach personalized from CRM data
+- Pipeline risk scoring that flags stalled deals
+- Proposal/deck first-draft generation from RFP input
+
+### Generic
+
+**Typical tools to ask about:** ChatGPT, Claude, Microsoft 365 Copilot, Google Gemini for Workspace, Notion AI, Otter, Fireflies.
+
+**Common capability gaps (express as needs, not products):**
+- Meeting summarization with action items
+- Draft generation for recurring documents
+- Research synthesis from multiple sources
+- Workflow automation for repetitive steps
 
 ## References
 
