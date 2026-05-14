@@ -71,7 +71,7 @@ Find the specific friction points where AI could help.
 **Questions:**
 - What's the thing your team spends time on that feels like it should be faster?
 - When was the last time someone said "I wish I didn't have to do this manually"?
-- What's the biggest time sink that doesn't directly ship features?
+- What's the biggest time sink that doesn't directly produce output for customers or the business?
 
 ### Step 4: Assess Team Dynamics
 
@@ -142,7 +142,7 @@ Once the founder picks, produce the brief.
 **Fix:** Score on all five criteria, not just time savings. Visibility and skeptic-resistance matter more for the first use case than raw productivity.
 
 ### Ignoring the Blocker Report
-**Symptom:** Recommending code completion when the blocker report says seniors have identity-based resistance to AI writing code.
+**Symptom:** Recommending an AI tool that generates work-product content when the blocker report says seniors have identity-based resistance to AI replacing their expertise (e.g., code completion for engineers, AI-drafted outreach for top sales reps, AI-written copy for marketers).
 **Consequence:** The use case triggers the exact barrier that's already blocking adoption.
 **Fix:** Cross-reference the blocker report. If psychological barriers are high, favor use cases where AI reviews/assists rather than generates. If integration is the issue, favor use cases with zero setup.
 
@@ -155,7 +155,7 @@ Produce the use case brief in this exact format:
 **Company:** [name] | **Date:** [date]
 
 ### Chosen Use Case
-[Name of the use case — e.g., "AI-assisted code review on pull requests"]
+[Name of the use case — engineering: "AI-assisted code review on pull requests" / sales: "AI-drafted prospecting emails" / generic: "AI meeting summaries with action items"]
 
 ### Why This One
 [2-3 sentences tying the choice to this team's specific workflow, pain points, and dynamics]

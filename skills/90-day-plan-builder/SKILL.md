@@ -141,7 +141,7 @@ After founder approves all three phases, produce the complete plan in the Output
 ### Milestones Without Metrics
 **Symptom:** "Expand adoption" or "improve team sentiment" as a milestone.
 **Consequence:** No way to know if you hit it. Board can't evaluate progress.
-**Fix:** Every milestone has a number. "5 engineers using AI tools weekly" not "increase adoption."
+**Fix:** Every milestone has a number. "5 team members using AI tools weekly" not "increase adoption."
 
 ### Relying on Voluntary Habit Change
 **Symptom:** Every action is "train," "encourage," or "remind" people to use AI tools.
@@ -167,7 +167,7 @@ Produce the 90-day plan in this exact format:
 ### Starting Position
 - Fluency scores: Psych [X/5] | Integration [X/5] | Ownership [X/5]
 - Top blocker: [from blocker report]
-- Current state: [one sentence — e.g., "3 of 25 engineers use AI tools occasionally"]
+- Current state: [one sentence — e.g., "3 of 25 team members use AI tools occasionally"]
 
 ### Phase 1: Pilot (Days 1-30)
 **Goal:** [One sentence]

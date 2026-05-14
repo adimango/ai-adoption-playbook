@@ -17,7 +17,7 @@ Every AI investment produces value in one or more of these buckets:
 
 | Bucket | What it measures | Examples |
 |--------|-----------------|----------|
-| **Cost efficiency** | Time saved, spend reduced | Hours saved per engineer per week, reduced contractor spend, fewer tools needed |
+| **Cost efficiency** | Time saved, spend reduced | Hours saved per active user per week, reduced contractor or agency spend, fewer tools needed |
 | **Revenue optimization** | Existing revenue protected or grown | Faster feature shipping, reduced churn from faster bug fixes, shorter sales cycles |
 | **New revenue** | Revenue that wouldn't exist without AI | AI-powered product features, new service offerings, markets entered faster |
 
@@ -38,7 +38,7 @@ Most early-stage AI adoption lives in bucket 1. That's fine — but naming all t
 Ask for these if not already available from prior skills:
 
 - **Tool costs:** Monthly spend per tool, number of seats
-- **Team costs:** Fully loaded cost per engineer (or average)
+- **Team costs:** Fully loaded cost per team member (or average for the role being measured)
 - **Usage data:** How many people use each tool, how often
 - **Time savings:** Hours saved per person per week (self-reported is fine, label it)
 - **Quality signals:** Any measurable change in output — use the relevant department profile below for department-specific metrics
@@ -81,9 +81,9 @@ Cost efficiency ROI = (time value saved - tool cost) / tool cost × 100
 **Fix:** If the founder's data shows high access but low usage, flag it: "This number measures access, not behavior. The board will ask what people actually do with it."
 
 ### Cobra Numbers
-**Symptom:** A metric becomes a target and people optimize the number instead of the outcome — e.g., team accepts every AI suggestion to hit "AI-assisted commits" while code quality drops.
+**Symptom:** A metric becomes a target and people optimize the number instead of the outcome — e.g., engineering accepts every AI suggestion to hit "AI-assisted commits" while code quality drops; sales sends more AI-drafted emails to hit volume while reply rates fall.
 **Consequence:** The metric improves, the goal doesn't. Board eventually notices.
-**Fix:** Pair every activity metric with an outcome metric. If you report "AI-assisted commits," pair it with "defect rate" or "review cycle time." If they move in opposite directions, flag the tension.
+**Fix:** Pair every activity metric with an outcome metric. If you report "AI-assisted commits," pair it with "defect rate" or "review cycle time." If you report "AI-drafted emails sent," pair it with "reply rate" or "meetings booked." If they move in opposite directions, flag the tension.
 
 ### Hawthorne Numbers
 **Symptom:** Usage spikes during the pilot month when everyone's watching, then drops when attention moves elsewhere.
