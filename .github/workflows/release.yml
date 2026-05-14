@@ -1,0 +1,49 @@
+name: Build Cowork plugin zip on release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-attach:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Build plugin zip
+        run: |
+          zip -r ai-adoption-playbook.zip \
+            .claude-plugin \
+            skills \
+            README.md \
+            -x "*.DS_Store"
+          ls -lh ai-adoption-playbook.zip
+
+      - name: Create release and attach zip
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ai-adoption-playbook.zip
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+          body: |
+            ## For Claude Cowork users (non-technical install)
+
+            1. Download `ai-adoption-playbook.zip` below.
+            2. Open Claude Desktop, switch to the Cowork tab.
+            3. Click Plugins in the sidebar, then the + button, then Upload.
+            4. Select the downloaded `ai-adoption-playbook.zip`.
+            5. Trigger the playbook by saying one of:
+               - "My board is asking about our AI strategy" (Stage 1)
+               - "My CFO doesn't believe my AI numbers" (Stage 2)
+
+            ## For Claude Code users (technical install)
+
+            ```
+            /plugin marketplace add adimango/ai-adoption-playbook
+            /plugin install ai-adoption-playbook@ai-adoption-playbook
+            ```

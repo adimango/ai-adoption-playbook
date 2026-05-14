@@ -74,9 +74,16 @@ Works for engineering, sales, and other functional teams — the playbook detect
 
 ## Installation
 
-Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+### For Claude Cowork (no technical setup)
 
-**Install as a plugin from GitHub:**
+1. Download the latest `ai-adoption-playbook.zip` from the [Releases page](https://github.com/adimango/ai-adoption-playbook/releases).
+2. Open Claude Desktop and switch to the **Cowork** tab.
+3. Click **Plugins** in the sidebar, then the **+** button, then **Upload**.
+4. Select the downloaded `ai-adoption-playbook.zip`.
+
+Once installed, say one of the Quick Start phrases above and the playbook takes over.
+
+### For Claude Code (CLI)
 
 ```bash
 /plugin marketplace add adimango/ai-adoption-playbook
@@ -88,19 +95,12 @@ Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 ```bash
 git clone https://github.com/adimango/ai-adoption-playbook.git
 cd ai-adoption-playbook
-```
-
-Once installed, say **"My board is asking about our AI strategy"** and the playbook takes over.
-
-**Test locally during development:**
-
-```bash
-claude --plugin-dir ./ai-adoption-playbook
+claude --plugin-dir .
 ```
 
 Skills are namespaced as `/ai-adoption-playbook:skill-name` (e.g., `/ai-adoption-playbook:fluency-assessment`).
 
-Future: MCP server packaging for use with Claude Desktop, Cursor, and other MCP-compatible clients.
+Future: MCP server packaging for use with Cursor and other MCP-compatible clients.
 
 ## License
 
