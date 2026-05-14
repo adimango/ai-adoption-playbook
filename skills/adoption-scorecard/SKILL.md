@@ -63,12 +63,12 @@ Produce the scorecard in this exact format:
 
 | Tool | Seats | Weekly Users | Primary Use Case | Cost/Month |
 |------|:-----:|:------------:|-----------------|:----------:|
-| [Tool 1] | [X] | [X] | [use case] | $[X] |
-| [Tool 2] | [X] | [X] | [use case] | $[X] |
-| **Total** | **[X]** | **[X]** | | **$[X]** |
+| [Tool 1] | [X] | [X] | [use case] | [CCY][X] |
+| [Tool 2] | [X] | [X] | [use case] | [CCY][X] |
+| **Total** | **[X]** | **[X]** | | **[CCY][X]** |
 
 ### Unused Capacity
-- [X] seats provisioned but not used weekly ($[X]/month)
+- [X] seats provisioned but not used weekly ([CCY][X]/month)
 - [Tools or use cases attempted and abandoned, if any]
 
 ### Adoption by Role

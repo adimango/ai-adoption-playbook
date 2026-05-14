@@ -170,7 +170,7 @@ For each killed pilot:
 | Field | Content |
 |-------|---------|
 | Pilot name | [Specific, not generic — e.g., "AI sales call coaching"] |
-| Cost invested | $[X] (tool + people time) |
+| Cost invested | [CCY][X] (tool + people time) |
 | What it promised | [One sentence] |
 | Why it was killed | [One sentence — the operational reason, not "didn't deliver value"] |
 | Lesson learned | [One sentence — specific, not "better governance needed"] |

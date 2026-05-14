@@ -41,20 +41,21 @@ Evaluate each tool against four questions:
 
 ## Output
 
-Produce the audit in this exact format:
+Produce the audit in this exact format. **Currency note:** Substitute the `[CCY]` placeholder below with the currency symbol from the fluency-assessment scorecard (`$` for USD, `€` for EUR, `£` for GBP, etc.). If no scorecard is available, ask the founder which currency they report in.
 
 ```
 ## AI Tool Stack Audit
 **Company:** [name] | **Team:** [size] | **Date:** [date]
+**Currency:** [USD / EUR / GBP / other — from scorecard]
 
 ### Current Stack
 
 | Tool | Cost/Month | Seats | Weekly Users | Utilization | Primary Use |
 |------|:---------:|:-----:|:-----------:|:-----------:|-------------|
-| [Tool 1] | $[X] | [X] | [X] | [X]% | [use case] |
-| [Tool 2] | $[X] | [X] | [X] | [X]% | [use case] |
-| Individual subs (estimated) | $[X] | [X] | [X] | — | Various |
-| **Total** | **$[X]** | | | | |
+| [Tool 1] | [CCY][X] | [X] | [X] | [X]% | [use case] |
+| [Tool 2] | [CCY][X] | [X] | [X] | [X]% | [use case] |
+| Individual subs (estimated) | [CCY][X] | [X] | [X] | — | Various |
+| **Total** | **[CCY][X]** | | | | |
 
 ### Assessment
 
@@ -67,9 +68,9 @@ Produce the audit in this exact format:
 [List any tools with overlapping capabilities and which one to keep, with reasoning.]
 
 ### Waste Identified
-- Unused seats: [X] seats across [X] tools = $[X]/month wasted
-- Redundant tools: [list] = $[X]/month overlap
-- **Total recoverable spend: $[X]/month ($[X]/year)**
+- Unused seats: [X] seats across [X] tools = [CCY][X]/month wasted
+- Redundant tools: [list] = [CCY][X]/month overlap
+- **Total recoverable spend: [CCY][X]/month ([CCY][X]/year)**
 
 ### Gaps
 [Capabilities the team needs but doesn't have — described as needs, not product recommendations.
