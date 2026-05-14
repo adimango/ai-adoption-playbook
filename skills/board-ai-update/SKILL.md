@@ -38,7 +38,7 @@ Produce the board update in this exact format:
 
 ### What We Did
 [1 paragraph. What was the initiative, who participated, what timeframe.
-Must include: number of engineers, the specific use case, the duration.]
+Must include: number of team members (use department-specific noun: engineers, reps, marketers, etc.), the specific use case, the duration.]
 
 ### What Happened
 [1 paragraph. Results with specific numbers.
@@ -74,7 +74,7 @@ Adapt to what the board expects:
 ### The Buzzword Update
 **Symptom:** "We are leveraging AI to transform our development workflow and drive innovation across the organization."
 **Consequence:** Board learns nothing. Founder sounds like they're reading a press release.
-**Fix:** Replace with specifics. "8 engineers used AI code review for 2 months. 6 kept using it. They save about 6 hours per week combined. Tool costs $800/month."
+**Fix:** Replace with specifics. Engineering example: "8 engineers used AI code review for 2 months. 6 kept using it. They save about 6 hours per week combined. Tool costs $800/month." Sales example: "12 AEs used AI for proposal drafts for 8 weeks. 10 kept using it. They save about 4 hours per week each. Tool costs $1,200/month."
 
 ### The Apology Tour
 **Symptom:** Update is mostly about what didn't work, framed defensively.
@@ -84,7 +84,32 @@ Adapt to what the board expects:
 ### Numbers Without Context
 **Symptom:** "Saved 24 hours per month" with no reference point.
 **Consequence:** Board can't evaluate if that's good or bad.
-**Fix:** Always provide context. "24 hours/month across 6 engineers — about 4 hours each, or 30 minutes per day. Tool costs $800/month, which is $33 per hour of capacity recovered."
+**Fix:** Always provide context. "24 hours/month across 6 team members — about 4 hours each, or 30 minutes per day. Tool costs $800/month, which is $33 per hour of capacity recovered."
+
+## Department Profiles
+
+Use the relevant profile to choose nouns, example numbers, and quality signals in the output.
+
+### Engineering
+
+- Headcount noun: "engineers"
+- Use case examples: AI code review, test generation, PR descriptions, doc drafts, debugging
+- Quality signals: cycle time, bug rate, PR throughput, review turnaround
+- ROI framing: hours saved on code writing/review/testing/docs; faster feature shipping
+
+### Sales
+
+- Headcount noun: "reps" (or "AEs," "SDRs" — match the team)
+- Use case examples: AI-drafted prospecting, meeting summary + CRM auto-update, proposal first draft, pipeline scoring, call coaching
+- Quality signals: deal cycle length, outreach volume, CRM data entry time, proposal turnaround
+- ROI framing: hours saved on CRM/email/meeting prep; shorter cycles; higher outreach volume
+
+### Generic
+
+- Headcount noun: "team members" (or the team's own role label)
+- Use case examples: draft generation, summarization, research, data analysis
+- Quality signals: throughput, turnaround time, error rate, response time
+- ROI framing: hours saved on repetitive drafting/summarizing; faster turnaround on recurring work
 
 ## References
 
