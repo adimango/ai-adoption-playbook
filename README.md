@@ -2,7 +2,7 @@
 
 *From "we're exploring AI" to board-ready results.*
 
-A skills framework for leaders responsible for AI adoption — founders, CTOs, CAIOs, VPs of Engineering, COOs, or anyone who needs to show the board that AI investment is producing results.
+A skills framework for leaders responsible for AI adoption — founders, CTOs, CAIOs, VPs of Engineering, VPs of Sales, COOs, heads of Marketing or Operations, consultants, PE operating partners, or anyone who needs to show the board that AI investment is producing results.
 
 <p align="center">
   <img src="assets/ai-adoption-playbook-full.gif" alt="AI Adoption Playbook demo" width="800">
@@ -56,6 +56,8 @@ Every AI adoption failure maps to one of three pillars:
 3. **Ownership gaps** — nobody owns it, no metrics, no accountability
 
 The playbook diagnoses which pillars are blocking you, then guides you through fixing them in an order that produces board-reportable results.
+
+Works for engineering, sales, and other functional teams — the playbook detects your team type at the start and adapts its probes, examples, and metrics accordingly.
 
 ## Installation
 
