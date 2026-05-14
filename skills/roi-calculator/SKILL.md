@@ -175,6 +175,7 @@ Produce the ROI calculation in this exact format:
 - Bug rate or defect density
 - PR throughput (PRs merged per engineer per week)
 - Code review turnaround time
+- Revenue per engineer trend (revenue / engineering FTE, period over period)
 
 **ROI framing:**
 - Cost efficiency: hours saved on code writing, review, testing, documentation
@@ -188,6 +189,7 @@ Produce the ROI calculation in this exact format:
 - Outreach volume per rep per week
 - CRM data entry time per rep per week
 - Proposal turnaround time
+- Revenue per rep trend (revenue / sales FTE, period over period)
 
 **ROI framing:**
 - Cost efficiency: hours saved on CRM entry, email drafting, meeting prep
@@ -201,6 +203,7 @@ Produce the ROI calculation in this exact format:
 - Volume of work completed per person per week
 - Time spent on administrative or repetitive tasks
 - Error rate or rework rate
+- Output per team member trend (deliverables produced / FTE, period over period)
 
 **ROI framing:**
 - Cost efficiency: hours saved on drafting, summarizing, research, repetitive admin
