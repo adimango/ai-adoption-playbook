@@ -103,6 +103,12 @@ Skills are namespaced as `/ai-adoption-playbook:skill-name` (e.g., `/ai-adoption
 
 Future: MCP server packaging for use with Cursor and other MCP-compatible clients.
 
+## Need help running this?
+
+If the gap is bandwidth, not understanding, I package the same methodology as a quarterly service called Talon — same diagnosis, same board update, run by me.
+
+→ [alexdimango.com/talon](https://alexdimango.com/talon/)
+
 ## License
 
 MIT
