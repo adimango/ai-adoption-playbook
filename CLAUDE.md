@@ -141,6 +141,8 @@ skills/
   <skill-name>/
     SKILL.md           # Main skill file (required)
     supporting-file.*  # Only if needed (scripts, templates)
+CONNECTORS.md          # Tool-agnostic connector categories (~~category placeholders)
+.mcp.json              # Pre-configured MCP servers (all optional)
 docs/
   BRIEFING.md          # Full framework context and design principles
 CLAUDE.md              # This file
