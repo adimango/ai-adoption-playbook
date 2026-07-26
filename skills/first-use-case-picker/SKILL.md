@@ -200,10 +200,10 @@ After the use case is picked:
 
 | Situation | Recommended next skill |
 |-----------|----------------------|
-| Founder wants a full rollout plan | `90-day-plan-builder` |
+| Founder wants a full rollout plan | `data-readiness-check` |
 | Founder needs board-ready story | `board-narrative-coach` |
 | Founder wants to understand cost/benefit | `roi-calculator` |
-| Default | `90-day-plan-builder` |
+| Default | `data-readiness-check` |
 
 ## Department Profiles
 
@@ -253,4 +253,5 @@ A team buried in meetings will score "Meeting summaries with action items" highe
 
 - `fluency-assessment` — provides the scorecard that informs use case selection
 - `blocker-diagnosis` — identifies which barriers the use case must avoid triggering
-- `90-day-plan-builder` — most common next step, builds the rollout plan around the chosen use case
+- `data-readiness-check` — most common next step, checks whether the chosen use case's data is usable before the rollout plan gets built
+- `90-day-plan-builder` — receives the plan after data readiness is confirmed
