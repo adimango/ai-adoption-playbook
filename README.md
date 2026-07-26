@@ -34,6 +34,7 @@ The playbook picks the right diagnostic for you and takes over. If you'd rather 
 | `board-ai-update` | Board-ready narrative with specific numbers |
 | `tool-stack-audit` | What you pay for vs. what gets used |
 | `roi-calculator` | Quantified impact across four dimensions — cost efficiency, revenue optimization, new revenue, and capacity gained (revenue per FTE) |
+| `data-readiness-check` | Whether the data behind a chosen use case is actually usable, before committing to a plan |
 
 ### Interactive Skills
 | Skill | What it does |
