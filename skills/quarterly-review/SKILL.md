@@ -1,6 +1,7 @@
 ---
 name: quarterly-review
 description: Use when a founder has completed at least one adoption cycle and needs to reassess progress, compare to the previous scorecard, and prepare the next board update
+argument-hint: "<previous scorecard file or pasted text>"
 ---
 
 # Quarterly Review
@@ -10,6 +11,16 @@ description: Use when a founder has completed at least one adoption cycle and ne
 Re-runs the fluency assessment, compares to the previous scorecard, identifies what moved and what didn't, and produces the next board update. This is the ongoing cadence skill — run it every quarter to keep adoption on track and the board informed.
 
 **Core principle:** Measure the delta, not just the current state. The board wants to see trajectory, not a snapshot.
+
+## Context Intake
+
+> Unfamiliar `~~category` placeholders? See [CONNECTORS.md](../../CONNECTORS.md) for connected-tool categories.
+
+Accept the input artifact in any form: a file path, pasted text, an attachment, or output from a skill run earlier in this conversation. If `~~cloud storage` is connected, offer to fetch it from there.
+
+If no previous scorecard is provided, check `adoption.local.md` for a `Previous scorecards:` entry matching the department this review covers, before falling back to the existing rule (no previous scorecard → run `full-adoption-cycle` instead). In multi-department setups, compare like with like — never diff this quarter's Engineering scorecard against last quarter's Sales one.
+
+For `Department:` and `Currency:`, use the first available source: the scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD). If the config lists multiple departments or `whole org` and no scorecard pins this run to one, confirm which department (or org-wide/Generic) before producing numbers.
 
 ## Flow
 

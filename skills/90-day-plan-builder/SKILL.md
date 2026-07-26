@@ -11,6 +11,10 @@ Builds a phased AI adoption rollout plan with named owners, concrete milestones,
 
 **Core principle:** A plan without named owners and dates is a wish list. Every action in this plan has a who and a when.
 
+## Context Intake
+
+For `Department:` and `Currency:`, use the first available source: the current fluency scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD).
+
 ## Flow
 
 ```dot

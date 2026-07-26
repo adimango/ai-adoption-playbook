@@ -1,6 +1,7 @@
 ---
 name: board-ai-update
 description: Use when a founder needs to draft the AI section of a board update and already has results data — produces the formatted update, not the rehearsal
+argument-hint: "<scorecard / plan / results file or pasted text>"
 ---
 
 # Board AI Update
@@ -10,6 +11,16 @@ description: Use when a founder needs to draft the AI section of a board update 
 Template for the AI section of a board update. Takes results data and produces a tight, number-filled narrative. This is the template — `board-narrative-coach` is the skill that rehearses and pressure-tests before drafting.
 
 **Core principle:** Every paragraph has a number. No number, no paragraph.
+
+## Context Intake
+
+> Unfamiliar `~~category` placeholders? See [CONNECTORS.md](../../CONNECTORS.md) for connected-tool categories.
+
+Accept the input artifact in any form: a file path, pasted text, an attachment, or output from a skill run earlier in this conversation. If `~~cloud storage` is connected, offer to fetch it from there.
+
+If no artifact is provided: this skill builds on the fluency scorecard — offer to run `fluency-assessment` first, or proceed with the leader's verbal answers, clearly marking the output as based on self-reported data.
+
+For `Department:` and `Currency:`, use the first available source: the scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD). If the config lists multiple departments or `whole org` and no scorecard pins this run to one, confirm which department (or org-wide/Generic) before producing numbers.
 
 ## Process
 

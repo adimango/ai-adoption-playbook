@@ -11,6 +11,10 @@ Produces a one-page adoption snapshot with hard numbers — who's using what, ho
 
 **Core principle:** Adoption is behavior change, not tool access. This scorecard measures what people actually do, not what licenses they have.
 
+## Context Intake
+
+For `Department:` and `Currency:`, use the first available source: the current fluency scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD).
+
 ## Process
 
 <HARD-GATE>

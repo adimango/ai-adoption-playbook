@@ -11,6 +11,10 @@ Two-phase skill: first, roleplay as a skeptical board member to stress-test the 
 
 **Core principle:** If you can't defend it to a skeptical VC, don't put it in the board update. Rehearse first, draft second.
 
+## Context Intake
+
+For `Department:` and `Currency:`, use the first available source: the current fluency scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD).
+
 ## Flow
 
 ```dot

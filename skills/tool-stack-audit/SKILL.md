@@ -11,6 +11,10 @@ Structured audit of a team's AI tools: what they have, what's used, what's waste
 
 **Core principle:** Audit what you have before buying what you don't. Most teams have more tools than they use and more overlap than they realize.
 
+## Context Intake
+
+For `Department:` and `Currency:`, use the first available source: the current fluency scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD).
+
 ## Process
 
 <HARD-GATE>

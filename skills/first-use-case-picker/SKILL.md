@@ -11,6 +11,10 @@ Helps a founder choose the right first AI use case for their team. The goal is m
 
 **Core principle:** The first use case isn't about productivity. It's about proof. Pick the one that creates believers.
 
+## Context Intake
+
+For `Department:` and `Currency:`, use the first available source: the current fluency scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD).
+
 ## Flow
 
 ```dot

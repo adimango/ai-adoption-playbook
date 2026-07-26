@@ -1,6 +1,7 @@
 ---
 name: roi-calculator
 description: Use when a founder needs to calculate or present the ROI of AI tool adoption — typically before a board meeting or when justifying continued investment
+argument-hint: "<fluency scorecard file or pasted text>"
 ---
 
 # ROI Calculator
@@ -10,6 +11,16 @@ description: Use when a founder needs to calculate or present the ROI of AI tool
 Produces a board-ready ROI calculation from the founder's actual data — not industry benchmarks. Separates ROI into four dimensions (cost efficiency, revenue optimization, new revenue, capacity gained) so the founder can tell a complete story. This is a calculation tool, not a strategy session.
 
 **Core principle:** Use the founder's real numbers. If a number is estimated, label it as estimated. Never substitute industry averages for missing data — flag the gap instead.
+
+## Context Intake
+
+> Unfamiliar `~~category` placeholders? See [CONNECTORS.md](../../CONNECTORS.md) for connected-tool categories.
+
+Accept the input artifact in any form: a file path, pasted text, an attachment, or output from a skill run earlier in this conversation. If `~~cloud storage` is connected, offer to fetch it from there.
+
+If no artifact is provided: this skill builds on the fluency scorecard — offer to run `fluency-assessment` first, or proceed with the leader's verbal answers, clearly marking the output as based on self-reported data.
+
+For `Department:` and `Currency:`, use the first available source: the scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD). If the config lists multiple departments or `whole org` and no scorecard pins this run to one, confirm which department (or org-wide/Generic) before producing numbers.
 
 ## Four ROI Dimensions
 

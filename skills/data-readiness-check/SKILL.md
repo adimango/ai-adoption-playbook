@@ -11,6 +11,10 @@ Structured audit of whether the data behind one specific AI use case is usable: 
 
 **Core principle:** Audit the use case's actual data needs, not data in general. A generic data-quality assessment doesn't map to a decision; this does.
 
+## Context Intake
+
+For `Department:` and `Currency:`, use the first available source: the current fluency scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD).
+
 ## Process
 
 <HARD-GATE>

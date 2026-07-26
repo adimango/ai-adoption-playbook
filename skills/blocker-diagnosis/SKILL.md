@@ -1,6 +1,7 @@
 ---
 name: blocker-diagnosis
 description: Use when AI adoption has stalled and the founder needs to understand specifically what's blocking their team — goes deeper than the fluency assessment to identify root causes per pillar
+argument-hint: "<fluency scorecard file or pasted text>"
 ---
 
 # Blocker Diagnosis
@@ -10,6 +11,16 @@ description: Use when AI adoption has stalled and the founder needs to understan
 Deep-dive diagnostic that identifies the specific blockers preventing AI adoption, maps each to a pillar, and distinguishes surface complaints from root causes. Chains from fluency-assessment when scores are low. Produces a structured blocker report — not an action plan.
 
 **Core principle:** Name the real blocker, not the excuse. "It doesn't work" is never the real answer. This skill digs until it finds what's actually stuck.
+
+## Context Intake
+
+> Unfamiliar `~~category` placeholders? See [CONNECTORS.md](../../CONNECTORS.md) for connected-tool categories.
+
+Accept the input artifact in any form: a file path, pasted text, an attachment, or output from a skill run earlier in this conversation. If `~~cloud storage` is connected, offer to fetch it from there.
+
+If no artifact is provided: this skill builds on the fluency scorecard — offer to run `fluency-assessment` first, or proceed with the leader's verbal answers, clearly marking the output as based on self-reported data.
+
+For `Department:` and `Currency:`, use the first available source: the scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD). If the config lists multiple departments or `whole org` and no scorecard pins this run to one, confirm which department (or org-wide/Generic) before producing numbers.
 
 ## Flow
 
