@@ -12,6 +12,8 @@ Template for the AI section of a board update. Takes results data and produces a
 
 **Core principle:** Every paragraph has a number. No number, no paragraph.
 
+**Important:** This skill helps leaders calculate and present their own numbers — it does not audit or guarantee them. Figures going to a board, CFO, or investor should be validated by the company's finance owner first.
+
 ## Context Intake
 
 > Unfamiliar `~~category` placeholders? See [CONNECTORS.md](../../CONNECTORS.md) for connected-tool categories.

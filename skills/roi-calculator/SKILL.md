@@ -12,6 +12,8 @@ Produces a board-ready ROI calculation from the founder's actual data — not in
 
 **Core principle:** Use the founder's real numbers. If a number is estimated, label it as estimated. Never substitute industry averages for missing data — flag the gap instead.
 
+**Important:** This skill helps leaders calculate and present their own numbers — it does not audit or guarantee them. Figures going to a board, CFO, or investor should be validated by the company's finance owner first.
+
 ## Context Intake
 
 > Unfamiliar `~~category` placeholders? See [CONNECTORS.md](../../CONNECTORS.md) for connected-tool categories.
