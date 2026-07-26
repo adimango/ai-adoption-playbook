@@ -16,37 +16,24 @@ Builds a phased AI adoption rollout plan with named owners, concrete milestones,
 ```dot
 digraph plan {
     "Review prior artifacts" [shape=box];
-    "Which track?" [shape=diamond];
     "Discovery questions (4-6 Qs)" [shape=box];
     "Build Phase 1: Pilot (Days 1-30)" [shape=box];
     "Build Phase 2: Expand (Days 31-60)" [shape=box];
     "Build Phase 3: Prove (Days 61-90)" [shape=box];
-    "Review Layer discovery questions" [shape=box];
-    "Build Phase 1: Governance (Days 1-30)" [shape=box];
-    "Build Phase 2: Rollout Review (Days 31-60)" [shape=box];
-    "Build Phase 3: Guardrails (Days 61-90)" [shape=box];
     "Founder reviews each phase" [shape=diamond];
     "Adjust" [shape=box];
     "Produce final plan" [shape=box];
     "Route to next skill" [shape=doublecircle];
 
-    "Review prior artifacts" -> "Which track?";
-    "Which track?" -> "Discovery questions (4-6 Qs)" [label="fluency scorecard"];
-    "Which track?" -> "Review Layer discovery questions" [label="reporting-readiness scorecard, Risk Posture gap"];
+    "Review prior artifacts" -> "Discovery questions (4-6 Qs)";
     "Discovery questions (4-6 Qs)" -> "Build Phase 1: Pilot (Days 1-30)";
     "Build Phase 1: Pilot (Days 1-30)" -> "Founder reviews each phase";
-    "Review Layer discovery questions" -> "Build Phase 1: Governance (Days 1-30)";
-    "Build Phase 1: Governance (Days 1-30)" -> "Founder reviews each phase";
     "Founder reviews each phase" -> "Adjust" [label="change needed"];
-    "Founder reviews each phase" -> "Build Phase 2: Expand (Days 31-60)" [label="approved, Adoption track"];
-    "Founder reviews each phase" -> "Build Phase 2: Rollout Review (Days 31-60)" [label="approved, Review Layer track"];
+    "Founder reviews each phase" -> "Build Phase 2: Expand (Days 31-60)" [label="approved"];
     "Adjust" -> "Founder reviews each phase";
     "Build Phase 2: Expand (Days 31-60)" -> "Founder reviews each phase";
-    "Build Phase 2: Rollout Review (Days 31-60)" -> "Founder reviews each phase";
-    "Founder reviews each phase" -> "Build Phase 3: Prove (Days 61-90)" [label="approved, Adoption track"];
-    "Founder reviews each phase" -> "Build Phase 3: Guardrails (Days 61-90)" [label="approved, Review Layer track"];
+    "Founder reviews each phase" -> "Build Phase 3: Prove (Days 61-90)" [label="approved"];
     "Build Phase 3: Prove (Days 61-90)" -> "Produce final plan";
-    "Build Phase 3: Guardrails (Days 61-90)" -> "Produce final plan";
     "Produce final plan" -> "Route to next skill";
 }
 ```
@@ -61,24 +48,13 @@ digraph plan {
 5. Every action must have a named owner (role, not "the team") and a timeframe (week, not "soon").
 </HARD-GATE>
 
-### Step 1: Review Prior Artifacts and Pick a Track
+### Step 1: Review Prior Artifacts
 
-This skill builds two kinds of plan. Check which artifact the founder is arriving with:
-
-- **Fluency scorecard** (from `fluency-assessment`, plus blocker report and use case brief) → build the **Adoption Track**: continue with Step 2 below (pilot → expand → prove).
-- **Reporting-readiness scorecard** (from `reporting-readiness-assessment`) with **Risk Posture as the weak pillar** → build the **Review Layer Track**: skip to the "Review Layer Track" section below instead of Step 2 (governance → rollout review → guardrails).
-
-**For the Adoption Track**, reference the fluency scorecard, blocker report, and use case brief. Summarize what you're building from:
+Reference the fluency scorecard, blocker report, and use case brief. Summarize what you're building from:
 
 > "Here's what I'm working with from your previous sessions: [scorecard summary], [top blockers], [chosen use case]. I need a few more details to build a plan that actually fits your team."
 
 If prior artifacts are missing, ask the founder to summarize their scores, blockers, and chosen use case before proceeding.
-
-**For the Review Layer Track**, reference the reporting-readiness scorecard. Summarize what you're building from:
-
-> "Here's what I'm working with: your reporting-readiness scorecard shows Risk Posture at [X]/5, and [key finding from the scorecard]. I need a few more details to build a plan that closes that gap."
-
-Then go to the "Review Layer Track" section below instead of continuing to Step 2.
 
 ### Step 2: Discovery Questions
 
@@ -144,6 +120,53 @@ Phase 3 must:
 ### Step 6: Produce Final Plan
 
 After founder approves all three phases, produce the complete plan in the Output format below.
+
+## Review Layer Track
+
+Use this track instead of Steps 2-6 above when the founder arrives with a `reporting-readiness-assessment` scorecard showing Risk Posture as the weak pillar. Same mechanics as the Adoption Track — phased, named owners, metrics, founder approves each phase before the next — different content.
+
+### Discovery Questions
+
+Ask one at a time. Reuse from the founder's context where already known:
+
+- **Board timing:** "When is your next board meeting? That's our deadline for having results to show."
+- **Governance owner:** "Who would own deciding what 'correct' means for your riskiest AI use case — not you, someone with the authority and time to make that call?"
+- **Weakest use case:** "Which of your AI use cases reaches its audience — customer-facing or internal, like a finance report — with zero human review today? That's where Phase 1 starts."
+- **Capacity:** "How many hours per week can the governance owner realistically dedicate?"
+- **Budget:** "Do you have budget flexibility for review tooling, or does anything above a threshold need approval?"
+- **Board format:** "When your board asks about AI risk, what format do they expect? Narrative? Slides? Data table?"
+- **Prior attempts:** "Has anything been tried before that we need to avoid repeating?"
+
+### Review Layer Phase 1 (Days 1-30) — Governance
+
+Present Phase 1 to the founder. This phase must:
+- Name the governance owner for the highest-risk use case identified in discovery
+- Write down what "correct" means for that use case — a definition, not tribal knowledge
+- Confirm or assign its risk tier if not already done
+- Set a baseline: how many AI outputs — customer-facing or internal — currently ship with zero human review?
+- Define what success looks like at Day 30
+
+| Week | Action | Owner | Done when |
+|------|--------|-------|-----------|
+| 1 | [Specific action] | [Named role] | [Concrete deliverable] |
+| ... | ... | ... | ... |
+
+Present this to the founder: "Here's what Month 1 looks like. Does this feel right, or should we adjust?"
+
+### Review Layer Phase 2 (Days 31-60) — Rollout Review
+
+Phase 2 must:
+- Build a sign-off step before the target use case's output reaches whoever relies on it — customer or internal team (name who tests, who approves)
+- Start an audit/incident log if none exists
+- Begin tracking how often the sign-off step actually catches something
+
+### Review Layer Phase 3 (Days 61-90) — Guardrails
+
+Phase 3 must:
+- Add a human-review gate for irreversible actions on the target use case (refunds, account changes, outbound messages, financial postings, or similar)
+- Build and document a kill switch — a way to turn off the AI feature immediately if it misbehaves
+- Start spot-checking reviewer quality
+- Consolidate governance + rollout review + guardrails status into a board narrative
 
 ## Anti-Patterns
 
