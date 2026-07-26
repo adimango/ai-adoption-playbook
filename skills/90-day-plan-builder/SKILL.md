@@ -400,8 +400,9 @@ Status reflects against the plan, not against zero. A phase can be "below plan" 
 
 ## References
 
-- `fluency-assessment` — provides the scorecard that frames the starting position
-- `blocker-diagnosis` — identifies what Phase 1 must address
-- `first-use-case-picker` — defines the use case the plan is built around
+- `fluency-assessment` — provides the scorecard that frames the starting position (Adoption Track)
+- `blocker-diagnosis` — identifies what Phase 1 must address (Adoption Track)
+- `first-use-case-picker` — defines the use case the plan is built around (Adoption Track)
+- `reporting-readiness-assessment` — provides the scorecard that triggers the Review Layer Track, when Risk Posture is the weak pillar
 - `board-narrative-coach` — most common next step, rehearses and drafts the board update
-- `full-adoption-cycle` — orchestrates this skill as the fourth step in the complete sequence
+- `full-adoption-cycle` — orchestrates this skill as the fourth step in the complete sequence (Adoption Track)
