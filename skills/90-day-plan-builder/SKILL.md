@@ -16,24 +16,37 @@ Builds a phased AI adoption rollout plan with named owners, concrete milestones,
 ```dot
 digraph plan {
     "Review prior artifacts" [shape=box];
+    "Which track?" [shape=diamond];
     "Discovery questions (4-6 Qs)" [shape=box];
     "Build Phase 1: Pilot (Days 1-30)" [shape=box];
     "Build Phase 2: Expand (Days 31-60)" [shape=box];
     "Build Phase 3: Prove (Days 61-90)" [shape=box];
+    "Review Layer discovery questions" [shape=box];
+    "Build Phase 1: Governance (Days 1-30)" [shape=box];
+    "Build Phase 2: Rollout Review (Days 31-60)" [shape=box];
+    "Build Phase 3: Guardrails (Days 61-90)" [shape=box];
     "Founder reviews each phase" [shape=diamond];
     "Adjust" [shape=box];
     "Produce final plan" [shape=box];
     "Route to next skill" [shape=doublecircle];
 
-    "Review prior artifacts" -> "Discovery questions (4-6 Qs)";
+    "Review prior artifacts" -> "Which track?";
+    "Which track?" -> "Discovery questions (4-6 Qs)" [label="fluency scorecard"];
+    "Which track?" -> "Review Layer discovery questions" [label="reporting-readiness scorecard, Risk Posture gap"];
     "Discovery questions (4-6 Qs)" -> "Build Phase 1: Pilot (Days 1-30)";
     "Build Phase 1: Pilot (Days 1-30)" -> "Founder reviews each phase";
+    "Review Layer discovery questions" -> "Build Phase 1: Governance (Days 1-30)";
+    "Build Phase 1: Governance (Days 1-30)" -> "Founder reviews each phase";
     "Founder reviews each phase" -> "Adjust" [label="change needed"];
-    "Founder reviews each phase" -> "Build Phase 2: Expand (Days 31-60)" [label="approved"];
+    "Founder reviews each phase" -> "Build Phase 2: Expand (Days 31-60)" [label="approved, Adoption track"];
+    "Founder reviews each phase" -> "Build Phase 2: Rollout Review (Days 31-60)" [label="approved, Review Layer track"];
     "Adjust" -> "Founder reviews each phase";
     "Build Phase 2: Expand (Days 31-60)" -> "Founder reviews each phase";
-    "Founder reviews each phase" -> "Build Phase 3: Prove (Days 61-90)" [label="approved"];
+    "Build Phase 2: Rollout Review (Days 31-60)" -> "Founder reviews each phase";
+    "Founder reviews each phase" -> "Build Phase 3: Prove (Days 61-90)" [label="approved, Adoption track"];
+    "Founder reviews each phase" -> "Build Phase 3: Guardrails (Days 61-90)" [label="approved, Review Layer track"];
     "Build Phase 3: Prove (Days 61-90)" -> "Produce final plan";
+    "Build Phase 3: Guardrails (Days 61-90)" -> "Produce final plan";
     "Produce final plan" -> "Route to next skill";
 }
 ```
