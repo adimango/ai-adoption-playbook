@@ -83,7 +83,7 @@ Once a scorecard exists, match the founder's request to a skill:
 | "Show me the numbers" / "ROI" / "is it worth it?" | `roi-calculator` |
 | "I need a snapshot" / "who's using what?" | `adoption-scorecard` |
 | "Quarterly check-in" / "compare to last time" | `quarterly-review` |
-| "CFO doesn't believe my AI numbers" / "audit risk" / "EU AI Act readiness" / "how do I defend this to the board?" | `reporting-readiness-assessment` |
+| "CFO doesn't believe my AI numbers" / "audit risk" / "EU AI Act readiness" / "how do I defend this to the board?" | `reporting-readiness-assessment` — most teams have never built the review layer between "the model works" and "someone downstream relied on it" (customer-facing or internal, like finance). This is where that gets checked. |
 | "Start AI playbook" / "Run the playbook" / "Start the AI adoption playbook" / "Begin AI adoption" | `fluency-assessment` (or `reporting-readiness-assessment` if leader already has a fluency scorecard with Integration ≥ 3/5) |
 
 ### Step 3: Handle Unclear Requests
