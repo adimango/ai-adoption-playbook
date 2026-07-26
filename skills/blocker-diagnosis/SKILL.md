@@ -20,7 +20,7 @@ Accept the input artifact in any form: a file path, pasted text, an attachment, 
 
 If no artifact is provided: this skill builds on the fluency scorecard — offer to run `fluency-assessment` first, or proceed with the leader's verbal answers, clearly marking the output as based on self-reported data.
 
-For `Department:` and `Currency:`, use the first available source: the scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD). If the config lists multiple departments or `whole org` and no scorecard pins this run to one, confirm which department (or org-wide/Generic) before producing numbers.
+For `Department:` and `Currency:`, use the first available source: the scorecard → `adoption.local.md` (the department this run covers; by default the one marked `(primary)` — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD). If the config lists multiple departments or `whole org` and no scorecard pins this run to one, confirm which department (or org-wide/Generic) before producing numbers.
 
 ## Flow
 

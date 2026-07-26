@@ -20,7 +20,7 @@ Accept the input artifact in any form: a file path, pasted text, an attachment, 
 
 If no previous scorecard is provided, check `adoption.local.md` for a `Previous scorecards:` entry matching the department this review covers, before falling back to the existing rule (no previous scorecard → run `full-adoption-cycle` instead). In multi-department setups, compare like with like — never diff this quarter's Engineering scorecard against last quarter's Sales one.
 
-For `Department:` and `Currency:`, use the first available source: the scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD). If the config lists multiple departments or `whole org` and no scorecard pins this run to one, confirm which department (or org-wide/Generic) before producing numbers.
+For `Department:` and `Currency:`, use the first available source: the scorecard → `adoption.local.md` (the department this run covers; by default the one marked `(primary)` — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD). If the config lists multiple departments or `whole org` and no scorecard pins this run to one, confirm which department (or org-wide/Generic) before producing numbers.
 
 ## Flow
 

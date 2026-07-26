@@ -233,7 +233,7 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 - Higher score = better fluency (fewer barriers, better integration, stronger ownership).
 - **Score behavior, not access.** Having licenses is not adoption. People logging in is not adoption. Adoption means the work has actually changed.
 
-Produce the scorecard using the Output format below.
+Produce the scorecard using the Output format below. Classify each pillar into its tier — GREEN (4–5), YELLOW (2–3), RED (0–1) — per `## Score Interpretation`, and state the tier explicitly when presenting each score.
 
 ### Step 5: Offer Team Survey + Optional Deep-Dive
 
@@ -254,7 +254,7 @@ After presenting the scorecard:
 
 ### Step 6: Route to Next Skill
 
-Based on the scorecard, recommend ONE next step. See the Next Skill section below.
+Based on the scorecard, recommend ONE next step. See the Next Skill section below. Apply `## Score Interpretation` when routing: any RED pillar goes to `blocker-diagnosis` on that pillar before any use-case or planning skill.
 
 ## Deep-Dive Probes
 
@@ -356,12 +356,12 @@ After all questions, produce the scorecard in this exact format:
 
 ### Scores (1-5 scale)
 
-| Pillar | Score | One-line summary |
-|--------|:-----:|------------------|
-| Psychological Barriers | X/5 | [key finding] |
-| Integration Failures | X/5 | [key finding] |
-| Ownership Gaps | X/5 | [key finding] |
-| **Overall** | **X/5** | **[overall status]** |
+| Pillar | Score | Tier | One-line summary |
+|--------|:-----:|:----:|------------------|
+| Psychological Barriers | X/5 | [GREEN/YELLOW/RED] | [key finding] |
+| Integration Failures | X/5 | [GREEN/YELLOW/RED] | [key finding] |
+| Ownership Gaps | X/5 | [GREEN/YELLOW/RED] | [key finding] |
+| **Overall** | **X/5** | — | **[overall status]** |
 
 ### Fluency Levels
 - **1** — No awareness or action. Team has access but hasn't engaged.

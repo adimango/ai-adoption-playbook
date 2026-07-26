@@ -13,7 +13,7 @@ Structured audit of whether the data behind one specific AI use case is usable: 
 
 ## Context Intake
 
-For `Department:` and `Currency:`, use the first available source: the current fluency scorecard → `adoption.local.md` (the department this run covers; primary by default — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD).
+For `Department:` and `Currency:`, use the first available source: the current fluency scorecard → `adoption.local.md` (the department this run covers; by default the one marked `(primary)` — see CLAUDE.md Local Configuration) → ask the leader (currency defaults to USD).
 
 ## Process
 

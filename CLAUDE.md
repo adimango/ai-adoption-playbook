@@ -71,9 +71,9 @@ Format (all fields optional):
 - Previous scorecards: Engineering: <path or paste>; Sales: <path or paste>
 ```
 
-**Scope:** the playbook runs per department. `Departments:` may name one department, several (mark one `(primary)`), or `whole org`. With several, each run covers one department — the primary unless the leader says otherwise — and the cycle is re-run per department, each with its own scorecard. `whole org` maps to the Generic profile unless the leader narrows a given run to a specific department.
+**Scope:** the playbook runs per department. `Departments:` may name one department, several — append `(primary)` directly after the primary department (e.g., `Sales (primary)` makes Sales the primary), or `whole org`. With several, each run covers one department — the primary unless the leader says otherwise — and the cycle is re-run per department, each with its own scorecard. `whole org` maps to the Generic profile unless the leader narrows a given run to a specific department.
 
-**Precedence:** a scorecard produced this cycle always wins. The fallback order for `Department:` and `Currency:` is: current scorecard → `adoption.local.md` (the department this run covers; primary by default) → ask the leader (currency defaults to USD). `fluency-assessment` reads the config to pre-fill answers (confirming, not skipping, its questions). Skills never write this file without asking.
+**Precedence:** a scorecard produced this cycle always wins. The fallback order for `Department:` and `Currency:` is: current scorecard → `adoption.local.md` (the department this run covers; by default the one marked `(primary)`) → ask the leader (currency defaults to USD). `fluency-assessment` reads the config to pre-fill answers (confirming, not skipping, its questions). Skills never write this file without asking.
 
 ## Deliverable Output Conventions
 
