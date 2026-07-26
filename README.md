@@ -2,7 +2,15 @@
 
 *From "we're exploring AI" to board-ready results.*
 
-A skills framework for leaders responsible for AI adoption — founders, CTOs, CAIOs, VPs of Engineering, VPs of Sales, COOs, heads of Marketing or Operations, consultants, PE operating partners, or anyone who needs to show the board that AI investment is producing results.
+A skills framework for leaders responsible for AI adoption — a consulting methodology in agent-readable skills, not a coding tool.
+
+## Who It's For
+
+- **Founders & CTOs** — the board is asking about AI strategy; you need structured answers with numbers
+- **VPs / Directors of Engineering** — "AI adoption" landed on your OKRs; you need to move 50–200 engineers
+- **Chief AI Officers & fractional CAIOs** — you need a repeatable framework across teams or clients
+- **COOs at non-tech companies** — no CTO exists; AI adoption landed on your desk
+- **Consultants & PE operating partners** — you need a structured diagnostic and planning method for engagements
 
 <p align="center">
   <img src="assets/cowork.png" alt="AI Adoption Playbook running in Claude Cowork" width="800">
@@ -13,6 +21,8 @@ A skills framework for leaders responsible for AI adoption — founders, CTOs, C
 Leadership asks "what's your AI strategy?" You bought tool licenses. You told the team to use them. Nothing happened. Next board meeting, you say "we're exploring AI." The board is unimpressed. Repeat.
 
 This playbook breaks that loop with a structured process: diagnose what's stuck, build a plan with owners and milestones, and produce board-ready updates with real numbers.
+
+> **Note:** The playbook helps you calculate and defend your own numbers — it never invents them. Validate figures with your finance owner before they reach a board.
 
 ## Quick Start
 
@@ -73,6 +83,47 @@ The `fluency-assessment` diagnoses which pillars are blocking you. Other skills 
 The `reporting-readiness-assessment` diagnoses Stage 2. `roi-calculator`, `board-ai-update`, and `90-day-plan-builder` (Review Layer track) close the gaps it surfaces.
 
 Works for engineering, sales, and other functional teams — the playbook detects your team type at the start and adapts its probes, examples, and metrics accordingly.
+
+## Example Workflows
+
+### Board meeting in three weeks, nothing to show
+
+1. Say **"Start AI playbook"** — the fluency assessment runs (20–30 min, one question at a time)
+2. Get your scorecard: three pillar scores, each GREEN / YELLOW / RED
+3. `blocker-diagnosis` digs into the RED pillar; `first-use-case-picker` finds a win achievable in 2–4 weeks
+4. `data-readiness-check` verifies the data behind that use case is actually usable; `90-day-plan-builder` then produces the plan with named owners and board-cycle milestones
+5. `board-narrative-coach` grills you with skeptical-VC questions, then drafts the update you'll actually present
+
+### CFO doesn't believe your AI numbers
+
+1. Say **"My CFO doesn't believe my AI numbers"** — the Stage 2 reporting-readiness assessment runs
+2. Get scored on outcome rigor, risk posture, and board defensibility — including what's safe to present and what isn't
+3. `roi-calculator` rebuilds your numbers with documented methodology and ranges instead of point estimates
+4. `board-ai-update` formats the result into the narrative
+
+### Next quarter
+
+1. Say **"Run my quarterly AI review"** — `quarterly-review` re-assesses and compares against last quarter's scorecard
+2. Get the delta: what moved, what didn't, and the next board update drafted from real movement
+
+## Customization
+
+Persist your company context in an `adoption.local.md` file so skills stop re-asking for it — company name, departments, currency, board cadence, tool stack. Save it in any folder shared with Cowork, or in `.claude/` for Claude Code:
+
+```markdown
+# AI Adoption Playbook Configuration
+
+- Company: Acme GmbH
+- Departments: Engineering (primary), Sales   # one department, several, or "whole org"
+- Currency: EUR                               # USD / EUR / GBP / other
+- Company size: 120 employees, 45 in Engineering
+- Board cadence: quarterly, next meeting 2026-09-15
+- AI tools in use: GitHub Copilot (30 seats), ChatGPT Team (15 seats)
+```
+
+The playbook runs one department at a time (each gets its own scorecard and plan). List several departments and it works through them in cycles, starting with the primary; put `whole org` and it runs org-wide.
+
+Optionally connect your tools via MCP (Slack, Box, Atlassian pre-configured) — skills then replace self-reported numbers with observed ones. Every connector is optional; see [CONNECTORS.md](CONNECTORS.md).
 
 ## Installation
 
