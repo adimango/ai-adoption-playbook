@@ -36,13 +36,15 @@ jobs:
           body: |
             ## For Claude Cowork users (non-technical install)
 
-            1. Download `ai-adoption-playbook.zip` below.
-            2. Open Claude Desktop, switch to the Cowork tab.
-            3. Click Plugins in the sidebar, then the + button, then Upload.
-            4. Select the downloaded `ai-adoption-playbook.zip`.
+            1. Open Claude Desktop and switch to the Cowork tab.
+            2. Click Plugins in the sidebar, then the + button, then Add marketplace.
+            3. Paste the repo URL: https://github.com/adimango/ai-adoption-playbook
+            4. Install ai-adoption-playbook from the marketplace list.
             5. Trigger the playbook by saying one of:
                - "My board is asking about our AI strategy" (Stage 1)
                - "My CFO doesn't believe my AI numbers" (Stage 2)
+
+            Alternative: download `ai-adoption-playbook.zip` below and upload it via Plugins → + → Upload.
 
             ## For Claude Code users (technical install)
 
