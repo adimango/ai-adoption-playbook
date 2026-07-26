@@ -47,6 +47,13 @@ digraph fluency {
 
 ## Process
 
+### Step 0: Load Configuration
+
+Before the first question, look for an `adoption.local.md` file (in Cowork: any shared folder; in Claude Code: the project's `.claude/` directory).
+
+- **Found:** confirm instead of re-asking — "I have your setup on file: [Company], reporting in [Currency]. Still right?" Then resolve scope: if `Departments:` lists one department, pre-fill Q3 with it; if it lists several, ask which department this run covers (default: the one marked `(primary)`); if it says `whole org`, confirm whether this run is org-wide (Generic profile) or focused on one department. Pre-fill the currency (Q4) answer from the config, but still walk through every assessment question — the config stores context, not diagnosis.
+- **Not found:** proceed normally. After producing the scorecard, offer once: "Want me to save your company context to `adoption.local.md` so you don't repeat this next quarter?" Create it only if the leader says yes.
+
 <HARD-GATE>
 1. Ask ONE question at a time. Never batch questions.
 2. Wait for the leader's actual answer before proceeding. Never simulate or assume answers.

@@ -50,6 +50,31 @@ This applies to ALL skills in this plugin. Short names in documentation are for 
 6. `reporting-readiness-assessment` routes a Risk Posture gap to `90-day-plan-builder`'s Review Layer track, not `quarterly-review` — governance, rollout review, and guardrails need named owners and dates, not a re-score.
 7. `data-readiness-check` runs between `first-use-case-picker` and `90-day-plan-builder`. Its verdict branches: Ready or Gap-only routes to `90-day-plan-builder` (Gap adds a Phase 0); any Blocker routes back to `first-use-case-picker` to pick a different use case.
 
+## Local Configuration (adoption.local.md)
+
+Leaders can persist company context in an `adoption.local.md` file so skills stop re-asking for it:
+
+- **Cowork**: saved in any folder shared with Cowork
+- **Claude Code**: saved in the project's `.claude/` directory
+
+Format (all fields optional):
+
+```markdown
+# AI Adoption Playbook Configuration
+
+- Company: Acme GmbH
+- Departments: Engineering (primary), Sales   # one department, several with a (primary), or "whole org"
+- Currency: EUR                               # USD / EUR / GBP / other
+- Company size: 120 employees, 45 in Engineering
+- Board cadence: quarterly, next meeting 2026-09-15
+- AI tools in use: GitHub Copilot (30 seats), ChatGPT Team (15 seats)
+- Previous scorecards: Engineering: <path or paste>; Sales: <path or paste>
+```
+
+**Scope:** the playbook runs per department. `Departments:` may name one department, several (mark one `(primary)`), or `whole org`. With several, each run covers one department — the primary unless the leader says otherwise — and the cycle is re-run per department, each with its own scorecard. `whole org` maps to the Generic profile unless the leader narrows a given run to a specific department.
+
+**Precedence:** a scorecard produced this cycle always wins. The fallback order for `Department:` and `Currency:` is: current scorecard → `adoption.local.md` (the department this run covers; primary by default) → ask the leader (currency defaults to USD). `fluency-assessment` reads the config to pre-fill answers (confirming, not skipping, its questions). Skills never write this file without asking.
+
 ## Deliverable Output Conventions
 
 Every skill that produces a saved deliverable (scorecard, plan, report, narrative) follows the same naming and branding convention.
