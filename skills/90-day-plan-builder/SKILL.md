@@ -16,24 +16,37 @@ Builds a phased AI adoption rollout plan with named owners, concrete milestones,
 ```dot
 digraph plan {
     "Review prior artifacts" [shape=box];
+    "Which track?" [shape=diamond];
     "Discovery questions (4-6 Qs)" [shape=box];
     "Build Phase 1: Pilot (Days 1-30)" [shape=box];
     "Build Phase 2: Expand (Days 31-60)" [shape=box];
     "Build Phase 3: Prove (Days 61-90)" [shape=box];
+    "Review Layer discovery questions" [shape=box];
+    "Build Phase 1: Governance (Days 1-30)" [shape=box];
+    "Build Phase 2: Rollout Review (Days 31-60)" [shape=box];
+    "Build Phase 3: Guardrails (Days 61-90)" [shape=box];
     "Founder reviews each phase" [shape=diamond];
     "Adjust" [shape=box];
     "Produce final plan" [shape=box];
     "Route to next skill" [shape=doublecircle];
 
-    "Review prior artifacts" -> "Discovery questions (4-6 Qs)";
+    "Review prior artifacts" -> "Which track?";
+    "Which track?" -> "Discovery questions (4-6 Qs)" [label="fluency scorecard"];
+    "Which track?" -> "Review Layer discovery questions" [label="reporting-readiness scorecard, Risk Posture gap"];
     "Discovery questions (4-6 Qs)" -> "Build Phase 1: Pilot (Days 1-30)";
     "Build Phase 1: Pilot (Days 1-30)" -> "Founder reviews each phase";
+    "Review Layer discovery questions" -> "Build Phase 1: Governance (Days 1-30)";
+    "Build Phase 1: Governance (Days 1-30)" -> "Founder reviews each phase";
     "Founder reviews each phase" -> "Adjust" [label="change needed"];
-    "Founder reviews each phase" -> "Build Phase 2: Expand (Days 31-60)" [label="approved"];
+    "Founder reviews each phase" -> "Build Phase 2: Expand (Days 31-60)" [label="approved, Adoption track"];
+    "Founder reviews each phase" -> "Build Phase 2: Rollout Review (Days 31-60)" [label="approved, Review Layer track"];
     "Adjust" -> "Founder reviews each phase";
     "Build Phase 2: Expand (Days 31-60)" -> "Founder reviews each phase";
-    "Founder reviews each phase" -> "Build Phase 3: Prove (Days 61-90)" [label="approved"];
+    "Build Phase 2: Rollout Review (Days 31-60)" -> "Founder reviews each phase";
+    "Founder reviews each phase" -> "Build Phase 3: Prove (Days 61-90)" [label="approved, Adoption track"];
+    "Founder reviews each phase" -> "Build Phase 3: Guardrails (Days 61-90)" [label="approved, Review Layer track"];
     "Build Phase 3: Prove (Days 61-90)" -> "Produce final plan";
+    "Build Phase 3: Guardrails (Days 61-90)" -> "Produce final plan";
     "Produce final plan" -> "Route to next skill";
 }
 ```
@@ -48,13 +61,24 @@ digraph plan {
 5. Every action must have a named owner (role, not "the team") and a timeframe (week, not "soon").
 </HARD-GATE>
 
-### Step 1: Review Prior Artifacts
+### Step 1: Review Prior Artifacts and Pick a Track
 
-Reference the fluency scorecard, blocker report, and use case brief. Summarize what you're building from:
+This skill builds two kinds of plan. Check which artifact the founder is arriving with:
+
+- **Fluency scorecard** (from `fluency-assessment`, plus blocker report and use case brief) → build the **Adoption Track**: continue with Step 2 below (pilot → expand → prove).
+- **Reporting-readiness scorecard** (from `reporting-readiness-assessment`) with **Risk Posture as the weak pillar** → build the **Review Layer Track**: skip to the "Review Layer Track" section below instead of Step 2 (governance → rollout review → guardrails).
+
+**For the Adoption Track**, reference the fluency scorecard, blocker report, and use case brief. Summarize what you're building from:
 
 > "Here's what I'm working with from your previous sessions: [scorecard summary], [top blockers], [chosen use case]. I need a few more details to build a plan that actually fits your team."
 
 If prior artifacts are missing, ask the founder to summarize their scores, blockers, and chosen use case before proceeding.
+
+**For the Review Layer Track**, reference the reporting-readiness scorecard. Summarize what you're building from:
+
+> "Here's what I'm working with: your reporting-readiness scorecard shows Risk Posture at [X]/5, and [key finding from the scorecard]. I need a few more details to build a plan that closes that gap."
+
+Then go to the "Review Layer Track" section below instead of continuing to Step 2.
 
 ### Step 2: Discovery Questions
 
