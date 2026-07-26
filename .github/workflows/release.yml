@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build plugin zip
         run: |
@@ -28,7 +28,7 @@ jobs:
           ls -lh ai-adoption-playbook.zip
 
       - name: Create release and attach zip
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           files: ai-adoption-playbook.zip
           generate_release_notes: true
