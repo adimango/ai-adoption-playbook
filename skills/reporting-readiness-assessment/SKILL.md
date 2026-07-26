@@ -70,6 +70,10 @@ Confirm the leader has run `fluency-assessment` and scored Integration ≥ 3/5. 
 
 ### Step 2: Context (2 questions)
 
+Before the questions, frame why this assessment exists:
+
+> "Most roadmaps assume Data → AI → Value — a straight line. In practice, the model is the easy part. What's usually missing is the layer between 'the model produced an answer' and 'someone downstream relied on it' — a customer, or an internal team like finance: who decided what counts as correct, who tested it, and what catches it when it's wrong. That's what this assessment checks — not just whether AI is being used, but whether anyone's watching what it produces."
+
 Get just enough context to interpret the answers. Ask one at a time:
 
 1. **"Who are you trying to defend your AI investment to — board, CFO, external auditor, investors, or several of these?"**
