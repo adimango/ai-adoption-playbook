@@ -182,6 +182,16 @@ After presenting the scorecard:
 
 Based on the scorecard, recommend ONE next step. See the Next Skill section below.
 
+## Score Interpretation
+
+Classify each pillar score and act per tier. State the tier explicitly when presenting results.
+
+| Tier | Pillar score | What it means | Action |
+|------|:---:|---|---|
+| GREEN | 4–5 | Board-defensible | Present it; `board-ai-update` can cite this pillar without caveats |
+| YELLOW | 2–3 | Defensible with caveats | Present with stated methodology gaps; close them via `roi-calculator` before next quarter |
+| RED | 0–1 | Not defensible | Do not put these numbers in front of a board or CFO yet — fix the methodology first, then re-assess |
+
 ## Deep-Dive Probes
 
 Use these ONLY if the leader opts for the deeper assessment on a specific pillar. Ask 3-4 questions from the relevant section.
