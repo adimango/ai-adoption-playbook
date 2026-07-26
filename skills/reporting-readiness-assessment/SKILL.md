@@ -206,21 +206,38 @@ Use these ONLY if the leader opts for the deeper assessment on a specific pillar
 
 ### Risk Posture Deep-Dive
 
+This pillar is what we call the review layer. Ask at least one question from each of the three sub-areas below — Governance, Rollout Review, Guardrails — 4-5 questions total. Don't skip a sub-area; each one surfaces a different kind of failure.
+
+**Governance** — who owns the call
+
 - Which of your AI use cases would be high-risk under EU AI Act Annex III (or equivalent local framework)?
+- For your highest-risk use case, who decides what "correct" looks like — and is it written down anywhere?
+
+**Rollout Review** — what happens before it reaches whoever relies on it
+
+- Before an AI-driven output reaches whoever acts on it — a customer, or an internal team like finance — what testing happens, and who signs off?
 - For each Tier 1 use case, who has reviewed the audit trail in the last 90 days?
+
+**Guardrails** — what catches it when it's wrong
+
 - When was your last AI incident? Can you describe what happened, root cause, and fix?
-- What's the difference between a Tier 2 and Tier 3 use case in your classification?
-- Has external counsel or a third-party auditor ever reviewed your AI compliance posture?
+- For irreversible actions (refunds, account changes, outbound messages, financial postings, numbers that feed a board or investor report), does a human review before it happens, or can the AI act alone?
+- Do you have a kill switch — a way to turn off an AI feature today if it starts misbehaving?
+- Who checks the quality of the humans reviewing AI output? Is reviewer performance itself monitored?
 
 **What you're listening for:**
 
 | Signal | Issue | Severity |
 |--------|-------|----------|
 | "We don't have Tier 1 use cases" but org uses AI in hiring | Misclassification | Critical |
+| "Nobody's really decided that" (re: what's correct) | No governance owner | Critical |
 | Silence on "last incident" | No incident tracking exists | High |
 | Tier definitions vary across team members | No documented criteria | High |
 | No external review ever conducted | Posture untested | Medium |
 | Tier 1 audit trail not reviewed in 90+ days | Stale governance | High |
+| "It just ships once it works" | No rollout review / sign-off step | Critical |
+| "We don't have anything like that" (re: kill switch) | No guardrail for bad output | Critical |
+| "We trust the reviewers" (re: monitoring reviewer quality) | Review layer has an unmonitored failure point | Medium |
 
 ### Board Defensibility Deep-Dive
 
