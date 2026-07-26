@@ -14,9 +14,11 @@ Every connector is optional. Skills that use connected sources check whether the
 |----------|-------------|------------------|---------------|----------|
 | Chat | `~~chat` | Slack | Microsoft Teams | Real adoption signals: who actually discusses AI tools, tool-help channels, sentiment |
 | Cloud storage | `~~cloud storage` | Box | Google Drive, Dropbox, SharePoint, Egnyte | Previous scorecards, plans, and board decks; saving deliverables |
-| Project tracker | `~~project tracker` | Atlassian (Jira/Confluence) | Linear, Asana | Engineering usage evidence: cycle time, ticket throughput for ROI baselines |
-| CRM | `~~CRM` | — | Salesforce, HubSpot | Sales usage evidence: deal cycle length, activity volume for ROI baselines |
-| Office suite | `~~office suite` | — | Microsoft 365, Google Workspace | Exporting board updates and plans as documents |
+| Project tracker | `~~project tracker` | Atlassian (Jira/Confluence), Linear, Asana | Monday.com | Engineering usage evidence: cycle time, ticket throughput for ROI baselines |
+| CRM | `~~CRM` | HubSpot | Salesforce | Sales usage evidence: deal cycle length, activity volume for ROI baselines |
+| Office suite | `~~office suite` | Microsoft 365 | Google Workspace | Exporting board updates and plans as documents |
+| Knowledge base | `~~knowledge base` | Notion | Confluence, Guru | Internal AI guidelines, adoption docs, previous plans and playbooks |
+| Product analytics | `~~product analytics` | PostHog | Amplitude, Mixpanel | Observed tool-usage data: active users, feature adoption for ROI evidence |
 
 ## What connectors change
 
