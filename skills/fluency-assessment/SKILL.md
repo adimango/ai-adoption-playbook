@@ -233,7 +233,7 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 - Higher score = better fluency (fewer barriers, better integration, stronger ownership).
 - **Score behavior, not access.** Having licenses is not adoption. People logging in is not adoption. Adoption means the work has actually changed.
 
-Produce the scorecard using the Output format below. Classify each pillar into its tier — GREEN (4–5), YELLOW (2–3), RED (0–1) — per `## Score Interpretation`, and state the tier explicitly when presenting each score.
+Produce the scorecard using the Output format below. Classify each pillar into its tier — GREEN (4–5), YELLOW (2–3), RED (1) — per `## Score Interpretation`, and state the tier explicitly when presenting each score.
 
 ### Step 5: Offer Team Survey + Optional Deep-Dive
 
@@ -393,7 +393,7 @@ Classify each pillar score and act per tier. State the tier explicitly when pres
 |------|:---:|---|---|
 | GREEN | 4–5 | Working — protect it | Note what's driving it in the scorecard; revisit at `quarterly-review` |
 | YELLOW | 2–3 | Underperforming but movable | Address inside the 90-day plan; `blocker-diagnosis` picks the specific fix |
-| RED | 0–1 | Blocking everything downstream | Fix first. Run `blocker-diagnosis` on this pillar before picking use cases — a plan built on a RED pillar fails |
+| RED | 1 | Blocking everything downstream | Fix first. Run `blocker-diagnosis` on this pillar before picking use cases — a plan built on a RED pillar fails |
 
 If two or more pillars are RED, say so plainly: adoption is not stalled, it hasn't started. Set that expectation before any planning skill runs.
 

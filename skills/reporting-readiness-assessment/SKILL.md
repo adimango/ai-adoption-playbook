@@ -292,7 +292,7 @@ Classify each pillar score and act per tier. State the tier explicitly when pres
 |------|:---:|---|---|
 | GREEN | 4–5 | Board-defensible | Present it; `board-ai-update` can cite this pillar without caveats |
 | YELLOW | 2–3 | Defensible with caveats | Present with stated methodology gaps; close them via `roi-calculator` before next quarter |
-| RED | 0–1 | Not defensible | Do not put these numbers in front of a board or CFO yet — fix the methodology first, then re-assess |
+| RED | 1 | Not defensible | Do not put these numbers in front of a board or CFO yet — fix the methodology first, then re-assess |
 
 ## Output
 
