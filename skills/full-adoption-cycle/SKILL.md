@@ -7,7 +7,7 @@ description: Use when a founder wants the complete AI adoption process from star
 
 ## Purpose
 
-Orchestrates the complete AI adoption sequence: assess, diagnose, pick a use case, build a plan, rehearse for the board. Each step produces an artifact that feeds the next. The founder ends with a scorecard, blocker report, use case brief, 90-day plan, and board narrative.
+Orchestrates the complete AI adoption sequence: assess, diagnose, pick a use case, build a plan, rehearse for the board. Each step produces an artifact that feeds the next. The founder ends with a scorecard, blocker report, use case brief, data readiness check, 90-day plan, and board narrative.
 
 **Core principle:** Run the skills in order. Each one depends on the previous output. Skipping steps means building on guesswork.
 
@@ -91,7 +91,7 @@ If the artifact is incomplete or outdated (more than 90 days old), recommend re-
 
 ### Forcing the Full Cycle
 **Symptom:** Founder clearly needs just one skill, but you push the full sequence.
-**Consequence:** Founder disengages. Not everyone needs all five steps.
+**Consequence:** Founder disengages. Not everyone needs all six steps.
 **Fix:** The full cycle is an option, not a mandate. If the founder has a board meeting tomorrow, go straight to `board-narrative-coach` with whatever data they have.
 
 ## Output
