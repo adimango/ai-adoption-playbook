@@ -42,7 +42,7 @@ The playbook picks the right diagnostic for you and takes over. If you'd rather 
 | `reporting-readiness-assessment` | Stage 2 — scores reporting maturity across three pillars (outcome rigor, risk posture, board defensibility) |
 | `blocker-diagnosis` | Deep dive into what's stuck and why |
 | `first-use-case-picker` | Finds the right starting point for maximum visible wins |
-| `90-day-plan-builder` | Phased rollout with board-cycle milestones |
+| `90-day-plan-builder` | Phased rollout with board-cycle milestones (Adoption track), or a governance/rollout-review/guardrails build-out (Review Layer track) |
 | `board-narrative-coach` | Practice with a skeptical VC, then draft the update |
 
 ### Workflow Skills
@@ -63,13 +63,13 @@ The playbook runs in two stages.
 
 The `fluency-assessment` diagnoses which pillars are blocking you. Other skills then fix them in an order that produces results.
 
-**Stage 2 — Reporting.** Once adoption is underway (Integration ≥ 3/5), the question shifts from "are we using AI?" to "can we defend the value to the board?" That's a different gap with three different pillars:
+**Stage 2 — Reporting.** Most roadmaps assume Data → AI → Value — a straight line. In practice, the model is the easy part. What's usually missing is the layer between "the model produced an answer" and "someone downstream relied on it" — a customer, or an internal team like finance: who decided what counts as correct, who tested it, and what catches it when it's wrong. Once adoption is underway (Integration ≥ 3/5), that gap — call it the review layer — is what Stage 2 checks for.
 
 1. **Outcome rigor** — cost methodology, speed baselines, revenue attribution
-2. **Risk posture** — tier classification, EU AI Act readiness, incident logging
+2. **Risk posture (the review layer)** — governance, rollout review, guardrails
 3. **Board defensibility** — reporting cadence, CFO-approved methodology, outcome vs activity discipline
 
-The `reporting-readiness-assessment` diagnoses Stage 2. `roi-calculator` and `board-ai-update` close the gaps it surfaces.
+The `reporting-readiness-assessment` diagnoses Stage 2. `roi-calculator`, `board-ai-update`, and `90-day-plan-builder` (Review Layer track) close the gaps it surfaces.
 
 Works for engineering, sales, and other functional teams — the playbook detects your team type at the start and adapts its probes, examples, and metrics accordingly.
 
