@@ -129,10 +129,10 @@ Optionally connect your tools via MCP (Slack, Box, Atlassian pre-configured) —
 
 ### For Claude Cowork (no technical setup)
 
-1. Download the latest `ai-adoption-playbook.zip` from the [Releases page](https://github.com/adimango/ai-adoption-playbook/releases).
-2. Open Claude Desktop and switch to the **Cowork** tab.
-3. Click **Plugins** in the sidebar, then the **+** button, then **Upload**.
-4. Select the downloaded `ai-adoption-playbook.zip`.
+1. Open Claude Desktop and switch to the **Cowork** tab.
+2. Click **Plugins** in the sidebar, then the **+** button, then **Add marketplace**.
+3. Paste the repo URL: `https://github.com/adimango/ai-adoption-playbook`
+4. Install **ai-adoption-playbook** from the marketplace list.
 
 Once installed, say one of the Quick Start phrases above and the playbook takes over.
 
