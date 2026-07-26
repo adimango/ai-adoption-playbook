@@ -18,13 +18,15 @@ digraph cycle {
     "fluency-assessment" [shape=box, style=bold];
     "blocker-diagnosis" [shape=box];
     "first-use-case-picker" [shape=box];
+    "data-readiness-check" [shape=box];
     "90-day-plan-builder" [shape=box];
     "board-narrative-coach" [shape=box];
     "Complete" [shape=doublecircle];
 
     "fluency-assessment" -> "blocker-diagnosis" [label="scorecard"];
     "blocker-diagnosis" -> "first-use-case-picker" [label="blocker report"];
-    "first-use-case-picker" -> "90-day-plan-builder" [label="use case brief"];
+    "first-use-case-picker" -> "data-readiness-check" [label="use case brief"];
+    "data-readiness-check" -> "90-day-plan-builder" [label="readiness verdict"];
     "90-day-plan-builder" -> "board-narrative-coach" [label="90-day plan"];
     "board-narrative-coach" -> "Complete" [label="board narrative"];
 }
@@ -47,12 +49,13 @@ digraph cycle {
 | 1 | `fluency-assessment` | Company context | AI Fluency Scorecard (includes `Department:`) | 20-30 min |
 | 2 | `blocker-diagnosis` | Scorecard | Blocker Report | 15-25 min |
 | 3 | `first-use-case-picker` | Scorecard + Blocker Report | Use Case Brief | 15-20 min |
-| 4 | `90-day-plan-builder` | All prior artifacts | 90-Day Plan | 20-30 min |
-| 5 | `board-narrative-coach` | 90-Day Plan + results | Board Narrative | 20-30 min |
+| 4 | `data-readiness-check` | Use Case Brief | Data Readiness Check | 10-15 min |
+| 5 | `90-day-plan-builder` | All prior artifacts | 90-Day Plan | 20-30 min |
+| 6 | `board-narrative-coach` | 90-Day Plan + results | Board Narrative | 20-30 min |
 
 **Department propagation:** Step 1's scorecard stamps a `Department:` field. Every downstream skill reads this field to load the matching Department Profile (Engineering / Sales / Generic). If the leader picked F (multiple departments) in Step 1, they will have chosen a primary department — downstream skills run on that primary. To cover a second department, re-run the full cycle for that department.
 
-**Total: approximately 90-135 minutes across one or more sessions.**
+**Total: approximately 100-150 minutes across one or more sessions.**
 
 ### Transitions
 
@@ -93,13 +96,14 @@ If the artifact is incomplete or outdated (more than 90 days old), recommend re-
 
 ## Output
 
-This skill does not produce its own artifact. It orchestrates the five skills that each produce their own:
+This skill does not produce its own artifact. It orchestrates the six skills that each produce their own:
 
 1. AI Fluency Scorecard
 2. Blocker Report
 3. First Use Case Brief
-4. 90-Day AI Adoption Plan
-5. Board AI Update
+4. Data Readiness Check
+5. 90-Day AI Adoption Plan
+6. Board AI Update
 
 **Stage 2 follow-up:** Once the team has worked through Stage 1 and reached Integration ≥ 3/5, the next question is whether the AI work can be defended to a CFO or board. That's a separate Stage 2 diagnostic: `reporting-readiness-assessment`. It runs once after adoption is real, then quarterly alongside `quarterly-review`. The full Stage 1 cycle above does NOT include it — Stage 2 is for teams past the adoption curve, not for first-time runs.
 
@@ -108,7 +112,8 @@ This skill does not produce its own artifact. It orchestrates the five skills th
 - `fluency-assessment` — Step 1
 - `blocker-diagnosis` — Step 2
 - `first-use-case-picker` — Step 3
-- `90-day-plan-builder` — Step 4
-- `board-narrative-coach` — Step 5
+- `data-readiness-check` — Step 4
+- `90-day-plan-builder` — Step 5
+- `board-narrative-coach` — Step 6
 - `using-playbook` — routes to this skill when the founder wants the full process
 - `reporting-readiness-assessment` — Stage 2 diagnostic that runs separately after this cycle, once Integration ≥ 3/5
