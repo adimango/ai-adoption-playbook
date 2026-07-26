@@ -132,7 +132,7 @@ Skills must detect and resist these founder behaviors:
 - Never promise specific ROI numbers — help founders calculate their own
 - Always ground advice in the three pillars
 - Quantify impact in board-relevant terms (runway, velocity, retention, revenue)
-- Every skill has a Flow digraph, Anti-Patterns section, and defined Output format
+- Every skill has an Anti-Patterns section and a defined Output format. Interactive and workflow skills also have a Flow digraph; component skills omit it (flowcharts only where sequencing is non-obvious)
 
 ## Directory Structure
 
