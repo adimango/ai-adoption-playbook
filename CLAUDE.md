@@ -47,6 +47,7 @@ This applies to ALL skills in this plugin. Short names in documentation are for 
 3. `quarterly-review` re-runs fluency-assessment and compares to previous scorecard
 4. Each skill produces an artifact that feeds the next skill in the chain
 5. `fluency-assessment` stamps two fields on the scorecard: `Department:` (from Q3) and `Currency:` (from Q4). Every downstream skill (`blocker-diagnosis`, `first-use-case-picker`, `90-day-plan-builder`, `roi-calculator`, `adoption-scorecard`, `board-ai-update`, `board-narrative-coach`, `tool-stack-audit`) reads these fields — Department determines which profile to load (Engineering / Sales / Generic), Currency determines the symbol used in money references (`$` / `€` / `£` / other). When the leader picks "multiple departments" they choose a primary; the cycle runs on the primary and can be re-run for another department. When no scorecard is available, default to USD ($).
+6. `reporting-readiness-assessment` routes a Risk Posture gap to `90-day-plan-builder`'s Review Layer track, not `quarterly-review` — governance, rollout review, and guardrails need named owners and dates, not a re-score.
 
 ## Deliverable Output Conventions
 
@@ -115,7 +116,7 @@ Skills must detect and resist these founder behaviors:
 - `reporting-readiness-assessment` — Stage 2 diagnostic: outcome rigor, risk posture, board defensibility. Runs after fluency-assessment when Integration ≥ 3/5.
 - `blocker-diagnosis` — deep dive on what's stuck and why, per pillar
 - `first-use-case-picker` — choose where to start for maximum visible wins in 2-4 weeks
-- `90-day-plan-builder` — phased rollout with board-cycle milestones and named owners
+- `90-day-plan-builder` — phased rollout with board-cycle milestones and named owners (Adoption track), or a governance/rollout-review/guardrails build-out (Review Layer track, triggered by a Risk Posture gap)
 - `board-narrative-coach` — rehearse with a skeptical VC, then draft the update
 
 ### Workflow (multi-step)
