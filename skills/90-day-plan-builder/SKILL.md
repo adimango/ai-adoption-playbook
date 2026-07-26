@@ -105,6 +105,8 @@ If Phase 1 actions rely on people voluntarily changing habits, the plan will fai
 
 ### Step 3: Build Phase 1 (Days 1-30) — Pilot
 
+If a `data-readiness-check` surfaced Gap-rated dimensions for this use case, insert a Phase 0 (Days -14 to 0, before the Phase 1 dates below) covering the specific fixes named in that check. Name an owner and a done-when for each fix, same as any other phase action. Phase 1 doesn't start until the named Gap fixes are done.
+
 Present Phase 1 to the founder. This phase must:
 - Name the adoption champion with explicit time allocation
 - Scope the first use case pilot (which team or sub-team, which scope of work, how many participants)
@@ -403,6 +405,7 @@ Status reflects against the plan, not against zero. A phase can be "below plan" 
 - `fluency-assessment` — provides the scorecard that frames the starting position (Adoption Track)
 - `blocker-diagnosis` — identifies what Phase 1 must address (Adoption Track)
 - `first-use-case-picker` — defines the use case the plan is built around (Adoption Track)
+- `data-readiness-check` — provides the verdict that triggers an optional Phase 0 (Adoption Track), when Gap-rated dimensions exist
 - `reporting-readiness-assessment` — provides the scorecard that triggers the Review Layer Track, when Risk Posture is the weak pillar
 - `board-narrative-coach` — most common next step, rehearses and drafts the board update
-- `full-adoption-cycle` — orchestrates this skill as the fourth step in the complete sequence (Adoption Track)
+- `full-adoption-cycle` — orchestrates this skill as the fifth step in the complete sequence (Adoption Track)
