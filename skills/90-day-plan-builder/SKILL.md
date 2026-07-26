@@ -61,13 +61,24 @@ digraph plan {
 5. Every action must have a named owner (role, not "the team") and a timeframe (week, not "soon").
 </HARD-GATE>
 
-### Step 1: Review Prior Artifacts
+### Step 1: Review Prior Artifacts and Pick a Track
 
-Reference the fluency scorecard, blocker report, and use case brief. Summarize what you're building from:
+This skill builds two kinds of plan. Check which artifact the founder is arriving with:
+
+- **Fluency scorecard** (from `fluency-assessment`, plus blocker report and use case brief) → build the **Adoption Track**: continue with Step 2 below (pilot → expand → prove).
+- **Reporting-readiness scorecard** (from `reporting-readiness-assessment`) with **Risk Posture as the weak pillar** → build the **Review Layer Track**: skip to the "Review Layer Track" section below instead of Step 2 (governance → rollout review → guardrails).
+
+**For the Adoption Track**, reference the fluency scorecard, blocker report, and use case brief. Summarize what you're building from:
 
 > "Here's what I'm working with from your previous sessions: [scorecard summary], [top blockers], [chosen use case]. I need a few more details to build a plan that actually fits your team."
 
 If prior artifacts are missing, ask the founder to summarize their scores, blockers, and chosen use case before proceeding.
+
+**For the Review Layer Track**, reference the reporting-readiness scorecard. Summarize what you're building from:
+
+> "Here's what I'm working with: your reporting-readiness scorecard shows Risk Posture at [X]/5, and [key finding from the scorecard]. I need a few more details to build a plan that closes that gap."
+
+Then go to the "Review Layer Track" section below instead of continuing to Step 2.
 
 ### Step 2: Discovery Questions
 
