@@ -55,6 +55,8 @@ This IS the fluency-assessment starting. You're not routing to it — you're beg
 
 **If they mention having existing data** (surveys, tool dashboards, engagement reports): Help them bridge it to our framework. See Step 1b.
 
+**If they ask what AI is actually running** — an inventory, who owns which tool, what has access to what — route to `ai-exposure-register` instead of starting the assessment. It is the one skill that may run first. Someone who cannot list their use cases cannot answer assessment questions about them, and making them sit through a diagnostic before answering the question they asked is how you lose them.
+
 ### Step 1b: Bridge Existing Data to the Framework
 
 Many leaders have done employee surveys, have tool usage dashboards, or have some sense of where things stand — but not in our three-pillar format. Help them translate.
@@ -70,7 +72,7 @@ After bridging, you should have enough to produce a rough scorecard (even if som
 
 ### Step 2: Route Based on Request
 
-Once a scorecard exists, match the founder's request to a skill:
+Match the founder's request to a skill. All of these assume a scorecard exists, except `ai-exposure-register`, which does not require one:
 
 | Founder says something like... | Route to |
 |-------------------------------|----------|
@@ -83,6 +85,7 @@ Once a scorecard exists, match the founder's request to a skill:
 | "Show me the numbers" / "ROI" / "is it worth it?" | `roi-calculator` |
 | "I need a snapshot" / "who's using what?" | `adoption-scorecard` |
 | "Quarterly check-in" / "compare to last time" | `quarterly-review` |
+| "What AI is actually running here?" / "I don't know what tools people are using" / "we need an AI inventory" / "who owns these tools?" | `ai-exposure-register` — the one skill that may run before `fluency-assessment`. Do not redirect them into the assessment first; a leader who does not know what is running cannot answer assessment questions about it anyway. |
 | "Is our data ready for this?" / "do we have the data for X" / "will this use case actually work with what we have" | `data-readiness-check` |
 | "CFO doesn't believe my AI numbers" / "audit risk" / "EU AI Act readiness" / "how do I defend this to the board?" | `reporting-readiness-assessment` — most teams have never built the review layer between "the model works" and "someone downstream relied on it" (customer-facing or internal, like finance). This is where that gets checked. |
 | "Start AI playbook" / "Run the playbook" / "Start the AI adoption playbook" / "Begin AI adoption" | `fluency-assessment` (or `reporting-readiness-assessment` if leader already has a fluency scorecard with Integration ≥ 3/5) |
@@ -103,6 +106,7 @@ If the founder's request doesn't clearly match a skill, use their scorecard to r
 **Symptom:** Founder says "I know what I need, just help me with X."
 **Consequence:** Without a fluency scorecard, you're giving advice without diagnosis.
 **Fix:** "I hear you. But without understanding where your team actually stands, any advice I give is generic. The assessment takes 20 minutes and makes everything after it specific to your situation."
+**Exception:** `ai-exposure-register` is not advice, it is collection. Never block it on the assessment.
 
 ### Routing to the Wrong Skill
 **Symptom:** Founder says "we need a plan" but their real issue is that their senior team members (senior engineers, top sales reps, tenured ops staff) won't touch AI tools.
@@ -119,5 +123,6 @@ Whichever skill matches the routing logic above. Terminal state is the invoked s
 
 ## References
 
-- `fluency-assessment` — always the first skill if no scorecard exists
+- `fluency-assessment` — always the first skill if no scorecard exists, with one exception below
+- `ai-exposure-register` — the documented exception to fluency-first; runs standalone when the leader does not yet know what AI is running
 - All other skills — this meta-skill routes to any of them
