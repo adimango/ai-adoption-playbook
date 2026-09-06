@@ -157,7 +157,9 @@ Use this track instead of Steps 2-6 above when the founder arrives with a `repor
 
 ### Discovery Questions
 
-Ask one at a time. Reuse from the founder's context where already known:
+Ask one at a time. Reuse from the founder's context where already known.
+
+**If an `ai-exposure-register` exists, read it before asking.** Its exceptions list already names the weakest use cases and their owners — Phase 1 covers those exceptions rather than re-deriving them, and each exception's due date becomes a milestone. Skip the "Weakest use case" question and confirm what the register shows instead. If no register exists, build one first — you cannot assign governance owners to use cases nobody has listed.
 
 - **Board timing:** "When is your next board meeting? That's our deadline for having results to show."
 - **Governance owner:** "Who would own deciding what 'correct' means for your riskiest AI use case — not you, someone with the authority and time to make that call?"
@@ -411,5 +413,6 @@ Status reflects against the plan, not against zero. A phase can be "below plan" 
 - `first-use-case-picker` — defines the use case the plan is built around (Adoption Track)
 - `data-readiness-check` — provides the verdict that triggers an optional Phase 0 (Adoption Track), when Gap-rated dimensions exist
 - `reporting-readiness-assessment` — provides the scorecard that triggers the Review Layer Track, when Risk Posture is the weak pillar
+- `ai-exposure-register` — runs before the Review Layer Track; its exceptions list seeds Phase 1 governance with named owners and due dates
 - `board-narrative-coach` — most common next step, rehearses and drafts the board update
 - `full-adoption-cycle` — orchestrates this skill as the fifth step in the complete sequence (Adoption Track)
