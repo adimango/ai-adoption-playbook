@@ -13,6 +13,11 @@ VERSION=$(sed -n 's/.*"version"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' .cla
 FIX=0
 [ "${1:-}" = "--fix" ] && FIX=1
 
+# BSD sed (macOS) requires an argument to -i; GNU sed (Linux/CI) must not have one.
+sed_inplace() {
+  if sed --version >/dev/null 2>&1; then sed -i "$@"; else sed -i '' "$@"; fi
+}
+
 drift=0
 missing=0
 
@@ -22,7 +27,7 @@ if [ -f "$MKT" ]; then
   mv=$(sed -n 's/.*"version"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' "$MKT" | head -1)
   if [ -n "$mv" ] && [ "$mv" != "$VERSION" ]; then
     if [ "$FIX" -eq 1 ]; then
-      sed -i '' "s|\"version\": \"$mv\"|\"version\": \"$VERSION\"|" "$MKT"
+      sed_inplace "s|\"version\": \"$mv\"|\"version\": \"$VERSION\"|" "$MKT"
       echo "FIXED $MKT: v$mv -> v$VERSION"
     else
       echo "DRIFT $MKT: v$mv (plugin.json says v$VERSION)"
@@ -46,7 +51,7 @@ for f in $FILES; do
   for v in $found; do
     if [ "$v" != "$VERSION" ]; then
       if [ "$FIX" -eq 1 ]; then
-        sed -i '' "s|ai-adoption-playbook) v$v|ai-adoption-playbook) v$VERSION|g" "$f"
+        sed_inplace "s|ai-adoption-playbook) v$v|ai-adoption-playbook) v$VERSION|g" "$f"
         echo "FIXED $f: v$v -> v$VERSION"
       else
         echo "DRIFT $f: v$v (plugin.json says v$VERSION)"
