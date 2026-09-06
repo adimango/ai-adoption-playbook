@@ -27,6 +27,7 @@ For `Department:` and `Currency:`, use the first available source: the scorecard
 ```dot
 digraph review {
     "Retrieve previous artifacts" [shape=box];
+    "Confirm exposure register" [shape=box];
     "Re-run fluency-assessment" [shape=box];
     "Compare scorecards" [shape=box];
     "Identify what moved, what didn't" [shape=box];
@@ -35,7 +36,8 @@ digraph review {
     "Draft board update" [shape=box];
     "Route to next action" [shape=doublecircle];
 
-    "Retrieve previous artifacts" -> "Re-run fluency-assessment";
+    "Retrieve previous artifacts" -> "Confirm exposure register";
+    "Confirm exposure register" -> "Re-run fluency-assessment";
     "Re-run fluency-assessment" -> "Compare scorecards";
     "Compare scorecards" -> "Identify what moved, what didn't";
     "Identify what moved, what didn't" -> "Update blocker report";
@@ -53,6 +55,7 @@ digraph review {
 3. Always show the comparison — previous score vs. current score, with what changed.
 4. Do NOT inflate progress. If a score stayed flat, say so.
 5. The board update must reference the delta, not just current numbers.
+6. Any exposure-register record not confirmed within 90 days is reported as unverified, not as fact. A register that looks maintained but is not is worse than no register.
 </HARD-GATE>
 
 ### Step 1: Retrieve Previous Artifacts
@@ -67,13 +70,33 @@ Then, after collecting the previous scorecard, ask:
 
 If they killed pilots, capture for each one: name, cost invested (tool + people time), what it promised, why it was killed, lesson learned, killed date. Push back on vague reasons — "didn't deliver value" is filler; "reps disengaged after week 3" is signal.
 
-### Step 2: Re-Run Fluency Assessment
+### Step 2: Confirm the Exposure Register
+
+If an exposure register exists from `ai-exposure-register`, confirm it before re-assessing. The register rots faster than the scorecard — use cases get switched on between quarters and nobody mentions them.
+
+Replay last quarter's list one function at a time and ask only what changed:
+
+> "Last quarter in [function] you had: [list the use case names]. For each — still accurate, something changed, or no longer used?"
+
+Three answers, and only the middle one opens questions:
+
+| Answer | What to do |
+|---|---|
+| Still accurate | Update Last confirmed to today. Review Status `verified`. Move on. |
+| Something changed | Re-ask only what moved — usually Owner or Authority. Most records carry only the four columns; ask the second-pass fields only if the change trips a trigger (it can now act, it now touches personal data, or the owner is gone). |
+| No longer used | Set Status to `retired`, but confirm it is switched off, not merely unused. Something that still runs with no users is `in production` with `action needed`. |
+
+Then ask what is new: "Anything switched on in [function] since last quarter — including AI features that appeared inside tools you already had?"
+
+Any record the owner cannot confirm is reported as **unverified**, not carried forward as fact. If no register exists, offer to run `ai-exposure-register` — the board's exposure section has no source without it.
+
+### Step 3: Re-Run Fluency Assessment
 
 Run `fluency-assessment` as normal, but with two additions:
 - For each pillar, ask "Last time you scored [X/5] here. Has anything changed?" before the detailed questions
 - Keep the re-assessment tighter — focus on what's different, not re-establishing baseline
 
-### Step 3: Compare Scorecards
+### Step 4: Compare Scorecards
 
 Produce a side-by-side comparison:
 
@@ -84,25 +107,25 @@ Produce a side-by-side comparison:
 | Ownership Gaps | X/5 | X/5 | +X / -X / = |
 | **Overall** | **X/5** | **X/5** | **+X / -X / =** |
 
-### Step 4: Identify What Moved and What Didn't
+### Step 5: Identify What Moved and What Didn't
 
 For each pillar, explain the change (or lack of change) in one sentence:
 - **Improved:** What specific action caused the improvement
 - **Flat:** Why it didn't move — was the action taken but ineffective, or was nothing done?
 - **Declined:** What went wrong — this is the most important finding
 
-### Step 5: Update Blocker Report
+### Step 6: Update Blocker Report
 
 Review the previous blocker report:
 - **Resolved blockers:** Mark as resolved, note what fixed them
 - **Persistent blockers:** Still there — escalate severity if no action was taken
 - **New blockers:** Anything that emerged since last quarter
 
-### Step 6: Produce Comparison Report
+### Step 7: Produce Comparison Report
 
 Use the Output format below.
 
-### Step 7: Draft Board Update
+### Step 8: Draft Board Update
 
 Use `board-ai-update` template to draft the quarterly update. The "What Happened" section must reference the delta — "Psychological barrier score improved from 2/5 to 3/5 after we..." not just "Our psychological barrier score is 3/5."
 
@@ -216,3 +239,4 @@ Note: team composition changed this quarter. Adoption metrics reflect both behav
 - `adoption-scorecard` — provides current adoption data for the comparison
 - `board-ai-update` — template for the board update section
 - `full-adoption-cycle` — first-time process; quarterly-review is the ongoing cadence
+- `ai-exposure-register` — produces the register this skill re-confirms each quarter
