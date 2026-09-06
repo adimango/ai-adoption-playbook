@@ -55,6 +55,7 @@ The playbook picks the right diagnostic for you and takes over. If you'd rather 
 | `first-use-case-picker` | Finds the right starting point for maximum visible wins |
 | `90-day-plan-builder` | Phased rollout with board-cycle milestones (Adoption track), or a governance/rollout-review/guardrails build-out (Review Layer track) |
 | `board-narrative-coach` | Practice with a skeptical VC, then draft the update |
+| `ai-exposure-register` | What AI is actually running, function by function — owner, authority, data reach. Produces the exposure section of the board report. The one skill that can run before the fluency assessment. |
 
 ### Workflow Skills
 | Skill | What it orchestrates |
@@ -80,7 +81,7 @@ The `fluency-assessment` diagnoses which pillars are blocking you. Other skills 
 2. **Risk posture (the review layer)** — governance, rollout review, guardrails
 3. **Board defensibility** — reporting cadence, CFO-approved methodology, outcome vs activity discipline
 
-The `reporting-readiness-assessment` diagnoses Stage 2. `roi-calculator`, `board-ai-update`, and `90-day-plan-builder` (Review Layer track) close the gaps it surfaces.
+The `reporting-readiness-assessment` diagnoses Stage 2. `roi-calculator`, `board-ai-update`, and `90-day-plan-builder` (Review Layer track) close the gaps it surfaces. A risk-posture gap routes through `ai-exposure-register` first — you cannot plan governance for use cases nobody has listed.
 
 Works for engineering, sales, and other functional teams — the playbook detects your team type at the start and adapts its probes, examples, and metrics accordingly.
 
