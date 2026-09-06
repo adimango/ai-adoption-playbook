@@ -122,6 +122,8 @@ Ask ONE question at a time. Present the options exactly as written. The leader p
 - C) High-risk use cases identified, readiness checklist per use case with gaps documented [3]
 - D) High-risk use cases audit-ready, external counsel reviewed, readiness tracked as a board metric [4]
 
+> **Evidence check for Q4 and Q5.** If the leader scores themselves C or D on either, ask for the list: "Can you show me the use cases and their tiers?" If they cannot produce one, the honest score is B. Both questions describe a register — score the register that exists, not the one that would exist if someone built it. Route to `ai-exposure-register` to build it.
+
 **Q6. How do you detect, log, and respond to AI errors or policy violations?**
 - A) No incident tracking — errors discovered by accident or by customers [1]
 - B) Incidents tracked informally in Slack threads or email, no central log [2]
@@ -342,7 +344,7 @@ Based on the scorecard, recommend ONE next step:
 | Lowest-scoring pillar | Recommended next skill | Why |
 |----------------------|----------------------|-----|
 | Outcome Rigor | `roi-calculator` | Methodology must exist before numbers get believed |
-| Risk Posture | `90-day-plan-builder` (Review Layer track) | Governance, rollout review, and guardrails need named owners and dates — not a quarterly re-check |
+| Risk Posture | `ai-exposure-register`, then `90-day-plan-builder` (Review Layer track) | You cannot plan governance for use cases nobody has listed. Build the register first, then assign owners and dates to what it surfaces. |
 | Board Defensibility | `board-ai-update` | Format and cadence problem — solve the artifact first |
 | Tied or all low | `roi-calculator` | Numbers must be defensible before they're reported |
 
@@ -353,6 +355,7 @@ Based on the scorecard, recommend ONE next step:
 - `fluency-assessment` — prerequisite skill. Must score Integration ≥ 3/5 before running this skill.
 - `roi-calculator` — chains from this skill when Outcome Rigor is the main gap.
 - `board-ai-update` — chains from this skill when Board Defensibility is the main gap.
-- `90-day-plan-builder` — chains from this skill (Review Layer track) when Risk Posture is the main gap. Builds a phased plan for governance, rollout review, and guardrails with named owners and dates.
+- `ai-exposure-register` — chains from this skill when Risk Posture is the main gap, and supplies the evidence Q4 and Q5 require. Runs before `90-day-plan-builder`.
+- `90-day-plan-builder` — chains from this skill (Review Layer track) when Risk Posture is the main gap, after the register exists. Builds a phased plan for governance, rollout review, and guardrails with named owners and dates.
 - `quarterly-review` — re-runs this Stage 2 assessment on a periodic cadence alongside its fluency re-run. Use it to track whether a Risk Posture gap is closing, not to close it — that's `90-day-plan-builder`'s job.
 - `full-adoption-cycle` — orchestrates Stage 1 (adoption). This skill is the Stage 2 follow-up: run it separately once the team has Integration ≥ 3/5 and the question shifts from "are we using AI?" to "can we defend the numbers?"
