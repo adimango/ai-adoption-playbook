@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: using-playbook
 description: Use when someone responsible for AI adoption starts a conversation about AI strategy, AI tools, or getting their team to use AI — routes to the right skill based on context and whether a fluency assessment has been completed
 ---

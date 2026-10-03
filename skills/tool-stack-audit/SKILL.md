@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: tool-stack-audit
 description: Use when a founder wants to evaluate their current AI tools — identify overlap, waste, gaps, and whether tools match actual use cases
 ---

@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: roi-calculator
 description: Use when a founder needs to calculate or present the ROI of AI tool adoption — typically before a board meeting or when justifying continued investment
 argument-hint: "<fluency scorecard file or pasted text>"

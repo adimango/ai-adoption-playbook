@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: data-readiness-check
 description: Use when a founder has picked an AI use case and needs to check whether the underlying data is actually fit for it — before committing to a 90-day plan built on data that isn't there.
 ---

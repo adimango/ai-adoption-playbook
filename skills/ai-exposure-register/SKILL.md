@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: ai-exposure-register
 description: Use when a leader cannot say what AI is running across their company — who owns which tool, what it does on its own, or whose data it touches — and needs that answer before a board, a customer, or a regulator asks for it.
 ---
