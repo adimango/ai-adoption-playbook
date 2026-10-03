@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: quarterly-review
 description: Use when a founder has completed at least one adoption cycle and needs to reassess progress, compare to the previous scorecard, and prepare the next board update
 argument-hint: "<previous scorecard file or pasted text>"

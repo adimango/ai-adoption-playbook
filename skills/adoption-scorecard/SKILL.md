@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: adoption-scorecard
 description: Use when a founder needs a quick snapshot of current AI adoption status for a board deck, leadership update, or progress check — not a diagnostic, just the numbers
 ---

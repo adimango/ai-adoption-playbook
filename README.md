@@ -154,7 +154,26 @@ claude --plugin-dir .
 
 Skills are namespaced as `/ai-adoption-playbook:skill-name` (e.g., `/ai-adoption-playbook:fluency-assessment`).
 
-Future: MCP server packaging for use with Cursor and other MCP-compatible clients.
+### For Mistral Vibe Code (CLI)
+
+Skills are auto-discovered from `.vibe/skills/` or `.agents/skills/` directories. The symlinks are already set up in this repo.
+
+1. Clone this repo
+2. Run Mistral Vibe Code from the repo root
+3. Skills are available as slash commands: `/ai-adoption-playbook-fluency-assessment`, `/ai-adoption-playbook-roi-calculator`, etc.
+
+### For Mistral Vibe Work (Web UI)
+
+1. Open [Le Chat](https://chat.mistral.ai) and switch to the **Work** tab
+2. Go to **Context > Skills**
+3. Click **New Skill > From Directory** and select this repo's `skills/` folder
+4. Skills become available in your workspace
+
+### For Cursor
+
+Cursor supports the same Agent Skills format. Clone this repo and Cursor will auto-discover skills from the `skills/` directory.
+
+Future: MCP server packaging for use with other MCP-compatible clients.
 
 ## Need help running this?
 

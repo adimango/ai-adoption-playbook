@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: board-ai-update
 description: Use when a founder needs to draft the AI section of a board update and already has results data — produces the formatted update, not the rehearsal
 argument-hint: "<scorecard / plan / results file or pasted text>"

@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: reporting-readiness-assessment
 description: Use when a leader has adopted AI and can show it working — but now needs to defend the value to a CFO, board, or external auditor. The Stage 2 diagnostic that runs after fluency-assessment for organizations past pilot stage.
 ---

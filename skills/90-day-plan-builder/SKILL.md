@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: 90-day-plan-builder
 description: Use when a founder has diagnosed their AI adoption blockers and picked a first use case, and now needs a phased rollout plan with milestones aligned to board reporting cycles
 ---

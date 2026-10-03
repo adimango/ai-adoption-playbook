@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: fluency-assessment
 description: Use when a leader responsible for AI adoption wants to understand where their team stands with AI tools — the entry point diagnostic before any other AI adoption skill
 ---

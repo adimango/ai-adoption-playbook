@@ -1,4 +1,5 @@
 ---
+user-invocable: true
 name: full-adoption-cycle
 description: Use when a founder wants the complete AI adoption process from start to finish — orchestrates assessment through board narrative in sequence
 ---
