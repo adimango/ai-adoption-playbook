@@ -1,5 +1,4 @@
 ---
-user-invocable: true
 name: first-use-case-picker
 description: Use when a founder needs to choose where to start with AI adoption — finds the highest-probability first use case that produces visible results within 2-4 weeks
 ---

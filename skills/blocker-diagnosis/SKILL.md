@@ -1,5 +1,4 @@
 ---
-user-invocable: true
 name: blocker-diagnosis
 description: Use when AI adoption has stalled and the founder needs to understand specifically what's blocking their team — goes deeper than the fluency assessment to identify root causes per pillar
 argument-hint: "<fluency scorecard file or pasted text>"

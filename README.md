@@ -162,6 +162,8 @@ Skills are auto-discovered from `.vibe/skills/` or `.agents/skills/` directories
 2. Run Mistral Vibe Code from the repo root
 3. Skills are available as slash commands: `/ai-adoption-playbook-fluency-assessment`, `/ai-adoption-playbook-roi-calculator`, etc.
 
+A few skills (`blocker-diagnosis`, `first-use-case-picker`, `90-day-plan-builder`, `board-narrative-coach`, `reporting-readiness-assessment`) are deliberately left off the slash-command list — CLAUDE.md's chaining rules gate them behind `fluency-assessment`, and Mistral Vibe Code doesn't load CLAUDE.md to enforce that. Run `fluency-assessment` first, then describe what you need and let the model route to them.
+
 ### For Mistral Vibe Work (Web UI)
 
 1. Open [Le Chat](https://chat.mistral.ai) and switch to the **Work** tab
@@ -171,7 +173,7 @@ Skills are auto-discovered from `.vibe/skills/` or `.agents/skills/` directories
 
 ### For Cursor
 
-Cursor supports the same Agent Skills format. Clone this repo and Cursor will auto-discover skills from the `skills/` directory.
+Cursor supports the same Agent Skills format, auto-discovered from `.agents/skills/` (or `.cursor/skills/`), not a top-level `skills/` folder. Clone this repo — the symlinks in `.agents/skills/` are already set up — and Cursor will pick up the skills automatically.
 
 Future: MCP server packaging for use with other MCP-compatible clients.
 

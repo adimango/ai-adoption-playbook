@@ -1,5 +1,4 @@
 ---
-user-invocable: true
 name: board-narrative-coach
 description: Use when a founder is preparing for a board meeting and needs to present their AI adoption progress — rehearses with hard questions first, then drafts the actual board update
 ---
